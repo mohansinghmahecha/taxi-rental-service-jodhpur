@@ -1,4 +1,3 @@
-
 /* .slider-container {
     width: 100%;
     margin: auto;
@@ -19,3 +18,46 @@
 .slick-slide div {
     width: 100%; 
 } */
+
+.full-width-slider {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.slider-container {
+    display: flex;
+    width: calc(100vw * 3);
+}
+
+.slide {
+    width: 100vw;
+    height: 94vh;
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+
+}
+
+.slide img {
+    width: 100%;
+    height: 80vh;
+    
+    object-fit: cover;
+   
+}
+
+.content-wrapper {
+   
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+  
+}
+
+.heading,
+.desc {
+    margin: 5px;
+}
