@@ -1,0 +1,50 @@
+import React, { useState } from 'react';
+
+export default function NavBarMainList() {
+    const [isHovered, setIsHovered] = useState(false);
+    const [listItems, setListItems] = useState([
+        'Item 1',
+        'Item 2',
+        'Item 3',
+        'Item 4',
+        'Item 5',
+    ]);
+
+    const handleMouseOver = () => {
+        setIsHovered(true);
+    };
+
+    const handleMouseOut = () => {
+        setIsHovered(false);
+    };
+
+    return (
+        <div
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
+            style={{
+                position: 'relative',
+            }}
+        >
+            <span>Hover over me!</span>
+            {isHovered && (
+                <ul
+                    style={{
+                        position: 'absolute',
+                        top: 20,
+                        left: 0,
+                        backgroundColor: 'white',
+                        border: '1px solid gray',
+                        padding: 10,
+                        listStyle: 'none',
+                        margin: 0,
+                    }}
+                >
+                    {listItems.map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))}
+                </ul>
+            )}
+        </div>
+    );
+}
