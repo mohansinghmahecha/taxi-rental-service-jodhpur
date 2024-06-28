@@ -1,17 +1,25 @@
 
 import './App.css';
+import Intro from './components/introduction/Intro';
 import MainNevbar from './components/navbar/MainNevbar';
-import CustomSlider from './components/slider/CustomSlider';
-import SimpleSlider from './components/slider/SimpleSlider';
+import OurPackages from './components/our-packages/OurPackages';
+
 import SlidingImage from './components/slider/SlidingImage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
     <div className='bg-white '>
+      <Router>
       <MainNevbar />
-      {/* <SimpleSlider /> */}
-      {/* <CustomSlider/> */}
-      <SlidingImage/>
+      <SlidingImage />
+      <Intro />
+      <OurPackages/>
+
+      </Router>
+      
+
     </div>
   );
 }

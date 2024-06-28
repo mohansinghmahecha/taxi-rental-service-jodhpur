@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import OneWay from "./OneWay";
+import './MainNevbar.css'
+
 import { MdArrowDropDown } from "react-icons/md";
 
 export default function NavBarMainList() {
     const [isHovered, setIsHovered] = useState(false);
-    //const [isHovered, setIsHovered] = useState(false);
-    const handleMouseEnter = () => setIsHovered(true);
-    const handleMouseLeave = () => setIsHovered(false);
+   
 
 
 
@@ -18,13 +17,6 @@ export default function NavBarMainList() {
         setIsHovered(false);
     };
 
-    const [listItems, setListItems] = useState([
-        'Item 1',
-        'Item 2',
-        'Item 3',
-        'Item 4',
-        'Item 5',
-    ]);
 
     return (
         <div className="parent-component">
@@ -35,7 +27,7 @@ export default function NavBarMainList() {
                 onMouseOut={handleMouseOut}>
                 Taxi Services
 
-                {isHovered && <ul className="submenu">
+                {isHovered && <ul className="submenu ">
                     <li className="itms">Jaipur</li>
                     <li className="itms">Jodhpur</li>
                     <li className="itms">Balotra</li>

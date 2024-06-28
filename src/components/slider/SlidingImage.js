@@ -1,15 +1,48 @@
 import React from "react";
-import { Fade, Slide } from "react-slideshow-image";
-import img1 from '../../asserts/Feature-City-Palace-Udaipur-Rajasthan.jpg'
-import img2 from '../../asserts/home-slider.jpg'
+import { Slide } from "react-slideshow-image";
+import img1 from '../../assets/Feature-City-Palace-Udaipur-Rajasthan.jpg';
+import img2 from '../../assets/home-slider.jpg';
 import "react-slideshow-image/dist/styles.css";
+
+const arrowStyle = {
+    position: 'absolute',
+    top: '50%',
+    transform: 'translateY(-50%)',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    color: 'white',
+    padding: '10px',
+    border: 'none',
+    cursor: 'pointer',
+    zIndex: 2,
+};
+
+const PrevArrow = ({ onClick }) => {
+    return (
+        <button
+            style={{ ...arrowStyle, left: '10px' }}
+            onClick={onClick}
+        >
+            Previous
+        </button>
+    );
+};
+
+const NextArrow = ({ onClick }) => {
+    return (
+        <button
+            style={{ ...arrowStyle, right: '10px' }}
+            onClick={onClick}
+        >
+            Next
+        </button>
+    );
+};
 
 export default function SlidingImage() {
     const spanStyle = {
         padding: "30px",
         color: "#000000",
         fontSize: "60px",
-
     };
 
     const divStyle = {
@@ -18,45 +51,40 @@ export default function SlidingImage() {
         justifyContent: "center",
         backgroundSize: "cover",
         height: "600px",
-
     };
 
     const slideImages = [
         {
             url: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-            caption: "  Welcome to JCR Cab & Car Rental Rajasthan",
+            caption: "Welcome to JCR Cab & Car Rental Rajasthan",
             disc: "JCR Cab & Car Rental is a trusted and best car rental company in Rajasthan. We have most modern Luxury Cars, Coaches and Small Cars in our fleet."
-
         },
         {
             url: img1,
             caption: "Car Rental",
             disc: "JCR Cab & Car Rental is a trusted and best car rental company in Rajasthan. We have most modern Luxury Cars, Coaches and Small Cars in our fleet."
-
         },
         {
             url: img2,
             caption: "Mohan",
             disc: "JCR Cab & Car Rental is a trusted and best car rental company in Rajasthan. We have most modern Luxury Cars, Coaches and Small Cars in our fleet."
-
         },
     ];
 
     return (
         <div className="slide-container">
-            <Fade>
+            <Slide prevArrow={<PrevArrow />} nextArrow={<NextArrow />} duration={1000} >
                 {slideImages.map((slideImage, index) => (
                     <div key={index}>
                         <div style={{ ...divStyle, backgroundImage: `url(${slideImage.url})` }}>
-                            <div style={{ display: 'block', textAlign: 'center' , color:"white" }}>
-                                <p style={{ ...spanStyle , color:"white"}}>{slideImage.caption}</p>
-                                <p >{slideImage.disc}</p>
+                            <div style={{ display: 'block', textAlign: 'center', color: "white" }}>
+                                <p style={{ ...spanStyle, color: "white" }}>{slideImage.caption}</p>
+                                <p>{slideImage.disc}</p>
                             </div>
-
                         </div>
                     </div>
                 ))}
-            </Fade>
+            </Slide>
         </div>
     );
 }

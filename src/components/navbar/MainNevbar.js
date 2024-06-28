@@ -1,5 +1,5 @@
 import './MainNevbar.css';
-import logo from '../../asserts/JCR_Logo_white.webp';
+import logo from '../../assets/JCR_Logo_white.webp';
 import NavBarMainList from './NavBarMainList';
 const MainNevbar = () => {
     return <nav>
@@ -11,7 +11,6 @@ const MainNevbar = () => {
                 <div><img src={logo} width={180} height={100} /></div>
                 <div>
                     <div className='block  '>
-                    
                         <NavBarMainList />
                     </div>
                 </div>
