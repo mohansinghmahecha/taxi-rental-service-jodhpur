@@ -9,7 +9,7 @@ export default function Intro() {
         <p className="mb-5 font-bold ">
           WELCOME TO JCR CAB & CAR RENTAL RAJASTHAN
         </p>
-        <img src={smallcar} className="" />
+        <img src={smallcar} alt={smallcar} />
         <span className="paragraph">
           Are you planning to visit a city and do not want to follow the typical
           tourist-beaten part, or do you want to explore the untouched corners
@@ -28,7 +28,7 @@ export default function Intro() {
         </span>
       </div>
       <div>
-        <img src={bigcar} />
+        <img src={bigcar} alt={bigcar} />
       </div>
     </div>
   );

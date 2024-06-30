@@ -27,7 +27,7 @@ const MainNevbar = () => {
           <Link to="/">
            
             <div>
-              <img src={logo} width={180} height={100} />
+              <img src={logo}  alt={logo} width={180} height={100} />
             </div>
           </Link>
           <div>

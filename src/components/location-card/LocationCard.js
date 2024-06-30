@@ -10,7 +10,7 @@ export default function LocationCard() {
         Discover Rajasthan with Car Tours Jodhpur
       </p>
 
-      <div className="flex-container  flex flex-wrap w-full h-full  gap-6  border container">
+      <div className="flex-container  flex flex-wrap w-full h-full  gap-6  border container border border-red-500">
         {/* 1 */}
         <div className=" flex p-4 relative   ">
           <div className="w-[390px] h-auto shadow-lg p-4 rounded-lg ok">

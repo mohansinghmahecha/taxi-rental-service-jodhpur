@@ -1,2 +1,2 @@
 https://www.rajasthancab.com/
-https://rajasthanholidaytrips.com/?gad_source=1&gclid=CjwKCAjw4f6zBhBVEiwATEHFVtzaEc8FqBdCs2fgb8NKHNoYSzbm6aleaWcayRecGMaRphgCjbBK2xoCl3cQAvD_BwE
+https://rajasthanholidaytrips.com/

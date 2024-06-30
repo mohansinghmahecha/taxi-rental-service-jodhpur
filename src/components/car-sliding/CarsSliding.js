@@ -63,7 +63,7 @@ export default function CarsSliding() {
         {carData.map((item, index) => (
           <div key={index} className=" block rounded-lg shadow-md">
             <img
-              src={item.img}
+              src={item.img} alt={item.img}
               style={{
                 objectFit: "cover",
                 padding: "10px",

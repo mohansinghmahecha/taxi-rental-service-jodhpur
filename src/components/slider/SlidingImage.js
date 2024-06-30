@@ -7,17 +7,7 @@ import "react-slideshow-image/dist/styles.css";
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 
-const arrowStyle = {
-  position: "absolute",
-  top: "50%",
-  transform: "translateY(-90%)",
-  backgroundColor: "rgba(0, 0, 0, 0.5)",
-  color: "white",
-  padding: "10px",
-  border: "none",
-  cursor: "pointer",
-  zIndex: 2,
-};
+
 
 const PrevArrow = ({ onClick }) => {
   return (

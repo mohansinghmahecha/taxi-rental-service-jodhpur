@@ -1,0 +1,11 @@
+.dynamic-conainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+}
+.image-container {
+    display: flex; /* Enable flexbox for the image container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  

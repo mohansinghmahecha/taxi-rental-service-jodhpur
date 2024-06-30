@@ -1,0 +1,23 @@
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+   background-color: rgb(0, 0, 0);
+   color: #ef9228;
+    width: 100%;
+    gap: 10px;
+}
+
+@media  ( min-width:320px) and (max-width: 768px) {
+
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 2fr;
+       
+        width: 100%;
+        gap: 10px;
+        padding: 35px;
+    }
+    
+}
