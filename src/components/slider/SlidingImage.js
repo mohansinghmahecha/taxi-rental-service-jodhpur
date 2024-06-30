@@ -1,90 +1,124 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
-import img1 from '../../assets/Feature-City-Palace-Udaipur-Rajasthan.jpg';
-import img2 from '../../assets/home-slider.jpg';
+import img1 from "../../assets/Feature-City-Palace-Udaipur-Rajasthan.jpg";
+import img2 from "../../assets/home-slider.jpg";
 import "react-slideshow-image/dist/styles.css";
 
+import { FaAngleLeft } from "react-icons/fa6";
+import { FaAngleRight } from "react-icons/fa6";
+
 const arrowStyle = {
-    position: 'absolute',
-    top: '50%',
-    transform: 'translateY(-50%)',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    color: 'white',
-    padding: '10px',
-    border: 'none',
-    cursor: 'pointer',
-    zIndex: 2,
+  position: "absolute",
+  top: "50%",
+  transform: "translateY(-90%)",
+  backgroundColor: "rgba(0, 0, 0, 0.5)",
+  color: "white",
+  padding: "10px",
+  border: "none",
+  cursor: "pointer",
+  zIndex: 2,
 };
 
 const PrevArrow = ({ onClick }) => {
-    return (
-        <button
-            style={{ ...arrowStyle, left: '10px' }}
-            onClick={onClick}
-        >
-            Previous
-        </button>
-    );
+  return (
+  
+    <FaAngleLeft
+     
+      onClick={onClick}
+      style={{
+        position: "absolute",
+        left: "10px",
+        top: "30%",
+        cursor: "pointer",
+        zIndex: 2,
+        height: "400px",
+        opacity: "0.5",
+        width: "100px",
+      }}
+    />
+  );
 };
 
 const NextArrow = ({ onClick }) => {
-    return (
-        <button
-            style={{ ...arrowStyle, right: '10px' }}
-            onClick={onClick}
-        >
-            Next
-        </button>
-    );
+  return (
+    <FaAngleRight
+     
+      onClick={onClick}
+      style={{
+        position: "absolute",
+        right: "10px",
+        top: "30%",
+        cursor: "pointer",
+        zIndex: 2,
+        height: "400px",
+        opacity: "0.5",
+        width: "100px",
+      }}
+    />
+  );
 };
 
 export default function SlidingImage() {
-    const spanStyle = {
-        padding: "30px",
-        color: "#000000",
-        fontSize: "60px",
-    };
+  const spanStyle = {
+    padding: "30px",
+    color: "#000000",
+    fontSize: "60px",
+  };
 
-    const divStyle = {
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundSize: "cover",
-        height: "600px",
-    };
+  const divStyle = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundSize: "cover",
+    height: "600px",
+  };
 
-    const slideImages = [
-        {
-            url: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-            caption: "Welcome to JCR Cab & Car Rental Rajasthan",
-            disc: "JCR Cab & Car Rental is a trusted and best car rental company in Rajasthan. We have most modern Luxury Cars, Coaches and Small Cars in our fleet."
-        },
-        {
-            url: img1,
-            caption: "Car Rental",
-            disc: "JCR Cab & Car Rental is a trusted and best car rental company in Rajasthan. We have most modern Luxury Cars, Coaches and Small Cars in our fleet."
-        },
-        {
-            url: img2,
-            caption: "Mohan",
-            disc: "JCR Cab & Car Rental is a trusted and best car rental company in Rajasthan. We have most modern Luxury Cars, Coaches and Small Cars in our fleet."
-        },
-    ];
+  const slideImages = [
+    {
+      url: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+      caption: "Welcome to JCR Cab & Car Rental Rajasthan",
+      disc: "JCR Cab & Car Rental is a trusted and best car rental company in Rajasthan. We have most modern Luxury Cars, Coaches and Small Cars in our fleet.",
+    },
+    {
+      url: img1,
+      caption: "Car Rental",
+      disc: "JCR Cab & Car Rental is a trusted and best car rental company in Rajasthan. We have most modern Luxury Cars, Coaches and Small Cars in our fleet.",
+    },
+    {
+      url: img2,
+      caption: "Mohan",
+      disc: "JCR Cab & Car Rental is a trusted and best car rental company in Rajasthan. We have most modern Luxury Cars, Coaches and Small Cars in our fleet.",
+    },
+  ];
 
-    return (
-        <div className="slide-container">
-            <Slide prevArrow={<PrevArrow />} nextArrow={<NextArrow />} duration={1000} >
-                {slideImages.map((slideImage, index) => (
-                    <div key={index}>
-                        <div style={{ ...divStyle, backgroundImage: `url(${slideImage.url})` }}>
-                            <div style={{ display: 'block', textAlign: 'center', color: "white" }}>
-                                <p style={{ ...spanStyle, color: "white" }}>{slideImage.caption}</p>
-                                <p>{slideImage.disc}</p>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </Slide>
-        </div>
-    );
+  return (
+    <div className="slide-container">
+      <Slide
+        prevArrow={<PrevArrow />}
+        nextArrow={<NextArrow />}
+        duration={2000}
+      >
+        {slideImages.map((slideImage, index) => (
+          <div key={index}>
+            <div
+              style={{ ...divStyle, backgroundImage: `url(${slideImage.url})` }}
+            >
+              <div
+                style={{
+                  display: "block",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                <p style={{ ...spanStyle, color: "white" }}>
+                  {slideImage.caption}
+                </p>
+                <p>{slideImage.disc}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </Slide>
+    </div>
+  );
 }

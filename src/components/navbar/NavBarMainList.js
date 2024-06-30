@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './MainNevbar.css'
 
 import { MdArrowDropDown } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export default function NavBarMainList() {
     const [isHovered, setIsHovered] = useState(false);
@@ -20,7 +21,7 @@ export default function NavBarMainList() {
 
     return (
         <div className="parent-component">
-            <div className="custom-font">About Us</div>
+            <div className="custom-font"><Link to="/about-us" >About Us</Link></div>
 
 
             <div className="inline custom-font" onMouseOver={handleMouseOver}

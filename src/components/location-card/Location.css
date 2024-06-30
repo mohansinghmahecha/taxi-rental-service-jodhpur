@@ -1,0 +1,39 @@
+@keyframes cssAnimation_0 {
+  from{
+    transform: translateX(-0px);
+  }
+  to {
+    transform: translate(0px, -40px) ;
+  }
+}
+.container{
+  justify-content: center
+}
+.design {
+    display: none;
+    cursor: pointer; /* Add cursor: pointer initially */
+    /* animation: cssAnimation_0 1500ms 1 ease-in forwards; */
+    transition: 3s;
+    
+
+  }
+  
+  .ok:hover  .design {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.746);
+    color: rgba(255, 255, 255, 0.473);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    padding:  8px;
+    left: 18px;
+    margin-top: 100px;
+    opacity: 80px;
+    width: 390px;
+  
+    
+  }
+  

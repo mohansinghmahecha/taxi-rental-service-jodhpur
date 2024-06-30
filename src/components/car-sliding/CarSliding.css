@@ -1,0 +1,22 @@
+.main{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.constainer{
+    width: 100%;
+   
+}
+.box{
+    justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+    .main{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .box{
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
+
