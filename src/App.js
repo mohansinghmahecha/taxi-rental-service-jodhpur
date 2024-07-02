@@ -8,7 +8,7 @@ import AboutUs from "./components/about-us/AboutUs.js";
 import LocationCard from "./components/location-card/LocationCard.js";
 import Footer from "./components/footer/Footer.js";
 import DetailedInfo from "./components/taxi-services/DetailedInfo.js";
-
+import LocationOfffer from "./browse-location/LocationOffer.js";
 export default function App() {
   return (
     <BrowserRouter>
@@ -23,7 +23,10 @@ export default function App() {
                 <SlidingImage />
                 <Intro />
                 <OurPackages />
-                <LocationCard />
+                {/* <LocationCard /> */}
+                <LocationOfffer />
+                
+
               </>
             }
           />

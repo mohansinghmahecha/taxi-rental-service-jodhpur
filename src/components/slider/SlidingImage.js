@@ -3,47 +3,20 @@ import { Slide } from "react-slideshow-image";
 import img1 from "../../assets/Feature-City-Palace-Udaipur-Rajasthan.jpg";
 import img2 from "../../assets/home-slider.jpg";
 import "react-slideshow-image/dist/styles.css";
+import "../navbar/MainNevbar.css";
 
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 
-
-
 const PrevArrow = ({ onClick }) => {
-  return (
-  
-    <FaAngleLeft
-     
-      onClick={onClick}
-      style={{
-        position: "absolute",
-        left: "10px",
-        top: "30%",
-        cursor: "pointer",
-        zIndex: 2,
-        height: "400px",
-        opacity: "0.5",
-        width: "100px",
-      }}
-    />
-  );
+  return <FaAngleLeft onClick={onClick} className="icon" />;
 };
 
 const NextArrow = ({ onClick }) => {
   return (
     <FaAngleRight
-     
       onClick={onClick}
-      style={{
-        position: "absolute",
-        right: "10px",
-        top: "30%",
-        cursor: "pointer",
-        zIndex: 2,
-        height: "400px",
-        opacity: "0.5",
-        width: "100px",
-      }}
+      className="icon2"
     />
   );
 };

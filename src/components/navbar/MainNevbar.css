@@ -74,9 +74,34 @@
 .custom-font {
     font-size: 14px;
 }
+.icon {
+    position: absolute;
+    left: 10px;
+    top: 30%;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0.5;
+    height: 400px;
+    width: 100px;
+  }
+  .icon2 {
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0.5;
+    height: 400px;
+    width: 100px;
+  }
+
 .mobile-submenu-maincontainer{
     display: none;
 }
+
+
+
+
 @media only screen and (max-width: 749px) {
     .sub-main {
         display: none;
@@ -99,15 +124,35 @@
         
     }
     .menu-box{
-        display: flex;
-       
-        
+        display: flex;        
         width: 100%;
         padding: 10px;
         background-color: rgb(237, 208, 60);
         gap: 20px;
         font-size: large;
     }
+    .icon {
+       
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        cursor: pointer;
+        z-index: 2;
+        opacity: 0.6;
+        height: 130px;
+        width: 100px;
+      }
+      .icon2 {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        cursor: pointer;
+        z-index: 2;
+        opacity: 0.6;
+        height: 130px;
+        width: 100px;
+      }
+
 
 
 
@@ -132,5 +177,5 @@
         grid-template-rows: 1fr;
     
     }
-
+    
 }
