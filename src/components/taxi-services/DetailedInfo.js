@@ -1,7 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import img1 from "../../assets/bdr.png"; // Assuming a generic default image
+import img1 from "../../assets/car.jpg"; // Assuming a generic default image
 import "./CardsDetail.css";
+import Partners from "../our-partners/Partners";
 
 export default function DetailedInfo() {
   const { LocationName } = useParams();
@@ -23,7 +24,19 @@ export default function DetailedInfo() {
         <>
           <p>
             Jodhpur is famous for its <strong>blue houses</strong> and vibrant
-            culture.
+            culture.is famous fo Jodhpur is famous for its{" "}
+            <strong>blue houses</strong> and vibrant culture.is famous fo
+            Jodhpur is famous for its <strong>blue houses</strong> and vibrant
+            culture.is famous fo Jodhpur is famous for its{" "}
+            <strong>blue houses</strong> and vibrant culture.is famous fo
+            Jodhpur is famous for its <strong>blue houses</strong> and vibrant
+            culture.is famous fo Jodhpur is famous for its{" "}
+            <strong>blue houses</strong> and vibrant culture.is famous fo
+            Jodhpur is famous for its <strong>blue houses</strong> and vibrant
+            culture.is famous fo Jodhpur is famous for its{" "}
+            <strong>blue houses</strong> and vibrant culture.is famous fo
+            Jodhpur is famous for its <strong>blue houses</strong> and vibrant
+            culture.is famous fo
           </p>
           <ul>
             <li>Mehrangarh Fort</li>
@@ -58,7 +71,18 @@ export default function DetailedInfo() {
         <>
           <p>
             Barmer is renowned for its <strong>folk music</strong> and vibrant
-            festivals.
+            festivals. Barmer is renowned for its <strong>folk music</strong>{" "}
+            and vibrant festivals. Barmer is renowned for its{" "}
+            <strong>folk music</strong> and vibrant festivals. Barmer is
+            renowned for its <strong>folk music</strong> and vibrant festivals.
+            Barmer is renowned for its <strong>folk music</strong> and vibrant
+            festivals. Barmer is renowned for its <strong>folk music</strong>{" "}
+            and vibrant festivals. Barmer is renowned for its{" "}
+            <strong>folk music</strong> and vibrant festivals. Barmer is
+            renowned for its <strong>folk music</strong> and vibrant festivals.
+            Barmer is renowned for its <strong>folk music</strong> and vibrant
+            festivals. Barmer is renowned for its <strong>folk music</strong>{" "}
+            and vibrant festivals.
           </p>
           <ul>
             <li>Desert Festival</li>
@@ -122,9 +146,7 @@ export default function DetailedInfo() {
       </h1>
       <div className="  w-full dynamic-conainer sm:grid sm:grid-cols-1">
         <div>
-          {console.log("1", detailedData.LocationName)}
-          <p>{detailedData[LocationName].description}</p>
-          {console.log("2", detailedData[LocationName].image)}
+          <p className="p-box">{detailedData[LocationName].description}</p>
         </div>
         <div className="image-container">
           <img
@@ -133,6 +155,9 @@ export default function DetailedInfo() {
           />
         </div>
       </div>
+
+
+      <Partners/>
     </>
   );
 }
