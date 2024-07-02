@@ -49,7 +49,7 @@ export default function SlidingImage() {
     },
     {
       url: img2,
-      caption: "Mohan",
+      caption: "Ravi",
       disc: "JCR Cab & Car Rental is a trusted and best car rental company in Rajasthan. We have most modern Luxury Cars, Coaches and Small Cars in our fleet.",
     },
   ];

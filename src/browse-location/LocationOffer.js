@@ -1,23 +1,10 @@
 import { Slide } from "react-slideshow-image";
 import "./LocationOffer.css";
-import { FaAngleLeft, FaLeftRight } from "react-icons/fa6";
+import { FaAngleLeft } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa";
 
 export default function LocationOfffer() {
-  const spanStyle = {
-    padding: "30px",
-    color: "#000000",
-    fontSize: "60px",
-  };
-
-  const divStyle = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundSize: "cover",
-    height: "150px",
-  };
-
+  
   const locationData = [
     {
       discrption: "Jodhpur",
@@ -65,9 +52,9 @@ export default function LocationOfffer() {
     },
   ];
   return (
-    <div className="location-offer block">
-      <div className="flex justify-between p-10">
-        <div className="p-2 m-4 ">
+    <div className="location-offer block p-4">
+      <div className="flex justify-between ">
+        <div className="p-2 m-4 text-2xl">
           <p>Popular Destinations </p>
           <p>Explore some popular destinations in Rajasthan.</p>
         </div>
@@ -102,15 +89,14 @@ export default function LocationOfffer() {
                     />
                   </div>
 
-                  <div className="flex justify-between ok">
-                    <div>
-                      <p className="text-start ml-2 bg-white text-orange-400 font-bold text-lg tracking-widest ">
+                  <div className="flex flex-col items-center">
+                    <div className="w-full ">
+                      <p className="w-full text-start ml-2 bg-white text-orange-400 font-bold text-lg tracking-widest ">
                         {location.discrption}
                       </p>
                     </div>
                     <div>
-                      <button className="text-black mr-4 bg-orange-300 p-1 rounded-lg ">
-                      
+                      <button className="text-black  mr-4 bg-orange-300 p-1 rounded-lg ">
                         Explore Now
                       </button>
                     </div>

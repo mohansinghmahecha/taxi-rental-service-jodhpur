@@ -5,10 +5,12 @@ import OurPackages from "./components/our-packages/OurPackages";
 import SlidingImage from "./components/slider/SlidingImage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutUs from "./components/about-us/AboutUs.js";
-import LocationCard from "./components/location-card/LocationCard.js";
+
 import Footer from "./components/footer/Footer.js";
 import DetailedInfo from "./components/taxi-services/DetailedInfo.js";
 import LocationOfffer from "./browse-location/LocationOffer.js";
+import Partners from "./components/our-partners/Partners.js";
+import NotFound from "./components/not-found/NotFound.js";
 export default function App() {
   return (
     <BrowserRouter>
@@ -25,6 +27,9 @@ export default function App() {
                 <OurPackages />
                 {/* <LocationCard /> */}
                 <LocationOfffer />
+                <Partners/>
+                
+
                 
 
               </>
@@ -35,6 +40,7 @@ export default function App() {
             path="/taxi-services/:LocationName"
             element={<DetailedInfo />}
           />
+          <Route path="/*" element={<NotFound/>}/>
         </Routes>
       </div>
       <Footer />

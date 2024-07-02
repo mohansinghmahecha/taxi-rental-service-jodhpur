@@ -1,10 +1,12 @@
 .box-con{
-    width: 98%;
+    width: 100%;
 }
 .new-box{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
-    gap: 10px;
-    overflow: scroll;
+    gap: 40px;
+    justify-content: space-between;
+    width: 100%;
+   
+   
 }
