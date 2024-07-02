@@ -28,7 +28,10 @@ export default function App() {
             }
           />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/taxi-services/:LocationName"  element={<DetailedInfo />} />
+          <Route
+            path="/taxi-services/:LocationName"
+            element={<DetailedInfo />}
+          />
         </Routes>
       </div>
       <Footer />

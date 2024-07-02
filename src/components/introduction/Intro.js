@@ -1,15 +1,17 @@
-import smallcar from "../../assets/bdr.png";
+import car2 from "../../assets/car2.png";
 import bigcar from "../../assets/car.jpg";
 import "./Intro.css";
 
 export default function Intro() {
+  
+
   return (
-    <div className=" m-10 grid-container">
-      <div className=" paragraph ">
-        <p className="mb-5 font-bold ">
+    <div className="grid-container paragraph">
+      <div className="  ">
+        <p className="mb-5 font-bold text-center md:m-10">
           WELCOME TO JCR CAB & CAR RENTAL RAJASTHAN
         </p>
-        <img src={smallcar} alt={smallcar} />
+
         <span className="paragraph">
           Are you planning to visit a city and do not want to follow the typical
           tourist-beaten part, or do you want to explore the untouched corners
@@ -27,8 +29,12 @@ export default function Intro() {
           India Like Taxi Service In Jodhpur, and Taxi Service In Jaipur.
         </span>
       </div>
-      <div>
-        <img src={bigcar} alt={bigcar} />
+      <div className="image-container img2 ">
+        <img
+          src={car2}
+          alt={bigcar}
+          className="  border border-black rounded-full  p-10 "
+        />
       </div>
     </div>
   );

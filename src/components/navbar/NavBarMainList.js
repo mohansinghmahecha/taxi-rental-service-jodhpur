@@ -17,16 +17,19 @@ export default function NavBarMainList() {
 
   return (
     <div className="parent-component">
-
       <div className="custom-font">
         <Link to="/about-us">About Us</Link>
       </div>
 
       <div
-        className=" custom-font "
+        className=" custom-font  "
         onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut} >
-        Taxi Services <MdArrowDropDown className=" w-[15px] inline m-0 p-0 " />
+        onMouseOut={handleMouseOut}
+      >
+       
+          <span >Taxi Services <MdArrowDropDown className="inline" /></span>
+         
+        
         {isHovered && (
           <ul className="submenu">
             <li className="itms">
@@ -55,8 +58,10 @@ export default function NavBarMainList() {
       </div>
 
       <div className="custom-font">
-        <span>One Way Taxi</span>{" "}
-        <MdArrowDropDown className=" w-[15px] inline m-0 p-0 " />
+        <span>
+          One Way Taxi
+          <MdArrowDropDown className=" inline m-0 p-0" />
+        </span>
       </div>
       <div className="custom-font">
         Seight Seen <MdArrowDropDown className=" w-[15px] inline m-0 p-0 " />
