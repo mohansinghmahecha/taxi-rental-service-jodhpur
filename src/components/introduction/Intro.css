@@ -1,8 +1,10 @@
 .grid-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
     align-items: center;
-    width: 90%;
+    width: 98%;
+    
    
 }
 .paragraph{
@@ -22,21 +24,23 @@
   }
   
 
-@media only screen and (min-width: 749px) and (max-width: 1057px) {
+@media only screen and (min-width: 601px) and (max-width: 900px) {
    .grid-container{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(1fr);
-    width: 90%;
+    width: 98%;
    }
    
   
    .paragraph{
-    padding: 4px;
+    margin-left: 25px;
+    margin-right: 25px;
    }
     
 }
 @media only screen and (max-width: 600px) {
+   
     .img2 img{
         display: none;
     }
@@ -44,9 +48,14 @@
         display: grid;
         grid-template-columns: repeat(1,1fr);
         align-items: center;
-        width: 90%;
-       
+        width: 95%;
+      
     }
+    .paragraph{
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+       }
     
     
 }

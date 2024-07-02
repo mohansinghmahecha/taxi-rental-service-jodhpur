@@ -11,6 +11,7 @@ import DetailedInfo from "./components/taxi-services/DetailedInfo.js";
 import LocationOfffer from "./browse-location/LocationOffer.js";
 import Partners from "./components/our-partners/Partners.js";
 import NotFound from "./components/not-found/NotFound.js";
+import NormalParagraph from "./components/small-containers/NormalParagraph.js";
 export default function App() {
   return (
     <BrowserRouter>
@@ -27,6 +28,7 @@ export default function App() {
                 <OurPackages />
                 {/* <LocationCard /> */}
                 <LocationOfffer />
+                <NormalParagraph/>
                 <Partners/>
                 
 

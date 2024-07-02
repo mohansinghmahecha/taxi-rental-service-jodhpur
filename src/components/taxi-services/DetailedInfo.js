@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import img1 from "../../assets/car.jpg"; // Assuming a generic default image
-import "./CardsDetail.css";
 import Partners from "../our-partners/Partners";
+import "./CardsDetail.css";
 
 export default function DetailedInfo() {
   const { LocationName } = useParams();
@@ -144,7 +144,7 @@ export default function DetailedInfo() {
       <h1 className="text-center text-4xl mt-10 text-orange-500 font-bold">
         Welcome in {LocationName}
       </h1>
-      <div className="  w-full dynamic-conainer sm:grid sm:grid-cols-1">
+      <div className="  w-full dynamic-conainer ">
         <div>
           <p className="p-box">{detailedData[LocationName].description}</p>
         </div>

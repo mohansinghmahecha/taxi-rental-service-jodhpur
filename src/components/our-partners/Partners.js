@@ -24,7 +24,7 @@ export default function Partners() {
           
        
           {partnersData.map((items, key) => (
-            <img src={items.img} alt={items.img} key={key} width={180} height={100} /> // Add key prop
+            <img src={items.img} alt={items.img} key={key} width={180} height={46} /> // Add key prop
           ))}
         </div>
         </Slide>

@@ -52,22 +52,18 @@ export default function LocationOfffer() {
     },
   ];
   return (
-    <div className="location-offer block p-4">
+    <div className="location-offer block p-4 rounded-md">
       <div className="flex justify-between ">
-        <div className="p-2 m-4 text-2xl">
+        <div className="p-12 m-4 text-2xl">
           <p>Popular Destinations </p>
           <p>Explore some popular destinations in Rajasthan.</p>
         </div>
 
-        <div className="flex p-4 gap-4 ">
-          <FaAngleLeft className="border border-orange-300 rounded-full p-0" />
-
-          <FaAngleRight className="border border-orange-300 rounded-full p-0 text-white" />
-        </div>
+    
       </div>
 
       <div className="">
-        <Slide autoplay={false} arrows={false}>
+        
           <div className="flex gap-10 flex-wrap justify-center">
             {locationData.map((location, index) => {
               return (
@@ -105,7 +101,7 @@ export default function LocationOfffer() {
               );
             })}
           </div>
-        </Slide>
+      
       </div>
     </div>
   );
