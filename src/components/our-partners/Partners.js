@@ -5,9 +5,13 @@ import { Slide } from "react-slideshow-image";
 export default function Partners() {
   const partnersData = [
     { img: oyo },
-    { img: "https://www.jcrcab.com/wp-content/themes/JCR_CAB/images/rentalcars-com-vector-art-png-clip-art.png" },
+    {
+      img: "https://www.jcrcab.com/wp-content/themes/JCR_CAB/images/rentalcars-com-vector-art-png-clip-art.png",
+    },
     { img: oyo },
-    { img: "https://www.jcrcab.com/wp-content/themes/JCR_CAB/images/TA_logo_primary_v2.svg" },
+    {
+      img: "https://www.jcrcab.com/wp-content/themes/JCR_CAB/images/TA_logo_primary_v2.svg",
+    },
     { img: oyo },
     { img: oyo },
     { img: oyo },
@@ -20,15 +24,18 @@ export default function Partners() {
       </h2>
       <div className="box-con">
         <Slide autoplay={false} arrows={false}>
-        <div className="new-box  ">
-          
-       
-          {partnersData.map((items, key) => (
-            <img src={items.img} alt={items.img} key={key} width={180} height={46} /> // Add key prop
-          ))}
-        </div>
+          <div className="new-box  ">
+            {partnersData.map((items, key) => (
+              <img
+                src={items.img}
+                alt={items.img}
+                key={key}
+                width={180}
+                height={46}
+              /> // Add key prop
+            ))}
+          </div>
         </Slide>
-       
       </div>
     </div>
   );
