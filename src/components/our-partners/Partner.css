@@ -1,12 +1,61 @@
-.box-con{
+.box-con {
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+    
 }
-.new-box{
+
+.new-box {
     display: flex;
     flex-wrap: nowrap;
     gap: 40px;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-   
-   
+    padding: 10px;
 }
+
+.partner-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    .new-box {
+        flex: 1 1 calc(33.33% - 40px); /* 3 images per row with gap */
+    }
+    .partner-logo {
+        flex: 1 1 calc(33.33% - 40px); /* 3 images per row with gap */
+    }
+}
+
+@media (max-width: 767px) {
+    .new-box {
+        flex: 1 1 100%; /* 1 image per row */
+        justify-content: center;
+    }
+    .partner-logo {
+        flex: 1 1 100%; /* Full width */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .new-box {
+        flex: 1 1 calc(50% - 40px); /* 2 images per row with gap */
+    }
+    .partner-logo {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 767px) {
+    .new-box {
+        flex: 1 1 100%; /* 1 image per row */
+    }
+    .partner-logo {
+        width: 100%;
+    }
+}
+

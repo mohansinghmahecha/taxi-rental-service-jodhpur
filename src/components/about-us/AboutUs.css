@@ -1,0 +1,30 @@
+
+.img-gradient{
+    height: auto;
+    background: rgb(249,115,22);
+background: linear-gradient(90deg, rgba(249,115,22,1) 0%, rgba(9,9,121,1) 35%, rgba(0,0,0,1) 100%);
+}
+
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=f97416&c2=f14e5f&gt=c&gd=dtr
+*/
+.img-gradient-file{
+    background: #F97416;
+background: conic-gradient(from 45deg, #F97416, #F14E5F);
+}
+
+.btn-gradient-2 {
+    background: linear-gradient(rgb(215, 222, 147), white) padding-box,
+                linear-gradient(to right, rgb(34, 119, 216), rgb(255, 255, 255)) border-box;
+    border-radius: 50em;
+    border: 8px solid transparent;
+  }
+
+  @media only screen and (min-width: 700px) {
+    #img-insta{
+        display: none;
+    }
+
+    
+  }

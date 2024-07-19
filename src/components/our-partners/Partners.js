@@ -1,21 +1,71 @@
+import React, { useEffect, useState } from "react";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css"; // Ensure your CSS file path is correct
 import "./Partner.css";
 import oyo from "../../assets/oyo.png";
-import { Slide } from "react-slideshow-image";
 
 export default function Partners() {
   const partnersData = [
-    { img: oyo },
     {
-      img: "https://www.jcrcab.com/wp-content/themes/JCR_CAB/images/rentalcars-com-vector-art-png-clip-art.png",
+      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/1364908823-8234-e1597567153389.jpg?time=1721209120",
     },
-    { img: oyo },
     {
-      img: "https://www.jcrcab.com/wp-content/themes/JCR_CAB/images/TA_logo_primary_v2.svg",
+      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/treebo_logo_og_image_3-300x110.png",
     },
-    { img: oyo },
-    { img: oyo },
-    { img: oyo },
+    {
+      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/rentalcars-com-vector-art-png-clip-art-300x96.png",
+    },
+    {
+      img: oyo,
+    },
+    {
+      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/Hindustan-Times-Logo-PNG-03118-300x133.png",
+    },
+    {
+      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/AHA-Taxis-300x70.png",
+    },
+    {
+      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/Make-My-Trip-Logo-PNG-Photo-300x126.png",
+    },
+    {
+      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/Make-My-Trip-Logo-PNG-Photo-300x126.png",
+    },
+    {
+      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/Make-My-Trip-Logo-PNG-Photo-300x126.png",
+    },
   ];
+
+  const chunkArray = (array, chunkSize) => {
+    const chunks = [];
+    for (let i = 0; i < array.length; i += chunkSize) {
+      chunks.push(array.slice(i, i + chunkSize));
+    }
+    return chunks;
+  };
+
+  const [chunkSize, setChunkSize] = useState(getChunkSize());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setChunkSize(getChunkSize());
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  function getChunkSize() {
+    const width = window.innerWidth;
+    if (width <= 767) {
+      return 1; // mobile
+    } else if (width <= 1024) {
+      return 2; // tablet
+    } else {
+      return 3; // desktop
+    }
+  }
+
+  const chunkedPartnersData = chunkArray(partnersData, chunkSize);
 
   return (
     <div className="p-20 bg-orange-500 mt-0">
@@ -23,18 +73,19 @@ export default function Partners() {
         Our Partners
       </h2>
       <div className="box-con">
-        <Slide autoplay={false} arrows={false}>
-          <div className="new-box  ">
-            {partnersData.map((items, key) => (
-              <img
-                src={items.img}
-                alt={items.img}
-                key={key}
-                width={180}
-                height={46}
-              /> // Add key prop
-            ))}
-          </div>
+        <Slide autoplay={true} arrows={true} duration={5000}>
+          {chunkedPartnersData.map((chunk, index) => (
+            <div key={index} className="new-box">
+              {chunk.map((item, i) => (
+                <img
+                  key={i}
+                  src={item.img}
+                  alt={`Partner ${i}`}
+                  className="partner-logo"
+                />
+              ))}
+            </div>
+          ))}
         </Slide>
       </div>
     </div>
