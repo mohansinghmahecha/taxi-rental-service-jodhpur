@@ -26,8 +26,8 @@ export default function SmallAboutUS() {
         {/* one box */}
         <div className="flex flex-col justify-center items-center shadow-lg rounded-lg bg-orange-400 p-4  w-[300px]">
           <p className=" text-white  font-bold text-2xl mb-2">Our vission</p>
-          <img
-            src="https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/Mission.png?time=1721209120"
+          <img className="bg-transparent mix-blend-multiply"
+            src="https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/images-1-1.png?time=1721209120"
             alt=""
           />
           <p className="text-center ">
@@ -41,8 +41,8 @@ export default function SmallAboutUS() {
         {/* one box */}
         <div className="flex flex-col justify-center items-center shadow-lg rounded-lg bg-orange-400 p-4  w-[300px]">
           <p className=" text-white  font-bold text-2xl mb-2">Our vission</p>
-          <img
-            src="https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/Mission.png?time=1721209120"
+          <img className="bg-transparent mix-blend-multiply"
+            src="https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/images-2-150x150.png"
             alt=""
           />
           <p className="text-center ">
