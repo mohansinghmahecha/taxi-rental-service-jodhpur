@@ -1,0 +1,13 @@
+.whatsapp{
+    position: fixed;
+    z-index: 70;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    
+}
+.logo-size{
+    width: 50px;
+    height: 50px;
+}

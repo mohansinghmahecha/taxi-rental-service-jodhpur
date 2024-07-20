@@ -1,7 +1,6 @@
-import { Slide } from "react-slideshow-image";
+
 import "./LocationOffer.css";
-import { FaAngleLeft } from "react-icons/fa6";
-import { FaAngleRight } from "react-icons/fa";
+
 
 export default function LocationOfffer() {
   

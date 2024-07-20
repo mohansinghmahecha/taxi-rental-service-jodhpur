@@ -12,6 +12,10 @@ import LocationOfffer from "./browse-location/LocationOffer.js";
 import Partners from "./components/our-partners/Partners.js";
 import NotFound from "./components/not-found/NotFound.js";
 import NormalParagraph from "./components/small-containers/NormalParagraph.js";
+import ContectUs from "./components/contect-us/ContectUs.js";
+import Floating from "./components/WhatsApp/Floating.js";
+import SeightSeenPage from "./components/sightSeensPage/SightSeenPage.js";
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -26,26 +30,25 @@ export default function App() {
                 <SlidingImage />
                 <Intro />
                 <OurPackages />
-                {/* <LocationCard /> */}
-                <LocationOfffer />
-                <NormalParagraph/>
-                <Partners/>
-                
-
-                
-
+                <LocationOfffer /> {/* Popular Destinations */}
+                <NormalParagraph />
+                <Partners />
               </>
             }
           />
+          <Route path="/onewaytaxi/:cityName" element={<SeightSeenPage/>} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contect-us" element={<ContectUs />} />
           <Route
             path="/taxi-services/:LocationName"
             element={<DetailedInfo />}
           />
-          <Route path="/*" element={<NotFound/>}/>
+
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer />
+      <Floating />
     </BrowserRouter>
   );
 }

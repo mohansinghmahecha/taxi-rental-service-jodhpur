@@ -24,6 +24,16 @@ const MainNevbar = () => {
     setisMenuOpened(!isMenuOpen);
   };
 
+  // for sight seen menu
+  const [isSight, setIsSinght] = useState(false);
+  const handleMouseEnter = () => {
+    setIsSinght(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsSinght(false);
+  };
+
   return (
     <nav>
       <div className="main-menu">
@@ -55,7 +65,7 @@ const MainNevbar = () => {
           </div>
         </div>
 
-        {/* important             for             here */}
+        {/* important   for     here */}
 
         {/* for mobile menu */}
 
@@ -117,12 +127,26 @@ const MainNevbar = () => {
                   )}
                 </div>
 
-                <div className="custom-font">
-                  <span>One Way Taxi</span>
+                <div
+                  className="custom-font   hover:cursor-pointer"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <span className="">Sight Seen</span>
+                  {isSight && (
+                    <ul className="ml-4  text-white custom-font" onClick={()=>setIsSinght(false)}>
+                      <li className="border-b border-blue-400"><Link to="/onewaytaxi/:Jodhpur">Jodhpur</Link></li>
+                      <li className="border-b border-blue-400"><Link to="/onewaytaxi/:Jaipur">Jaipur</Link></li>
+                      <li className="border-b border-blue-400"><Link to="/onewaytaxi/:Udaipur">Udaipur</Link></li>
+
+       
+                    </ul>
+                  )}
                 </div>
-                <div className="custom-font">Seight Seen</div>
-                <div className="custom-font">Jodhpur Cab </div>
-                <div className="custom-font">Contect Us </div>
+                <div className="custom-font">Jodhpur Cab Here</div>
+                <div className="custom-font">
+                  <Link to="/contect-us">Contect Us</Link>
+                </div>
               </div>
 
               {/* end */}

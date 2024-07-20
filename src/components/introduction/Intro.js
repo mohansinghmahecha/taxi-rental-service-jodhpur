@@ -6,7 +6,7 @@ export default function Intro() {
   
 
   return (
-    <div className="grid-container paragraph">
+    <div className="grid-container paragraph ">
       <div className="">
         <p className="mb-5 font-bold text-center md:m-3 ">
           WELCOME TO JCR CAB & CAR RENTAL RAJASTHAN

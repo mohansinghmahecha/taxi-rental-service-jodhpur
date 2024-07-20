@@ -3,7 +3,7 @@
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1fr;
     align-items: center;
-    width: 100%;
+    width: 95%;
     
    
 }

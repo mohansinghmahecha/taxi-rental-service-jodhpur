@@ -95,6 +95,23 @@
     width: 100px;
   }
 
+  /* sight seen  */
+  .one-way {
+    position: absolute;
+    top: 100%; /* Position submenu below the parent */
+    left: 0;
+    width: 100%;
+    background-color: #ffe066; /* Adjust background color as needed */
+    border: 1px solid #ccc; /* Example border styling */
+    padding: 5px;
+  }
+  
+  .open-oneway:hover .one-way {
+    display: block; /* Show submenu when hovering over .open-oneway */
+  }
+  /* sight seen end */
+  
+
 .mobile-submenu-maincontainer{
     display: none;
 }
