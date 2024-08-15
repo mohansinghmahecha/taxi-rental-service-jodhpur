@@ -1,6 +1,6 @@
 import ownerImage from "../../assets/owner-clear.png";
 import instastory from "../../assets/InstagramStory.svg";
-import moduleName from "";
+
 import "./AboutUs.css";
 import SmallAboutUs from "../small-containers/SmallAboutUs";
 
