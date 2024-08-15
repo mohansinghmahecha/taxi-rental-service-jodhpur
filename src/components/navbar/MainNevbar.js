@@ -39,11 +39,11 @@ const MainNevbar = () => {
       <div className="main-menu">
         <div class="flex bg-black width-full flex-nowrap text-white p-2 items-center justify-end">
           <p class="text-sm  ">
-            Call us for Booking +919414137405 +919799735500 /
+            Call us for Booking +919001502506 +919413802506 /
           </p>
           <div class=" flex flex-nowrap items-center gap-2">
             <span class="   p-1 rounded-lg bg-orange-500">
-              jcrcab12@gmail.com
+              contact@cartoursjodhpur.com
             </span>
             <FaFacebook />
             <AiFillInstagram />
@@ -134,12 +134,19 @@ const MainNevbar = () => {
                 >
                   <span className="">Sight Seen</span>
                   {isSight && (
-                    <ul className="ml-4  text-white custom-font" onClick={()=>setIsSinght(false)}>
-                      <li className="border-b border-blue-400"><Link to="/onewaytaxi/:Jodhpur">Jodhpur</Link></li>
-                      <li className="border-b border-blue-400"><Link to="/onewaytaxi/:Jaipur">Jaipur</Link></li>
-                      <li className="border-b border-blue-400"><Link to="/onewaytaxi/:Udaipur">Udaipur</Link></li>
-
-       
+                    <ul
+                      className="ml-4  text-white custom-font"
+                      onClick={() => setIsSinght(false)}
+                    >
+                      <li className="border-b border-blue-400">
+                        <Link to="/onewaytaxi/:Jodhpur">Jodhpur</Link>
+                      </li>
+                      <li className="border-b border-blue-400">
+                        <Link to="/onewaytaxi/:Jaipur">Jaipur</Link>
+                      </li>
+                      <li className="border-b border-blue-400">
+                        <Link to="/onewaytaxi/:Udaipur">Udaipur</Link>
+                      </li>
                     </ul>
                   )}
                 </div>

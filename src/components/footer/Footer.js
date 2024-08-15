@@ -10,8 +10,8 @@ export default function Footer() {
           <div>
             <img src={img1} alt="" />
             <p>
-              Welcome to the official website of Rajasthan Holiday Trips. We are
-              a tour and travels agency based in Rajasthan, India.
+              Welcome to the official website of Rajasthan Trips. We offer
+              jodhpur tour and travlers
             </p>
           </div>
         </div>
@@ -30,10 +30,11 @@ export default function Footer() {
         <div>
           <p>Contact Info</p>
           <p className="mt-10">
-            F-121, Tulip Enclave, Central Spine Road, VDN, Jaipur, 302039.
+            16, Gaytri nagar bhadwasiya jodpur rajasthan 342006
           </p>
-          <p>6377877505</p>
-          <p>rajasthanholidaytrips@</p>
+          <p>+91 9001502506</p>
+          <p> +91 9413802506</p>
+          <p>contact@cartoursjodhpur.com</p>
         </div>
       </div>
 

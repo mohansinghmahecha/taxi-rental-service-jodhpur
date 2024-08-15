@@ -1,7 +1,8 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
-import img1 from "../../assets/Feature-City-Palace-Udaipur-Rajasthan.jpg";
-import img2 from "../../assets/home-slider.jpg";
+import img1 from "../../assets/slide1.jpg";
+import img2 from "../../assets/rajasthan-wallpaper.jpg";
+import img3 from "../../assets/mehrangadh-right.jpg";
 import "react-slideshow-image/dist/styles.css";
 import "../navbar/MainNevbar.css";
 
@@ -13,12 +14,7 @@ const PrevArrow = ({ onClick }) => {
 };
 
 const NextArrow = ({ onClick }) => {
-  return (
-    <FaAngleRight
-      onClick={onClick}
-      className="icon2"
-    />
-  );
+  return <FaAngleRight onClick={onClick} className="icon2" />;
 };
 
 export default function SlidingImage() {
@@ -38,19 +34,19 @@ export default function SlidingImage() {
 
   const slideImages = [
     {
-      url: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-      caption: "Welcome to JCR Cab & Car Rental Rajasthan",
-      disc: "JCR Cab & Car Rental is a trusted and best car rental company in Rajasthan. We have most modern Luxury Cars, Coaches and Small Cars in our fleet.",
+      url: img3,
+      caption: "Welcome to cars tours jodhpur",
+      disc: "we are trusted and best car rental company in Rajasthan.",
     },
     {
       url: img1,
-      caption: "Car Rental",
-      disc: "JCR Cab & Car Rental is a trusted and best car rental company in Rajasthan. We have most modern Luxury Cars, Coaches and Small Cars in our fleet.",
+      caption: "Car Rental In Jodhpur",
+      disc: "Need a ride in Jodhpur? Look no further! Our car rental service provides a range of vehicles to suit your needs",
     },
     {
       url: img2,
-      caption: "Ravi",
-      disc: "JCR Cab & Car Rental is a trusted and best car rental company in Rajasthan. We have most modern Luxury Cars, Coaches and Small Cars in our fleet.",
+      caption: "Your Journey, Our Cars",
+      disc: "Explore the Blue City in style with our car rental services",
     },
   ];
 
@@ -71,9 +67,10 @@ export default function SlidingImage() {
                   display: "block",
                   textAlign: "center",
                   color: "white",
+                  fontSize:"larger"
                 }}
               >
-                <p style={{ ...spanStyle, color: "white" }}>
+                <p style={{ ...spanStyle, color: "white",fontWeight:"bold" }}>
                   {slideImage.caption}
                 </p>
                 <p>{slideImage.disc}</p>

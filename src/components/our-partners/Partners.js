@@ -3,35 +3,43 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css"; // Ensure your CSS file path is correct
 import "./Partner.css";
 import oyo from "../../assets/oyo.png";
+import aha from "../../assets/partners/AHA-Taxis.png";
+import hindusthantimes from "../../assets/partners/Hindustan-Times-Logo.png";
+import justdial from "../../assets/partners/justdial.jpg";
+import makemytrip from "../../assets/partners/Make-My-Trip-Logo.png";
+import rentcars from "../../assets/partners/rentalcars-com-.png";
+import rome from "../../assets/partners/rome.png";
+import treeboLogo from "../../assets/partners/treebo_logo.png";
+import tripadvisor from "../../assets/partners/tripadvisor.png";
 
 export default function Partners() {
   const partnersData = [
     {
-      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/1364908823-8234-e1597567153389.jpg?time=1721209120",
+      img: aha,
     },
     {
-      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/treebo_logo_og_image_3-300x110.png",
+      img: hindusthantimes,
     },
     {
-      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/rentalcars-com-vector-art-png-clip-art-300x96.png",
+      img: justdial,
     },
     {
       img: oyo,
     },
     {
-      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/Hindustan-Times-Logo-PNG-03118-300x133.png",
+      img: makemytrip,
     },
     {
-      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/AHA-Taxis-300x70.png",
+      img: rentcars,
     },
     {
-      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/Make-My-Trip-Logo-PNG-Photo-300x126.png",
+      img: rome,
     },
     {
-      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/Make-My-Trip-Logo-PNG-Photo-300x126.png",
+      img: treeboLogo,
     },
     {
-      img: "https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/Make-My-Trip-Logo-PNG-Photo-300x126.png",
+      img: tripadvisor,
     },
   ];
 
