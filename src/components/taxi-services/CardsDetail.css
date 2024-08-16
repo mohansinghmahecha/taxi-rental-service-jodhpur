@@ -1,53 +1,84 @@
-.dynamic-container {
-    display: grid;
-    grid-template-columns: 2fr auto;
-    /* Text takes the available space, image takes auto width */
-    gap: 20px;
+.p-box {
+    margin-left: 130px;
+    margin-top: 20px;
 }
 
-.p-box {
-    margin-top: 20px;
+.dynamic-conainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
 }
 
 .image-container {
     display: flex;
+    background-color: orange;
     justify-content: center;
-    align-items: flex-start;
-    border-radius: 30px;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 10px;
+    /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2px;
+    margin-right: 5px;
+
+    /* 3D shadow effect */
+
+    /* Prevents overflow and extra space */
 }
 
-@media only screen and (max-width: 922px) {
-    .dynamic-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-    }
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the container */
+    display: block;
+    /* Prevents inline space issues */
+}
 
+@media only screen and (min-width: 922px) {
     .p-box {
-        grid-row: 1;
         margin-left: 5px;
+        margin-top: 20px;
         margin-right: 5px;
     }
+}
 
-    .image-container {
-        grid-row: 2;
-        justify-content: center;
-        margin-top: 20px;
+@media only screen and (min-width: 601px) and (max-width: 921px) {
+    .p-box {
+        margin-left: 10px;
+        margin-top: 10px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .p-box {
         margin-left: 10px;
+        margin-top: 20px;
         margin-right: 10px;
     }
 
-    .dynamic-container {
+    .dynamic-conainer {
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
+        /* Single column layout */
+        grid-template-rows: auto;
+        /* Adjusts row height automatically */
     }
 
     .image-container {
-        grid-row: 2;
+        height: auto;
+        /* Allows the container height to adjust automatically */
+        max-height: 300px;
+        /* Optional: Set a max height to control large images */
+    }
+
+    .image-container img {
+        max-height: 100%;
+        /* Ensures the image fits within its container */
+        max-width: 100%;
+        /* Keeps the image within bounds */
     }
 }

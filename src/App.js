@@ -16,6 +16,7 @@ import ContectUs from "./components/contect-us/ContectUs.js";
 import Floating from "./components/WhatsApp/Floating.js";
 import SeightSeenPage from "./components/sightSeensPage/SightSeenPage.js";
 import Reviews from "./components/small-containers/Reviews.js";
+import OneWayTaxi from "./components/one-way-taxi/OneWayTaxi.js";
 
 export default function App() {
   return (
@@ -46,6 +47,7 @@ export default function App() {
             path="/taxi-services/:LocationName"
             element={<DetailedInfo />}
           />
+          <Route path="/one-way-taxi" element={<OneWayTaxi/>}/>
 
           <Route path="/*" element={<NotFound />} />
         </Routes>

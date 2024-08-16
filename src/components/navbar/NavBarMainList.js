@@ -1,4 +1,4 @@
-import React, { useState ,useRef  } from "react";
+import React, { useState, useRef } from "react";
 import "./MainNevbar.css";
 
 import { MdArrowDropDown } from "react-icons/md";
@@ -12,11 +12,11 @@ export default function NavBarMainList() {
     setIsSightSeen(true);
   };
   const handleMouseSightOut = (e) => {
-      // Check if the mouse moved to the dropdown (ul)
-      if (dropdownRef.current && dropdownRef.current.contains(e.relatedTarget)) {
-        return; // Do nothing if moving to the dropdown
-      }
-      setIsSightSeen(false);
+    // Check if the mouse moved to the dropdown (ul)
+    if (dropdownRef.current && dropdownRef.current.contains(e.relatedTarget)) {
+      return; // Do nothing if moving to the dropdown
+    }
+    setIsSightSeen(false);
   };
 
   const handleMouseOver = () => {
@@ -70,10 +70,14 @@ export default function NavBarMainList() {
       </div>
 
       <div className="custom-font">
-        One Way Taxi <MdArrowDropDown className=" w-[15px] inline m-0 p-0 " />
+        <Link to="/one-way-taxi">
+        
+          One Way Taxi <MdArrowDropDown className=" w-[15px] inline m-0 p-0 " />
+        </Link>
+        {/* One Way Taxi <MdArrowDropDown className=" w-[15px] inline m-0 p-0 " /> */}
       </div>
 
-{/* sight seen box is here  */}
+      {/* sight seen box is here  */}
       <div className="custom-font hover:cursor-pointer ">
         <span
           onMouseEnter={handleMouseSightIn}

@@ -91,8 +91,8 @@ export default function SeightSeenPage() {
         <div>
           <p> Call or Whatsapp to book a Car Rental in Rajasthan :</p>
           <p>
-            Contact No.: +91-9358811941 or 0141 4040687 or E-Mail us at
-            ravi@gmail.com
+            Contact No.: +919001502506 or +919413802506 / E-Mail us at
+            contact@cartoursjodhpur.com
           </p>
         </div>
       </div>

@@ -25,7 +25,9 @@ export default function Footer() {
         <div>
           <p>About Us</p>
           <p className="mt-10">Our Story</p>
-          <p>rajasthanholidaytrips@</p>
+          <p>Privacy Policy</p>
+          <p>Cancellations Policy</p>
+          <p>Refund policy</p>
         </div>
         <div>
           <p>Contact Info</p>

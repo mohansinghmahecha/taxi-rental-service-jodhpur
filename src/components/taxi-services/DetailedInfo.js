@@ -5,7 +5,12 @@ import Partners from "../our-partners/Partners";
 import "./CardsDetail.css";
 import jeep from "../../assets/jeeps.jpg";
 import Mehrangarh from "../../assets/mehrangadh-right.jpg";
-import jaipur from "../../assets/jeeps.jpg";
+import rajasthaniMan from "../../assets/rajasthani-man.jpg";
+import barmerImage from "../../assets/barmer.jpg";
+import jaipur from "../../assets/jaipur.jpg";
+import paliImage from "../../assets/pali.jpg";
+import osianImage from "../../assets/ossian.jpg";
+import WhyChooseUs from "../small-containers/WhyChooseUs";
 
 export default function DetailedInfo() {
   const { LocationName } = useParams();
@@ -66,14 +71,19 @@ export default function DetailedInfo() {
               gives you a taste of Rajasthani traditions and cuisine.
             </li>
           </ul>
-          <p>
-            By choosing a taxi service in Jaipur, you can effortlessly navigate
-            through these popular tourist attractions and enjoy the city's
-            vibrant atmosphere. Whether you're traveling solo, with family, or
-            in a group, a Jaipur taxi offers flexibility and convenience, making
-            your trip memorable and enjoyable.
+        </div>
+      ),
+      paragraphs: (
+        <div>
+          <p className="text-center m-4">
+            By choosing a{" "}
+            <span className="font-bold"> taxi service in Jaipur</span>, you can
+            effortlessly navigate through these popular tourist attractions and
+            enjoy the city's vibrant atmosphere. Whether you're traveling solo,
+            with family, or in a group, a Jaipur taxi offers flexibility and
+            convenience, making your trip memorable and enjoyable.
           </p>
-          <p>
+          <p className="mt-14 p-box">
             Jaipur, the capital city of Rajasthan, is a treasure trove of
             culture, history, and architectural marvels. Known as the Pink City
             for its distinct pink-colored buildings, Jaipur attracts millions of
@@ -84,7 +94,7 @@ export default function DetailedInfo() {
             way to reach your hotel and start your adventure.
           </p>
 
-          <p>
+          <p className="p-box">
             One of the biggest advantages of using a taxi service in Jaipur is
             the flexibility it offers. Unlike group tours or public
             transportation, a taxi allows you to explore the city at your own
@@ -96,7 +106,7 @@ export default function DetailedInfo() {
             getting lost in the city’s winding streets.
           </p>
 
-          <p>
+          <p className="p-box">
             Jaipur is home to some of the most magnificent forts and palaces in
             India. A visit to the <strong>Amber Fort</strong> is a must. Perched
             on a hill, this fort is a stunning blend of Hindu and Mughal
@@ -110,7 +120,7 @@ export default function DetailedInfo() {
             sunset for its panoramic views of Jaipur.
           </p>
 
-          <p>
+          <p className="p-box">
             No visit to Jaipur is complete without stopping by the{" "}
             <strong>Hawa Mahal</strong>, or the Palace of Winds. This five-story
             structure with its intricate latticework is one of the most
@@ -124,7 +134,7 @@ export default function DetailedInfo() {
             home to the royal family.
           </p>
 
-          <p>
+          <p className="p-box">
             For those interested in science and astronomy, the{" "}
             <strong>Jantar Mantar</strong> is a must-see. This UNESCO World
             Heritage site features a collection of nineteen architectural
@@ -135,7 +145,7 @@ export default function DetailedInfo() {
             attraction to your itinerary.
           </p>
 
-          <p>
+          <p className="p-box">
             Beyond the forts and palaces, Jaipur offers a vibrant cultural
             experience. The <strong>Albert Hall Museum</strong>, located in the
             heart of the city, is the oldest museum in Rajasthan and showcases
@@ -147,7 +157,7 @@ export default function DetailedInfo() {
             the city's hustle and bustle.
           </p>
 
-          <p>
+          <p className="p-box">
             If you're looking to experience the local culture and cuisine, a
             visit to <strong>Chokhi Dhani</strong> is highly recommended. This
             cultural village resort offers an immersive experience of Rajasthani
@@ -157,7 +167,7 @@ export default function DetailedInfo() {
             providing a convenient escape from the urban environment.
           </p>
 
-          <p>
+          <p className="p-box">
             Shopping enthusiasts will find Jaipur to be a paradise, with its
             bustling markets offering everything from traditional handicrafts to
             modern designer wear. The city is famous for its jewelry,
@@ -170,7 +180,7 @@ export default function DetailedInfo() {
             parking.
           </p>
 
-          <p>
+          <p className="p-box">
             For nature lovers, a visit to <strong>Jal Mahal</strong>, the Water
             Palace, is a must. This beautiful palace, situated in the middle of
             the Man Sagar Lake, offers a serene escape from the city. While
@@ -181,7 +191,7 @@ export default function DetailedInfo() {
             Fort, which is perfect for a leisurely stroll or a picnic.
           </p>
 
-          <p>
+          <p className="p-box">
             With so much to see and do, a taxi service in Jaipur is the ideal
             way to explore the city’s rich heritage and vibrant culture. Whether
             you’re traveling solo, with family, or in a group, a taxi provides
@@ -194,12 +204,12 @@ export default function DetailedInfo() {
           </p>
         </div>
       ),
-      image: jeep,
+      image: jaipur,
     },
     jodhpur: {
       description: (
         <div>
-          <p>
+          <p className="p-box">
             Jodhpur, the Blue City of Rajasthan, is a mesmerizing blend of
             history, culture, and architectural brilliance. Known for its
             striking blue-painted houses that add a unique charm to the
@@ -212,7 +222,7 @@ export default function DetailedInfo() {
             the convenience and comfort needed to navigate this vibrant city.
           </p>
 
-          <p>
+          <p className="p-box">
             One of the most significant benefits of using a taxi service in
             Jodhpur is the ability to explore the city at your own pace. Unlike
             guided tours that follow a strict itinerary, a taxi allows you to
@@ -224,7 +234,7 @@ export default function DetailedInfo() {
             and efficiently, making your travel experience stress-free.
           </p>
 
-          <p>
+          <p className="p-box">
             Jodhpur is perhaps best known for the magnificent{" "}
             <strong>Mehrangarh Fort</strong>, one of the largest and most
             impressive forts in India. Perched on a rocky hill overlooking the
@@ -238,7 +248,7 @@ export default function DetailedInfo() {
             visiting Jodhpur.
           </p>
 
-          <ul>
+          <ul className="p-box">
             <li>
               <strong>Mehrangarh Fort Museum</strong> - Explore the museum's
               vast collection of royal artifacts, including swords, armor, and
@@ -260,8 +270,11 @@ export default function DetailedInfo() {
               the Maharajas.
             </li>
           </ul>
-
-          <p>
+        </div>
+      ),
+      paragraphs: (
+        <>
+          <p className="p-box">
             Not far from the fort is the <strong>Jaswant Thada</strong>, a
             stunning white marble cenotaph built in memory of Maharaja Jaswant
             Singh II. Often referred to as the 'Taj Mahal of Marwar,' this
@@ -273,7 +286,7 @@ export default function DetailedInfo() {
             monument, allowing you to enjoy its beauty at leisure.
           </p>
 
-          <ul>
+          <ul className="p-box">
             <li>
               <strong>Marble Cenotaphs</strong> - Admire the intricately carved
               marble cenotaphs, which are a fine example of Rajput architecture.
@@ -290,7 +303,7 @@ export default function DetailedInfo() {
             </li>
           </ul>
 
-          <p>
+          <p className="p-box">
             The <strong>Umaid Bhawan Palace</strong> is another iconic landmark
             in Jodhpur that should not be missed. This grand palace, one of the
             world's largest private residences, is divided into three parts: the
@@ -304,7 +317,7 @@ export default function DetailedInfo() {
             ensuring a comfortable and memorable visit.
           </p>
 
-          <ul>
+          <ul className="p-box">
             <li>
               <strong>Museum</strong> - Explore the museum that houses a
               remarkable collection of artifacts, including the royal family’s
@@ -322,7 +335,7 @@ export default function DetailedInfo() {
             </li>
           </ul>
 
-          <p>
+          <p className="p-box">
             For those interested in the spiritual and cultural side of Jodhpur,
             a visit to the <strong>Mandore Gardens</strong> is highly
             recommended. Located just a short drive from the city center,
@@ -336,7 +349,7 @@ export default function DetailedInfo() {
             include Mandore Gardens in your Jodhpur itinerary.
           </p>
 
-          <ul>
+          <ul className="p-box">
             <li>
               <strong>Temples and Cenotaphs</strong> - Explore the ancient
               temples and cenotaphs dedicated to the rulers of Marwar, which are
@@ -354,7 +367,7 @@ export default function DetailedInfo() {
             </li>
           </ul>
 
-          <p>
+          <p className="p-box">
             Jodhpur's vibrant culture extends beyond its historical monuments to
             its bustling markets, where you can shop for traditional Rajasthani
             handicrafts, textiles, and jewelry. The{" "}
@@ -368,7 +381,7 @@ export default function DetailedInfo() {
             parking or navigating the busy streets.
           </p>
 
-          <ul>
+          <ul className="p-box">
             <li>
               <strong>Jewelry and Handicrafts</strong> - Shop for exquisite
               jewelry, including Jodhpuri-style ornaments, and unique
@@ -386,7 +399,7 @@ export default function DetailedInfo() {
             </li>
           </ul>
 
-          <p>
+          <p className="p-box">
             If you're looking to experience the natural beauty of Jodhpur, a
             trip to the <strong>Balsamand Lake</strong> is a must. Originally
             built as a reservoir to supply water to the city, Balsamand Lake is
@@ -399,7 +412,7 @@ export default function DetailedInfo() {
             enjoyable.
           </p>
 
-          <ul>
+          <ul className="p-box">
             <li>
               <strong>Lake Views</strong> - Enjoy the serene views of Balsamand
               Lake, which offers a peaceful retreat from the busy city life.
@@ -416,7 +429,7 @@ export default function DetailedInfo() {
             </li>
           </ul>
 
-          <p>
+          <p className="p-box">
             Another unique destination in Jodhpur is the{" "}
             <strong>Toorji Ka Jhalra</strong>, an ancient stepwell that has been
             beautifully restored to its former glory. Stepwells were once vital
@@ -427,7 +440,7 @@ export default function DetailedInfo() {
             enthusiasts alike. With a taxi at your service, you can easily visit
             Toorji Ka Jhalra and other hidden gems in Jodhpur{" "}
           </p>
-        </div>
+        </>
       ),
       image: Mehrangarh,
     },
@@ -497,139 +510,142 @@ export default function DetailedInfo() {
               patterns, and high-quality craftsmanship make Balotra's textiles
               highly sought after by both locals and tourists alike.
             </p>
-
-            <ul>
-              <li>
-                <strong>Ajrakh Block Printing</strong> - Discover the art of
-                Ajrakh block printing, a traditional technique used to create
-                intricate designs on fabric using natural dyes.
-              </li>
-              <li>
-                <strong>Textile Workshops</strong> - Visit the various textile
-                workshops in Balotra and witness the meticulous process of
-                handloom weaving and textile printing.
-              </li>
-              <li>
-                <strong>Hand-Crafted Textiles</strong> - Purchase unique,
-                hand-crafted textiles from Balotra, known for their vibrant
-                colors and intricate patterns.
-              </li>
-            </ul>
-
-            <p>
-              Another notable attraction near Balotra is the{" "}
-              <strong>Juna Fort</strong>, an ancient fortress that stands as a
-              testament to the region's rich history. Although now in ruins,
-              Juna Fort offers a glimpse into the past, with its remnants of old
-              walls, gates, and watchtowers. The fort, which was once a
-              significant stronghold in the region, provides panoramic views of
-              the surrounding landscape and is a popular spot for history buffs
-              and photography enthusiasts. Exploring the fort is like stepping
-              back in time, as you wander through the ancient ruins and imagine
-              the stories of battles and conquests that once took place within
-              its walls.
-            </p>
-
-            <ul>
-              <li>
-                <strong>Historical Significance</strong> - Learn about the
-                historical significance of Juna Fort, which played a crucial
-                role in the region's history.
-              </li>
-              <li>
-                <strong>Architectural Ruins</strong> - Explore the architectural
-                ruins of Juna Fort, including its old walls, gates, and
-                watchtowers.
-              </li>
-              <li>
-                <strong>Panoramic Views</strong> - Enjoy the panoramic views of
-                the surrounding landscape from the top of the fort, offering a
-                unique perspective of the region.
-              </li>
-            </ul>
-
-            <p>
-              For those interested in the spiritual and cultural aspects of
-              Rajasthan, a visit to the nearby <strong>Siwana Fort</strong> is
-              highly recommended. Located about 40 kilometers from Balotra,
-              Siwana Fort is another ancient fortress that has witnessed
-              numerous historical events over the centuries. The fort, perched
-              on a hilltop, offers breathtaking views of the Thar Desert and the
-              surrounding countryside. Siwana Fort is also known for its
-              historical significance, having been the site of several battles
-              between local rulers and invading forces. The fort is a popular
-              destination for trekkers and adventure enthusiasts, as the climb
-              to the top is both challenging and rewarding, with stunning views
-              awaiting those who make the journey.
-            </p>
-
-            <ul>
-              <li>
-                <strong>Thar Desert Views</strong> - Experience the breathtaking
-                views of the Thar Desert and the surrounding countryside from
-                the top of Siwana Fort.
-              </li>
-              <li>
-                <strong>Historical Battles</strong> - Learn about the historical
-                battles that took place at Siwana Fort, where local rulers
-                defended their territory against invaders.
-              </li>
-              <li>
-                <strong>Trekking Experience</strong> - Embark on a trekking
-                adventure to Siwana Fort, where the challenging climb is
-                rewarded with stunning panoramic views.
-              </li>
-            </ul>
-
-            <p>
-              In addition to its historical and cultural attractions, Balotra is
-              also known for its vibrant local markets, where visitors can shop
-              for a variety of goods ranging from traditional Rajasthani
-              handicrafts to everyday items. The markets in Balotra offer a
-              unique shopping experience, with their colorful displays, bustling
-              atmosphere, and friendly vendors. One of the most popular items to
-              purchase in Balotra is the traditional Rajasthani jewelry, which
-              is known for its intricate designs and vibrant colors. Other
-              popular items include textiles, pottery, and handmade crafts.
-              Shopping in Balotra is not just about purchasing goods; it's about
-              experiencing the local culture, interacting with the artisans, and
-              taking home a piece of Rajasthan's rich heritage.
-            </p>
-
-            <ul>
-              <li>
-                <strong>Rajasthani Jewelry</strong> - Shop for traditional
-                Rajasthani jewelry in Balotra, known for its intricate designs
-                and vibrant colors.
-              </li>
-              <li>
-                <strong>Handicrafts and Pottery</strong> - Explore the local
-                markets for unique handicrafts and pottery, each piece
-                reflecting the rich cultural heritage of Rajasthan.
-              </li>
-              <li>
-                <strong>Textiles and Fabrics</strong> - Purchase high-quality
-                textiles and fabrics, including the famous Ajrakh prints, from
-                the bustling markets of Balotra.
-              </li>
-            </ul>
-
-            <p>
-              Balotra is not just a destination for tourists; it is a place
-              where you can immerse yourself in the rich culture and traditions
-              of Rajasthan. From its ancient forts and temples to its thriving
-              textile industry and vibrant markets, Balotra offers a diverse
-              range of experiences that cater to all types of travelers. Whether
-              you're exploring the historical sites, shopping for local crafts,
-              or simply soaking in the serene atmosphere, Balotra is a town that
-              leaves a lasting impression on all who visit. So, if you're
-              planning a trip to Rajasthan, be sure to include Balotra in your
-              itinerary and discover the hidden gem of this beautiful state.
-            </p>
           </div>
         </>
       ),
-      image: img1,
+      paragraphs: (
+        <>
+          <ul className="p-box">
+            <li>
+              <strong>Ajrakh Block Printing</strong> - Discover the art of
+              Ajrakh block printing, a traditional technique used to create
+              intricate designs on fabric using natural dyes.
+            </li>
+            <li>
+              <strong>Textile Workshops</strong> - Visit the various textile
+              workshops in Balotra and witness the meticulous process of
+              handloom weaving and textile printing.
+            </li>
+            <li>
+              <strong>Hand-Crafted Textiles</strong> - Purchase unique,
+              hand-crafted textiles from Balotra, known for their vibrant colors
+              and intricate patterns.
+            </li>
+          </ul>
+
+          <p className="p-box">
+            Another notable attraction near Balotra is the{" "}
+            <strong>Juna Fort</strong>, an ancient fortress that stands as a
+            testament to the region's rich history. Although now in ruins, Juna
+            Fort offers a glimpse into the past, with its remnants of old walls,
+            gates, and watchtowers. The fort, which was once a significant
+            stronghold in the region, provides panoramic views of the
+            surrounding landscape and is a popular spot for history buffs and
+            photography enthusiasts. Exploring the fort is like stepping back in
+            time, as you wander through the ancient ruins and imagine the
+            stories of battles and conquests that once took place within its
+            walls.
+          </p>
+
+          <ul className="p-box">
+            <li>
+              <strong>Historical Significance</strong> - Learn about the
+              historical significance of Juna Fort, which played a crucial role
+              in the region's history.
+            </li>
+            <li>
+              <strong>Architectural Ruins</strong> - Explore the architectural
+              ruins of Juna Fort, including its old walls, gates, and
+              watchtowers.
+            </li>
+            <li>
+              <strong>Panoramic Views</strong> - Enjoy the panoramic views of
+              the surrounding landscape from the top of the fort, offering a
+              unique perspective of the region.
+            </li>
+          </ul>
+
+          <p className="p-box">
+            For those interested in the spiritual and cultural aspects of
+            Rajasthan, a visit to the nearby <strong>Siwana Fort</strong> is
+            highly recommended. Located about 40 kilometers from Balotra, Siwana
+            Fort is another ancient fortress that has witnessed numerous
+            historical events over the centuries. The fort, perched on a
+            hilltop, offers breathtaking views of the Thar Desert and the
+            surrounding countryside. Siwana Fort is also known for its
+            historical significance, having been the site of several battles
+            between local rulers and invading forces. The fort is a popular
+            destination for trekkers and adventure enthusiasts, as the climb to
+            the top is both challenging and rewarding, with stunning views
+            awaiting those who make the journey.
+          </p>
+
+          <ul className="p-box">
+            <li>
+              <strong>Thar Desert Views</strong> - Experience the breathtaking
+              views of the Thar Desert and the surrounding countryside from the
+              top of Siwana Fort.
+            </li>
+            <li>
+              <strong>Historical Battles</strong> - Learn about the historical
+              battles that took place at Siwana Fort, where local rulers
+              defended their territory against invaders.
+            </li>
+            <li>
+              <strong>Trekking Experience</strong> - Embark on a trekking
+              adventure to Siwana Fort, where the challenging climb is rewarded
+              with stunning panoramic views.
+            </li>
+          </ul>
+
+          <p className="p-box">
+            In addition to its historical and cultural attractions, Balotra is
+            also known for its vibrant local markets, where visitors can shop
+            for a variety of goods ranging from traditional Rajasthani
+            handicrafts to everyday items. The markets in Balotra offer a unique
+            shopping experience, with their colorful displays, bustling
+            atmosphere, and friendly vendors. One of the most popular items to
+            purchase in Balotra is the traditional Rajasthani jewelry, which is
+            known for its intricate designs and vibrant colors. Other popular
+            items include textiles, pottery, and handmade crafts. Shopping in
+            Balotra is not just about purchasing goods; it's about experiencing
+            the local culture, interacting with the artisans, and taking home a
+            piece of Rajasthan's rich heritage.
+          </p>
+
+          <ul className="p-box">
+            <li>
+              <strong>Rajasthani Jewelry</strong> - Shop for traditional
+              Rajasthani jewelry in Balotra, known for its intricate designs and
+              vibrant colors.
+            </li>
+            <li>
+              <strong>Handicrafts and Pottery</strong> - Explore the local
+              markets for unique handicrafts and pottery, each piece reflecting
+              the rich cultural heritage of Rajasthan.
+            </li>
+            <li>
+              <strong>Textiles and Fabrics</strong> - Purchase high-quality
+              textiles and fabrics, including the famous Ajrakh prints, from the
+              bustling markets of Balotra.
+            </li>
+          </ul>
+
+          <p className="p-box">
+            Balotra is not just a destination for tourists; it is a place where
+            you can immerse yourself in the rich culture and traditions of
+            Rajasthan. From its ancient forts and temples to its thriving
+            textile industry and vibrant markets, Balotra offers a diverse range
+            of experiences that cater to all types of travelers. Whether you're
+            exploring the historical sites, shopping for local crafts, or simply
+            soaking in the serene atmosphere, Balotra is a town that leaves a
+            lasting impression on all who visit. So, if you're planning a trip
+            to Rajasthan, be sure to include Balotra in your itinerary and
+            discover the hidden gem of this beautiful state.
+          </p>
+        </>
+      ),
+      image: rajasthaniMan,
     },
 
     Barmer: {
@@ -734,141 +750,143 @@ export default function DetailedInfo() {
               are a testament to the artistic and architectural excellence of
               the period and are a must-see for history and art enthusiasts.
             </p>
-
-            <ul>
-              <li>
-                <strong>Architectural Marvel</strong> - Marvel at the intricate
-                stone carvings and architectural beauty of the 11th-century
-                Kiradu Temples.
-              </li>
-              <li>
-                <strong>Hindu Mythology</strong> - Explore the detailed carvings
-                depicting scenes from Hindu mythology, including gods,
-                goddesses, and celestial beings.
-              </li>
-              <li>
-                <strong>Someshwara Temple</strong> - Visit the Someshwara
-                Temple, dedicated to Lord Shiva, and admire its stunning array
-                of sculptures and carvings.
-              </li>
-            </ul>
-
-            <p>
-              Barmer's cultural richness is further showcased in its vibrant
-              festivals and fairs. The <strong>Barmer Thar Festival</strong> is
-              one of the most significant cultural events in the region, held
-              annually in March. This festival celebrates the unique cultural
-              heritage of the Thar Desert and features folk music, dance
-              performances, camel races, and traditional competitions. The
-              entire town comes alive with color, music, and dance during the
-              festival, offering visitors a chance to experience the lively
-              spirit of Rajasthan. The festival also provides a platform for
-              local artisans to showcase their crafts, allowing visitors to
-              purchase authentic Rajasthani handicrafts directly from the
-              creators. The Barmer Thar Festival is a true celebration of the
-              desert's vibrant culture and is a must-attend event for anyone
-              visiting the region.
-            </p>
-
-            <ul>
-              <li>
-                <strong>Folk Music and Dance</strong> - Enjoy traditional folk
-                music and dance performances at the Barmer Thar Festival,
-                celebrating the cultural heritage of the Thar Desert.
-              </li>
-              <li>
-                <strong>Camel Races and Competitions</strong> - Witness
-                thrilling camel races and participate in traditional
-                competitions, a highlight of the Barmer Thar Festival.
-              </li>
-              <li>
-                <strong>Artisan Crafts</strong> - Purchase authentic Rajasthani
-                handicrafts directly from local artisans, showcasing their
-                skills at the festival.
-              </li>
-            </ul>
-
-            <p>
-              For those interested in exploring the natural beauty of the
-              region, a visit to the nearby <strong>Mahabar Sand Dunes</strong>{" "}
-              is highly recommended. Located just a short drive from Barmer,
-              these sand dunes offer a serene escape into the heart of the Thar
-              Desert. The Mahabar Sand Dunes are less crowded than the more
-              famous dunes in Jaisalmer, providing a more peaceful and intimate
-              experience. Visitors can enjoy a camel safari, take in the
-              stunning desert landscape, and witness the mesmerizing sunset over
-              the dunes. The clear night sky, free from light pollution, offers
-              an excellent opportunity for stargazing, making it a perfect spot
-              for those seeking a tranquil retreat in the desert.
-            </p>
-
-            <ul>
-              <li>
-                <strong>Camel Safari</strong> - Embark on a camel safari through
-                the Mahabar Sand Dunes, experiencing the serene beauty of the
-                Thar Desert.
-              </li>
-              <li>
-                <strong>Sunset Views</strong> - Witness the breathtaking sunset
-                over the sand dunes, a truly mesmerizing sight in the desert
-                landscape.
-              </li>
-              <li>
-                <strong>Stargazing</strong> - Enjoy stargazing under the clear
-                night sky, free from light pollution, offering an unforgettable
-                experience in the desert.
-              </li>
-            </ul>
-
-            <p>
-              In addition to its historical, cultural, and natural attractions,
-              Barmer is also known for its warm and hospitable people. The
-              locals of Barmer are known for their generosity, friendliness, and
-              deep-rooted traditions. Visitors to Barmer can experience
-              authentic Rajasthani hospitality, whether it's sharing a meal with
-              a local family, participating in a cultural event, or simply
-              engaging in a conversation with the residents. The simplicity and
-              warmth of the people of Barmer make the visit to this desert town
-              even more memorable. Whether you're exploring the ancient forts,
-              admiring the intricate handicrafts, or enjoying the natural beauty
-              of the desert, the people of Barmer ensure that your experience is
-              filled with warmth and genuine Rajasthani hospitality.
-            </p>
-
-            <ul>
-              <li>
-                <strong>Rajasthani Hospitality</strong> - Experience the warmth
-                and hospitality of the locals, known for their generosity and
-                friendliness.
-              </li>
-              <li>
-                <strong>Cultural Engagement</strong> - Participate in cultural
-                events and share a meal with a local family, immersing yourself
-                in the traditions of Barmer.
-              </li>
-              <li>
-                <strong>Memorable Interactions</strong> - Engage in
-                conversations with the residents of Barmer, making your visit to
-                this desert town even more memorable.
-              </li>
-            </ul>
-
-            <p>
-              Barmer is not just a destination; it is an experience. From its
-              historical forts and temples to its vibrant festivals and
-              handicrafts, Barmer offers a unique blend of cultural richness and
-              natural beauty. The town's deep-rooted traditions, coupled with
-              the serene beauty of the Thar Desert, create an unforgettable
-              experience for all who visit. Whether you're a history buff, a
-              culture enthusiast, or someone seeking tranquility in the desert,
-              Barmer has something special to offer. So, when planning your next
-              trip to Rajasthan, make sure to include Barmer in your itinerary
-              and discover the cultural heart of this magnificent state.
-            </p>
           </div>
         </>
       ),
-      image: img1,
+      paragraphs: (
+        <>
+          <ul>
+            <li>
+              <strong>Architectural Marvel</strong> - Marvel at the intricate
+              stone carvings and architectural beauty of the 11th-century Kiradu
+              Temples.
+            </li>
+            <li>
+              <strong>Hindu Mythology</strong> - Explore the detailed carvings
+              depicting scenes from Hindu mythology, including gods, goddesses,
+              and celestial beings.
+            </li>
+            <li>
+              <strong>Someshwara Temple</strong> - Visit the Someshwara Temple,
+              dedicated to Lord Shiva, and admire its stunning array of
+              sculptures and carvings.
+            </li>
+          </ul>
+
+          <p>
+            Barmer's cultural richness is further showcased in its vibrant
+            festivals and fairs. The <strong>Barmer Thar Festival</strong> is
+            one of the most significant cultural events in the region, held
+            annually in March. This festival celebrates the unique cultural
+            heritage of the Thar Desert and features folk music, dance
+            performances, camel races, and traditional competitions. The entire
+            town comes alive with color, music, and dance during the festival,
+            offering visitors a chance to experience the lively spirit of
+            Rajasthan. The festival also provides a platform for local artisans
+            to showcase their crafts, allowing visitors to purchase authentic
+            Rajasthani handicrafts directly from the creators. The Barmer Thar
+            Festival is a true celebration of the desert's vibrant culture and
+            is a must-attend event for anyone visiting the region.
+          </p>
+
+          <ul>
+            <li>
+              <strong>Folk Music and Dance</strong> - Enjoy traditional folk
+              music and dance performances at the Barmer Thar Festival,
+              celebrating the cultural heritage of the Thar Desert.
+            </li>
+            <li>
+              <strong>Camel Races and Competitions</strong> - Witness thrilling
+              camel races and participate in traditional competitions, a
+              highlight of the Barmer Thar Festival.
+            </li>
+            <li>
+              <strong>Artisan Crafts</strong> - Purchase authentic Rajasthani
+              handicrafts directly from local artisans, showcasing their skills
+              at the festival.
+            </li>
+          </ul>
+
+          <p>
+            For those interested in exploring the natural beauty of the region,
+            a visit to the nearby <strong>Mahabar Sand Dunes</strong> is highly
+            recommended. Located just a short drive from Barmer, these sand
+            dunes offer a serene escape into the heart of the Thar Desert. The
+            Mahabar Sand Dunes are less crowded than the more famous dunes in
+            Jaisalmer, providing a more peaceful and intimate experience.
+            Visitors can enjoy a camel safari, take in the stunning desert
+            landscape, and witness the mesmerizing sunset over the dunes. The
+            clear night sky, free from light pollution, offers an excellent
+            opportunity for stargazing, making it a perfect spot for those
+            seeking a tranquil retreat in the desert.
+          </p>
+
+          <ul>
+            <li>
+              <strong>Camel Safari</strong> - Embark on a camel safari through
+              the Mahabar Sand Dunes, experiencing the serene beauty of the Thar
+              Desert.
+            </li>
+            <li>
+              <strong>Sunset Views</strong> - Witness the breathtaking sunset
+              over the sand dunes, a truly mesmerizing sight in the desert
+              landscape.
+            </li>
+            <li>
+              <strong>Stargazing</strong> - Enjoy stargazing under the clear
+              night sky, free from light pollution, offering an unforgettable
+              experience in the desert.
+            </li>
+          </ul>
+
+          <p>
+            In addition to its historical, cultural, and natural attractions,
+            Barmer is also known for its warm and hospitable people. The locals
+            of Barmer are known for their generosity, friendliness, and
+            deep-rooted traditions. Visitors to Barmer can experience authentic
+            Rajasthani hospitality, whether it's sharing a meal with a local
+            family, participating in a cultural event, or simply engaging in a
+            conversation with the residents. The simplicity and warmth of the
+            people of Barmer make the visit to this desert town even more
+            memorable. Whether you're exploring the ancient forts, admiring the
+            intricate handicrafts, or enjoying the natural beauty of the desert,
+            the people of Barmer ensure that your experience is filled with
+            warmth and genuine Rajasthani hospitality.
+          </p>
+
+          <ul>
+            <li>
+              <strong>Rajasthani Hospitality</strong> - Experience the warmth
+              and hospitality of the locals, known for their generosity and
+              friendliness.
+            </li>
+            <li>
+              <strong>Cultural Engagement</strong> - Participate in cultural
+              events and share a meal with a local family, immersing yourself in
+              the traditions of Barmer.
+            </li>
+            <li>
+              <strong>Memorable Interactions</strong> - Engage in conversations
+              with the residents of Barmer, making your visit to this desert
+              town even more memorable.
+            </li>
+          </ul>
+
+          <p>
+            Barmer is not just a destination; it is an experience. From its
+            historical forts and temples to its vibrant festivals and
+            handicrafts, Barmer offers a unique blend of cultural richness and
+            natural beauty. The town's deep-rooted traditions, coupled with the
+            serene beauty of the Thar Desert, create an unforgettable experience
+            for all who visit. Whether you're a history buff, a culture
+            enthusiast, or someone seeking tranquility in the desert, Barmer has
+            something special to offer. So, when planning your next trip to
+            Rajasthan, make sure to include Barmer in your itinerary and
+            discover the cultural heart of this magnificent state.
+          </p>
+        </>
+      ),
+      image: barmerImage,
     },
     Ajmer: {
       description: (
@@ -1148,10 +1166,12 @@ export default function DetailedInfo() {
         <>
           <div>
             <div class="container">
-              <h1>Discover Pali: A Hidden Gem of Rajasthan</h1>
+              <h1 className="font-bold">
+                Discover Pali: A Hidden Gem of Rajasthan
+              </h1>
 
               <div class="section">
-                <p>
+                <p className="p-box">
                   Situated in the vibrant state of Rajasthan, Pali is a
                   captivating destination known for its rich heritage, ancient
                   temples, and scenic beauty. Often overshadowed by its more
@@ -1164,171 +1184,169 @@ export default function DetailedInfo() {
                   perfect getaway for history buffs, spiritual seekers, and
                   nature enthusiasts alike.
                 </p>
-              </div>
+                <div class="section">
+                  <p className="p-box">
+                    One of the most prominent landmarks in Pali is the{" "}
+                    <strong>Rishabhdevji Temple</strong>, a revered Jain shrine
+                    dedicated to Lord Rishabha, the first Tirthankara. The
+                    temple is renowned for its stunning architecture and
+                    intricate carvings, which reflect the artistic prowess of
+                    the Jain craftsmen. The temple's serene ambiance and
+                    religious significance make it a peaceful retreat for
+                    devotees and tourists. The Rishabhdevji Temple is also a
+                    focal point during the annual Pali Jain Festival, which
+                    draws large crowds who come to witness the grand
+                    celebrations and participate in religious ceremonies.
+                  </p>
 
-              <div class="section">
-                <p>
-                  One of the most prominent landmarks in Pali is the{" "}
-                  <strong>Rishabhdevji Temple</strong>, a revered Jain shrine
-                  dedicated to Lord Rishabha, the first Tirthankara. The temple
-                  is renowned for its stunning architecture and intricate
-                  carvings, which reflect the artistic prowess of the Jain
-                  craftsmen. The temple's serene ambiance and religious
-                  significance make it a peaceful retreat for devotees and
-                  tourists. The Rishabhdevji Temple is also a focal point during
-                  the annual Pali Jain Festival, which draws large crowds who
-                  come to witness the grand celebrations and participate in
-                  religious ceremonies.
-                </p>
-
-                <ul>
-                  <li>
-                    <strong>Architectural Marvel</strong> - Marvel at the
-                    intricate carvings and stunning architecture of the
-                    Rishabhdevji Temple, a testament to Jain artistry.
-                  </li>
-                  <li>
-                    <strong>Religious Significance</strong> - Experience the
-                    serene ambiance and spiritual atmosphere of the temple, a
-                    key pilgrimage site for Jains.
-                  </li>
-                  <li>
-                    <strong>Pali Jain Festival</strong> - Join the festivities
-                    during the annual Pali Jain Festival, featuring grand
-                    processions and religious ceremonies.
-                  </li>
-                </ul>
-              </div>
-
-              <div class="section">
-                <p>
-                  The <strong>Meghmani Fort</strong> is another remarkable
-                  attraction in Pali. This ancient fort, built during the
-                  medieval period, stands as a symbol of Rajput valor and
-                  architectural brilliance. The fort's massive walls and
-                  strategic location offer panoramic views of the surrounding
-                  landscape, including the lush green fields and the distant
-                  Aravalli hills. Exploring Meghmani Fort allows visitors to
-                  step back in time and experience the grandeur of Rajput
-                  military architecture. The fort's courtyards, battlements, and
-                  historic relics provide a fascinating glimpse into the
-                  region's storied past.
-                </p>
-
-                <ul>
-                  <li>
-                    <strong>Rajput Architecture</strong> - Explore the
-                    impressive Rajput military architecture of Meghmani Fort,
-                    known for its massive walls and strategic design.
-                  </li>
-                  <li>
-                    <strong>Panoramic Views</strong> - Enjoy stunning panoramic
-                    views of the surrounding landscape from the fort's vantage
-                    points.
-                  </li>
-                  <li>
-                    <strong>Historical Exploration</strong> - Discover the
-                    fort's courtyards, battlements, and relics that reflect the
-                    rich history of the Rajput era.
-                  </li>
-                </ul>
-              </div>
-
-              <div class="section">
-                <p>
-                  For those interested in spiritual and historical sites, the{" "}
-                  <strong>Om Banna Temple</strong> (also known as the Bullet
-                  Baba Temple) is an intriguing destination. This temple is
-                  dedicated to a local hero, Om Banna, who is believed to have
-                  had miraculous powers. The temple is uniquely dedicated to a
-                  motorcycle, which is said to have been involved in a divine
-                  incident. The Om Banna Temple is a fascinating blend of
-                  folklore and spirituality, attracting curious visitors and
-                  devotees alike. The temple's legend is deeply embedded in
-                  local culture, making it a unique stop for those exploring
-                  Pali's spiritual landscape.
-                </p>
-
-                <ul>
-                  <li>
-                    <strong>Unique Temple</strong> - Visit the Om Banna Temple,
-                    dedicated to a local hero and his motorcycle, offering a
-                    unique blend of folklore and spirituality.
-                  </li>
-                  <li>
-                    <strong>Local Legend</strong> - Learn about the fascinating
-                    legend associated with the temple and its place in local
-                    culture.
-                  </li>
-                  <li>
-                    <strong>Spiritual Experience</strong> - Experience the
-                    unique spiritual atmosphere and community reverence at the
-                    Om Banna Temple.
-                  </li>
-                </ul>
-              </div>
-
-              <div class="section">
-                <p>
-                  Pali is also home to the tranquil{" "}
-                  <strong>Bangur Museum</strong>, which showcases the region's
-                  rich cultural heritage and history. The museum's collection
-                  includes ancient artifacts, traditional Rajasthani costumes,
-                  and historical relics that provide insight into the local way
-                  of life. The museum is a great place for history enthusiasts
-                  to learn about Pali's past and its significance in the broader
-                  context of Rajasthan's history. The museum's exhibits are
-                  well-curated and offer a comprehensive overview of the
-                  region's cultural evolution.
-                </p>
-
-                <ul>
-                  <li>
-                    <strong>Cultural Heritage</strong> - Explore the Bangur
-                    Museum's collection of artifacts, traditional costumes, and
-                    historical relics reflecting Pali's cultural heritage.
-                  </li>
-                  <li>
-                    <strong>Historical Insights</strong> - Gain valuable
-                    insights into the region's history and its role in
-                    Rajasthan's cultural landscape.
-                  </li>
-                  <li>
-                    <strong>Educational Experience</strong> - Enjoy an
-                    educational visit to the museum, perfect for history buffs
-                    and cultural enthusiasts.
-                  </li>
-                </ul>
-              </div>
-
-              <div class="section">
-                <p>
-                  For nature lovers, the <strong>Jawai Dam</strong> near Pali is
-                  a must-visit. This picturesque dam is surrounded by rolling
-                  hills and provides a serene setting for relaxation and nature
-                  observation. The dam's calm waters reflect the beauty of the
-                  Aravalli range, creating a tranquil environment ideal for
-                  picnics and leisurely walks. The area around Jawai Dam is also
-                  known for its diverse birdlife, making it a great spot for
-                  birdwatching enthusiasts. The dam's scenic beauty and peaceful
-                  ambiance make it a perfect escape from the hustle and bustle
-                  of city life.
-                </p>
+                  <ul className="p-box">
+                    <li>
+                      <strong>Architectural Marvel</strong> - Marvel at the
+                      intricate carvings and stunning architecture of the
+                      Rishabhdevji Temple, a testament to Jain artistry.
+                    </li>
+                    <li>
+                      <strong>Religious Significance</strong> - Experience the
+                      serene ambiance and spiritual atmosphere of the temple, a
+                      key pilgrimage site for Jains.
+                    </li>
+                    <li>
+                      <strong>Pali Jain Festival</strong> - Join the festivities
+                      during the annual Pali Jain Festival, featuring grand
+                      processions and religious ceremonies.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </>
       ),
-      image: img1,
+      paragraphs: (
+        <>
+          <div class="section">
+            <p>
+              The <strong>Meghmani Fort</strong> is another remarkable
+              attraction in Pali. This ancient fort, built during the medieval
+              period, stands as a symbol of Rajput valor and architectural
+              brilliance. The fort's massive walls and strategic location offer
+              panoramic views of the surrounding landscape, including the lush
+              green fields and the distant Aravalli hills. Exploring Meghmani
+              Fort allows visitors to step back in time and experience the
+              grandeur of Rajput military architecture. The fort's courtyards,
+              battlements, and historic relics provide a fascinating glimpse
+              into the region's storied past.
+            </p>
+
+            <ul>
+              <li>
+                <strong>Rajput Architecture</strong> - Explore the impressive
+                Rajput military architecture of Meghmani Fort, known for its
+                massive walls and strategic design.
+              </li>
+              <li>
+                <strong>Panoramic Views</strong> - Enjoy stunning panoramic
+                views of the surrounding landscape from the fort's vantage
+                points.
+              </li>
+              <li>
+                <strong>Historical Exploration</strong> - Discover the fort's
+                courtyards, battlements, and relics that reflect the rich
+                history of the Rajput era.
+              </li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <p>
+              For those interested in spiritual and historical sites, the{" "}
+              <strong>Om Banna Temple</strong> (also known as the Bullet Baba
+              Temple) is an intriguing destination. This temple is dedicated to
+              a local hero, Om Banna, who is believed to have had miraculous
+              powers. The temple is uniquely dedicated to a motorcycle, which is
+              said to have been involved in a divine incident. The Om Banna
+              Temple is a fascinating blend of folklore and spirituality,
+              attracting curious visitors and devotees alike. The temple's
+              legend is deeply embedded in local culture, making it a unique
+              stop for those exploring Pali's spiritual landscape.
+            </p>
+
+            <ul>
+              <li>
+                <strong>Unique Temple</strong> - Visit the Om Banna Temple,
+                dedicated to a local hero and his motorcycle, offering a unique
+                blend of folklore and spirituality.
+              </li>
+              <li>
+                <strong>Local Legend</strong> - Learn about the fascinating
+                legend associated with the temple and its place in local
+                culture.
+              </li>
+              <li>
+                <strong>Spiritual Experience</strong> - Experience the unique
+                spiritual atmosphere and community reverence at the Om Banna
+                Temple.
+              </li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <p>
+              Pali is also home to the tranquil <strong>Bangur Museum</strong>,
+              which showcases the region's rich cultural heritage and history.
+              The museum's collection includes ancient artifacts, traditional
+              Rajasthani costumes, and historical relics that provide insight
+              into the local way of life. The museum is a great place for
+              history enthusiasts to learn about Pali's past and its
+              significance in the broader context of Rajasthan's history. The
+              museum's exhibits are well-curated and offer a comprehensive
+              overview of the region's cultural evolution.
+            </p>
+
+            <ul>
+              <li>
+                <strong>Cultural Heritage</strong> - Explore the Bangur Museum's
+                collection of artifacts, traditional costumes, and historical
+                relics reflecting Pali's cultural heritage.
+              </li>
+              <li>
+                <strong>Historical Insights</strong> - Gain valuable insights
+                into the region's history and its role in Rajasthan's cultural
+                landscape.
+              </li>
+              <li>
+                <strong>Educational Experience</strong> - Enjoy an educational
+                visit to the museum, perfect for history buffs and cultural
+                enthusiasts.
+              </li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <p>
+              For nature lovers, the <strong>Jawai Dam</strong> near Pali is a
+              must-visit. This picturesque dam is surrounded by rolling hills
+              and provides a serene setting for relaxation and nature
+              observation. The dam's calm waters reflect the beauty of the
+              Aravalli range, creating a tranquil environment ideal for picnics
+              and leisurely walks. The area around Jawai Dam is also known for
+              its diverse birdlife, making it a great spot for birdwatching
+              enthusiasts. The dam's scenic beauty and peaceful ambiance make it
+              a perfect escape from the hustle and bustle of city life.
+            </p>
+          </div>
+        </>
+      ),
+      image: paliImage,
     },
     Osian: {
       description: (
         <>
           <div class="container">
-            <h1>Explore Ossian: The Ancient Jewel of Rajasthan</h1>
+            <h1 className="font-bold text-4xl"> Explore Ossian: The Ancient Jewel of Rajasthan</h1>
 
             <div class="section">
-              <p>
+              <p className="p-box">
                 Ossian, often referred to as the "Khajuraho of Rajasthan," is a
                 historic town renowned for its ancient temples and rich cultural
                 heritage. Located in the Jaisalmer district, Ossian is a hidden
@@ -1343,7 +1361,7 @@ export default function DetailedInfo() {
             </div>
 
             <div class="section">
-              <p>
+              <p className="p-box">
                 The <strong>Jain Temples</strong> of Ossian are among the most
                 significant attractions in the town. These temples, dating back
                 to the 8th and 9th centuries, showcase exceptional architectural
@@ -1357,7 +1375,7 @@ export default function DetailedInfo() {
                 historical artistry of Rajasthan.
               </p>
 
-              <ul>
+              <ul className="p-box">
                 <li>
                   <strong>Architectural Masterpieces</strong> - Admire the
                   intricate carvings and architectural brilliance of the Jain
@@ -1375,171 +1393,172 @@ export default function DetailedInfo() {
                 </li>
               </ul>
             </div>
-
-            <div class="section">
-              <p>
-                Another notable site in Ossian is the{" "}
-                <strong>Sun Temple</strong>, dedicated to the Sun God, Surya.
-                This temple is renowned for its unique architectural style and
-                striking carvings that celebrate the solar deity. The Sun
-                Temple's design incorporates intricate geometric patterns and
-                motifs that are characteristic of ancient Rajasthani temple
-                architecture. The temple's historical and cultural significance
-                is evident in its well-preserved state and the dedication of the
-                local community to its upkeep. The Sun Temple offers visitors a
-                chance to experience the ancient traditions and religious
-                practices associated with the worship of Surya.
-              </p>
-
-              <ul>
-                <li>
-                  <strong>Architectural Design</strong> - Discover the unique
-                  architectural style and intricate carvings of the Sun Temple,
-                  dedicated to the Sun God, Surya.
-                </li>
-                <li>
-                  <strong>Cultural Heritage</strong> - Understand the historical
-                  and cultural importance of the Sun Temple in Rajasthan's
-                  religious practices.
-                </li>
-                <li>
-                  <strong>Preservation</strong> - Appreciate the well-preserved
-                  state of the Sun Temple and the dedication of the local
-                  community to its maintenance.
-                </li>
-              </ul>
-            </div>
-
-            <div class="section">
-              <p>
-                The <strong>Mahavira Temple</strong> is another important
-                landmark in Ossian, dedicated to Lord Mahavira, the 24th
-                Tirthankara. This temple stands out for its impressive
-                sculptures and the serene ambiance that pervades its
-                surroundings. The Mahavira Temple is a testament to the
-                deep-rooted Jain traditions in Ossian and provides a tranquil
-                setting for meditation and reflection. The temple's architecture
-                and its historical significance make it a valuable site for
-                understanding the Jain religion's influence on the region.
-              </p>
-
-              <ul>
-                <li>
-                  <strong>Religious Significance</strong> - Explore the
-                  religious importance of the Mahavira Temple, dedicated to Lord
-                  Mahavira, the 24th Tirthankara.
-                </li>
-                <li>
-                  <strong>Serene Atmosphere</strong> - Experience the tranquil
-                  ambiance of the Mahavira Temple, ideal for meditation and
-                  reflection.
-                </li>
-                <li>
-                  <strong>Architectural Highlights</strong> - Admire the
-                  impressive sculptures and architectural features that reflect
-                  Jain traditions and artistry.
-                </li>
-              </ul>
-            </div>
-
-            <div class="section">
-              <p>
-                Ossian also boasts the <strong>Ranakpur Fort</strong>, an
-                ancient fortification that adds to the town's historical charm.
-                Although less famous than other Rajasthan forts, Ranakpur Fort
-                offers a glimpse into the region's military history and
-                strategic importance. The fort's ruins, including its defensive
-                walls and ancient gateways, provide a fascinating insight into
-                the architectural and defensive strategies employed during its
-                time. Exploring Ranakpur Fort allows visitors to appreciate the
-                strategic significance of Ossian in historical contexts.
-              </p>
-
-              <ul>
-                <li>
-                  <strong>Historical Context</strong> - Discover the historical
-                  context and significance of Ranakpur Fort in Rajasthan's
-                  military history.
-                </li>
-                <li>
-                  <strong>Architectural Features</strong> - Explore the fort's
-                  defensive walls, ancient gateways, and ruins that reflect its
-                  strategic design.
-                </li>
-                <li>
-                  <strong>Historical Insight</strong> - Gain insight into the
-                  architectural and defensive strategies of the era by visiting
-                  Ranakpur Fort.
-                </li>
-              </ul>
-            </div>
-
-            <div class="section">
-              <p>
-                The <strong>Ossian Desert</strong> surrounding the town offers a
-                serene and picturesque setting for nature enthusiasts. The
-                desert landscape, with its vast stretches of sand dunes and
-                sparse vegetation, provides a peaceful escape from the hustle
-                and bustle of urban life. The Ossian Desert is ideal for camel
-                rides, sunset views, and experiencing the tranquility of
-                Rajasthan's arid landscapes. Visitors can enjoy the natural
-                beauty of the desert, engage in traditional activities, and
-                immerse themselves in the local desert culture.
-              </p>
-
-              <ul>
-                <li>
-                  <strong>Sand Dunes</strong> - Enjoy the vast stretches of sand
-                  dunes in the Ossian Desert, perfect for camel rides and
-                  exploring the arid landscape.
-                </li>
-                <li>
-                  <strong>Sunset Views</strong> - Witness breathtaking sunset
-                  views over the desert, creating a magical and serene
-                  atmosphere.
-                </li>
-                <li>
-                  <strong>Desert Culture</strong> - Immerse yourself in the
-                  local desert culture and experience traditional activities
-                  unique to the Ossian Desert.
-                </li>
-              </ul>
-            </div>
-
-            <div class="section">
-              <p>
-                For those interested in local crafts, the{" "}
-                <strong>Ossian Markets</strong> offer a vibrant array of
-                traditional Rajasthani handicrafts, textiles, and souvenirs. The
-                markets are known for their colorful stalls and unique products,
-                including handwoven fabrics, intricate jewelry, and locally made
-                artifacts. Shopping in Ossian provides an opportunity to engage
-                with local artisans and learn about the traditional crafts of
-                the region. The markets are a great place to find authentic
-                souvenirs and support local craftsmanship.
-              </p>
-
-              <ul>
-                <li>
-                  <strong>Traditional Handicrafts</strong> - Explore a variety
-                  of traditional Rajasthani handicrafts, including handwoven
-                  fabrics and intricate jewelry.
-                </li>
-                <li>
-                  <strong>Local Artisans</strong> - Engage with local artisans
-                  and learn about the traditional crafts of Ossian.
-                </li>
-                <li>
-                  <strong>Authentic Souvenirs</strong> - Purchase unique
-                  souvenirs and support local craftsmanship in the vibrant
-                  Ossian markets.
-                </li>
-              </ul>
-            </div>
           </div>
         </>
       ),
-      image: img1,
+      paragraphs: (
+        <>
+          <div class="section">
+            <p className="p-box">
+              Another notable site in Ossian is the <strong>Sun Temple</strong>,
+              dedicated to the Sun God, Surya. This temple is renowned for its
+              unique architectural style and striking carvings that celebrate
+              the solar deity. The Sun Temple's design incorporates intricate
+              geometric patterns and motifs that are characteristic of ancient
+              Rajasthani temple architecture. The temple's historical and
+              cultural significance is evident in its well-preserved state and
+              the dedication of the local community to its upkeep. The Sun
+              Temple offers visitors a chance to experience the ancient
+              traditions and religious practices associated with the worship of
+              Surya.
+            </p>
+
+            <ul className="p-box">
+              <li>
+                <strong>Architectural Design</strong> - Discover the unique
+                architectural style and intricate carvings of the Sun Temple,
+                dedicated to the Sun God, Surya.
+              </li>
+              <li>
+                <strong>Cultural Heritage</strong> - Understand the historical
+                and cultural importance of the Sun Temple in Rajasthan's
+                religious practices.
+              </li>
+              <li>
+                <strong>Preservation</strong> - Appreciate the well-preserved
+                state of the Sun Temple and the dedication of the local
+                community to its maintenance.
+              </li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <p className="p-box">
+              The <strong>Mahavira Temple</strong> is another important landmark
+              in Ossian, dedicated to Lord Mahavira, the 24th Tirthankara. This
+              temple stands out for its impressive sculptures and the serene
+              ambiance that pervades its surroundings. The Mahavira Temple is a
+              testament to the deep-rooted Jain traditions in Ossian and
+              provides a tranquil setting for meditation and reflection. The
+              temple's architecture and its historical significance make it a
+              valuable site for understanding the Jain religion's influence on
+              the region.
+            </p>
+
+            <ul className="p-box">
+              <li>
+                <strong>Religious Significance</strong> - Explore the religious
+                importance of the Mahavira Temple, dedicated to Lord Mahavira,
+                the 24th Tirthankara.
+              </li>
+              <li>
+                <strong>Serene Atmosphere</strong> - Experience the tranquil
+                ambiance of the Mahavira Temple, ideal for meditation and
+                reflection.
+              </li>
+              <li>
+                <strong>Architectural Highlights</strong> - Admire the
+                impressive sculptures and architectural features that reflect
+                Jain traditions and artistry.
+              </li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <p className="p-box">
+              Ossian also boasts the <strong>Ranakpur Fort</strong>, an ancient
+              fortification that adds to the town's historical charm. Although
+              less famous than other Rajasthan forts, Ranakpur Fort offers a
+              glimpse into the region's military history and strategic
+              importance. The fort's ruins, including its defensive walls and
+              ancient gateways, provide a fascinating insight into the
+              architectural and defensive strategies employed during its time.
+              Exploring Ranakpur Fort allows visitors to appreciate the
+              strategic significance of Ossian in historical contexts.
+            </p>
+
+            <ul className="p-box">
+              <li>
+                <strong>Historical Context</strong> - Discover the historical
+                context and significance of Ranakpur Fort in Rajasthan's
+                military history.
+              </li>
+              <li>
+                <strong>Architectural Features</strong> - Explore the fort's
+                defensive walls, ancient gateways, and ruins that reflect its
+                strategic design.
+              </li>
+              <li>
+                <strong>Historical Insight</strong> - Gain insight into the
+                architectural and defensive strategies of the era by visiting
+                Ranakpur Fort.
+              </li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <p className="p-box">
+              The <strong>Ossian Desert</strong> surrounding the town offers a
+              serene and picturesque setting for nature enthusiasts. The desert
+              landscape, with its vast stretches of sand dunes and sparse
+              vegetation, provides a peaceful escape from the hustle and bustle
+              of urban life. The Ossian Desert is ideal for camel rides, sunset
+              views, and experiencing the tranquility of Rajasthan's arid
+              landscapes. Visitors can enjoy the natural beauty of the desert,
+              engage in traditional activities, and immerse themselves in the
+              local desert culture.
+            </p>
+
+            <ul className="p-box">
+              <li>
+                <strong>Sand Dunes</strong> - Enjoy the vast stretches of sand
+                dunes in the Ossian Desert, perfect for camel rides and
+                exploring the arid landscape.
+              </li>
+              <li>
+                <strong>Sunset Views</strong> - Witness breathtaking sunset
+                views over the desert, creating a magical and serene atmosphere.
+              </li>
+              <li>
+                <strong>Desert Culture</strong> - Immerse yourself in the local
+                desert culture and experience traditional activities unique to
+                the Ossian Desert.
+              </li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <p className="p-box">
+              For those interested in local crafts, the{" "}
+              <strong>Ossian Markets</strong> offer a vibrant array of
+              traditional Rajasthani handicrafts, textiles, and souvenirs. The
+              markets are known for their colorful stalls and unique products,
+              including handwoven fabrics, intricate jewelry, and locally made
+              artifacts. Shopping in Ossian provides an opportunity to engage
+              with local artisans and learn about the traditional crafts of the
+              region. The markets are a great place to find authentic souvenirs
+              and support local craftsmanship.
+            </p>
+
+            <ul className="p-box">
+              <li>
+                <strong>Traditional Handicrafts</strong> - Explore a variety of
+                traditional Rajasthani handicrafts, including handwoven fabrics
+                and intricate jewelry.
+              </li>
+              <li>
+                <strong>Local Artisans</strong> - Engage with local artisans and
+                learn about the traditional crafts of Ossian.
+              </li>
+              <li>
+                <strong>Authentic Souvenirs</strong> - Purchase unique souvenirs
+                and support local craftsmanship in the vibrant Ossian markets.
+              </li>
+            </ul>
+          </div>
+        </>
+      ),
+      image: osianImage,
     },
   };
 
@@ -1549,17 +1568,19 @@ export default function DetailedInfo() {
         Welcome in {LocationName}
       </h1>
       <div className="  w-full dynamic-conainer ">
-        <div>
+        <div className="">
           <p className="p-box">{detailedData[LocationName].description}</p>
         </div>
-        <div className="image-container">
-          <img
-            src={detailedData[LocationName].image}
-            alt={detailedData[LocationName].image}
-          />
-        </div>
+        <img
+          src={detailedData[LocationName].image}
+          alt={detailedData[LocationName].image}
+          loading="lazy"
+          className="image-container"
+        />
       </div>
+      <div className="p-box">{detailedData[LocationName].paragraphs}</div>
 
+      <WhyChooseUs />
       <Partners />
     </>
   );
