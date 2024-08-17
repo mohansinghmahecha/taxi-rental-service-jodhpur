@@ -21,6 +21,9 @@ import RefundPolicy from "./components/important/RefundPolicy.js";
 import PrivacyPolicy from "./components/important/PrivacyPolicy.js";
 import CancilationPolicy from "./components/important/CancilationPolicy.js";
 import JodhpurBlog from "./components/blogs/jodhpur/JodhpurBlog.js";
+import JaisalmerBlog from "./components/blogs/jaisalmer/JaisalmerBlog.js";
+import PushkatBlog from "./components/blogs/pushkar/PushkatBlog.js";
+import DelhiBlog from "./components/blogs/delhi/DelhiBlog.js";
 
 export default function App() {
   return (
@@ -56,6 +59,9 @@ export default function App() {
           <Route path="/cancellation-policy" element={<CancilationPolicy />} />
           {/* blog routes */}
           <Route path="/car-rent-jodhpur" element={<JodhpurBlog />} />
+          <Route path="/car-rent-jaisalmer" element={<JaisalmerBlog />} />
+          <Route path="/car-rent-pushkar" element={<PushkatBlog />} />
+          <Route path="/car-rent-delhi" element={<DelhiBlog />} />
 
           <Route path="/*" element={<NotFound />} />
         </Routes>

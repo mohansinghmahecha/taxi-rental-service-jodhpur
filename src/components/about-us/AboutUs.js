@@ -3,6 +3,7 @@ import instastory from "../../assets/InstagramStory.svg";
 
 import "./AboutUs.css";
 import SmallAboutUs from "../small-containers/SmallAboutUs";
+import CarsSliding from "../car-sliding/CarsSliding";
 
 export default function AboutUs() {
   return (
@@ -54,6 +55,7 @@ export default function AboutUs() {
           <img id="img-insta" src={instastory} alt="" />
         </div>
       </div>
+      <CarsSliding/>
       <SmallAboutUs />
     </div>
   );

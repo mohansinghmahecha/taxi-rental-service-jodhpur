@@ -21,17 +21,17 @@ export default function LocationOffer() {
     {
       description: "Jaisalmer",
       image: jaisalmer,
-      navigate: "/jaisalmer", // Add navigate path if needed
+      navigate: "/car-rent-jaisalmer",
     },
     {
       description: "Pushkar",
       image: pushkar,
-      navigate: "/pushkar", // Add navigate path if needed
+      navigate: "/car-rent-pushkar", // Add navigate path if needed
     },
     {
       description: "Delhi",
       image: delhi,
-      navigate: "/delhi", // Add navigate path if needed
+      navigate: "/car-rent-delhi", // Add navigate path if needed
     },
   ];
 
@@ -57,6 +57,7 @@ export default function LocationOffer() {
                     className="hover:cursor-pointer hover:-translate-y-6"
                     src={location.image}
                     alt={location.description}
+                    loading="lazy"
                     style={{
                       objectFit: "fill",
                       width: "100%",
