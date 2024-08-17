@@ -70,10 +70,7 @@ export default function NavBarMainList() {
       </div>
 
       <div className="custom-font">
-        <Link to="/one-way-taxi">
-        
-          One Way Taxi <MdArrowDropDown className=" w-[15px] inline m-0 p-0 " />
-        </Link>
+        <Link to="/one-way-taxi">One Way Taxi</Link>
         {/* One Way Taxi <MdArrowDropDown className=" w-[15px] inline m-0 p-0 " /> */}
       </div>
 
@@ -107,9 +104,11 @@ export default function NavBarMainList() {
         )}
       </div>
 
-      <div className="custom-font">Jodhpur Cab </div>
+      <Link to="/car-rent-jodhpur">
+        <div className="custom-font hover:cursor-pointer">Jodhpur Cab </div>
+      </Link>
+
       <div className="custom-font">
-        {" "}
         <Link to="/contect-us">Contect Us</Link>
       </div>
     </div>

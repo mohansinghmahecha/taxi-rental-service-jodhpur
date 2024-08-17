@@ -1,6 +1,5 @@
 import React from "react";
 import { FaOilCan } from "react-icons/fa6";
-import { GiCarWheel } from "react-icons/gi";
 import { FaWifi } from "react-icons/fa";
 import { BsCashCoin } from "react-icons/bs";
 import { GrUserManager } from "react-icons/gr";

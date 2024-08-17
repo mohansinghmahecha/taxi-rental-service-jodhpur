@@ -4,39 +4,42 @@ import delhi from "../assets/locations/delhi.jpg";
 import JaipurCity from "../assets/locations/jaipur-city.jpg";
 import jaisalmer from "../assets/locations/jaisalmer.jpg";
 import pushkar from "../assets/locations/pushkar.jpg";
-import udaipur from "../assets/locations/udaipur.jpg";
+import { Link } from "react-router-dom";
 
-export default function LocationOfffer() {
+export default function LocationOffer() {
   const locationData = [
     {
-      discrption: "Jodhpur",
-      imgage: jodhpur,
-    },
-
-    {
-      discrption: "Jaipur .",
-      imgage: JaipurCity,
-    },
-
-    {
-      discrption: "Jaisalmer.",
-      imgage: jaisalmer,
+      description: "Jodhpur",
+      image: jodhpur,
+      navigate: "/car-rent-jodhpur",
     },
     {
-      discrption: "pushkar",
-      imgage: pushkar,
+      description: "Jaipur",
+      image: JaipurCity,
+      navigate: "/taxi-services/jaipur",
     },
-
     {
-      discrption: "India.",
-      imgage: delhi,
+      description: "Jaisalmer",
+      image: jaisalmer,
+      navigate: "/jaisalmer", // Add navigate path if needed
+    },
+    {
+      description: "Pushkar",
+      image: pushkar,
+      navigate: "/pushkar", // Add navigate path if needed
+    },
+    {
+      description: "Delhi",
+      image: delhi,
+      navigate: "/delhi", // Add navigate path if needed
     },
   ];
+
   return (
     <div className="location-offer block p-4 rounded-md">
       <div className="flex justify-between ">
         <div className="p-12 m-4 text-2xl">
-          <p>Popular Destinations </p>
+          <p>Popular Destinations</p>
           <p>Explore some popular destinations in Rajasthan.</p>
         </div>
       </div>
@@ -47,13 +50,13 @@ export default function LocationOfffer() {
             return (
               <div
                 key={index}
-                className="w-[333px] h-[380px]  rounded-lg p-4  border bg-white"
+                className="w-[333px] h-[380px] rounded-lg p-4 border bg-white"
               >
                 <div className="w-full h-[300px] overflow-hidden">
                   <img
                     className="hover:cursor-pointer hover:-translate-y-6"
-                    src={location.imgage}
-                    alt=""
+                    src={location.image}
+                    alt={location.description}
                     style={{
                       objectFit: "fill",
                       width: "100%",
@@ -64,15 +67,34 @@ export default function LocationOfffer() {
                 </div>
 
                 <div className="flex flex-col items-center">
-                  <div className="w-full ">
-                    <p className="w-full text-start ml-2 bg-white text-orange-400 font-bold text-lg tracking-widest ">
-                      {location.discrption}
+                  <div className="w-full">
+                    <p className="w-full text-start ml-2 bg-white text-orange-400 font-bold text-lg tracking-widest">
+                      {location.description}
                     </p>
                   </div>
                   <div>
-                    <button className="text-black  mr-4 bg-orange-300 p-1 rounded-lg ">
-                      Explore Now
-                    </button>
+                    {location.navigate ? (
+                      <Link to={location.navigate}>
+                        <button
+                          className="text-black mr-4 bg-orange-300 p-1 rounded-lg"
+                          onClick={() => {
+                            window.scrollTo({
+                              top: 0,
+                              behavior: "smooth", // This will animate the scroll
+                            });
+                          }}
+                        >
+                          Explore Now
+                        </button>
+                      </Link>
+                    ) : (
+                      <button
+                        className="text-black mr-4 bg-gray-300 p-1 rounded-lg"
+                        disabled
+                      >
+                        Explore Now
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>

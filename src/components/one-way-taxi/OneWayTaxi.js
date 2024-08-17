@@ -1,5 +1,4 @@
 import React from "react";
-import jodhpurMain from "../../assets/locations/jodhpur.jpg";
 import Reviews from "../small-containers/Reviews";
 import SmallAboutUs from "../small-containers/SmallAboutUs";
 import jodhpur from "../../assets/locations/jodhpur.jpg";

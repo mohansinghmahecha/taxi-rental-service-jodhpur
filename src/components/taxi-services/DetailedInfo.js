@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import img1 from "../../assets/car.jpg"; // Assuming a generic default image
 import Partners from "../our-partners/Partners";
 import "./CardsDetail.css";
-import jeep from "../../assets/jeeps.jpg";
 import Mehrangarh from "../../assets/mehrangadh-right.jpg";
 import rajasthaniMan from "../../assets/rajasthani-man.jpg";
 import barmerImage from "../../assets/barmer.jpg";

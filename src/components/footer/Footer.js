@@ -1,5 +1,5 @@
 import "./Footer.css";
-import img1 from "../../assets/main-logo-white.webp";
+import img1 from "../../assets/main-logo.jpg";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -26,7 +26,8 @@ export default function Footer() {
         <div>
           <p>Support</p>
           <p className="mt-10">Call Us</p>
-          <p className="hover:cursor-pointer"
+          <p
+            className="hover:cursor-pointer"
             onClick={() => {
               window.open("https://wa.me/+919001502506", "_blank");
             }}
@@ -38,12 +39,19 @@ export default function Footer() {
         <div>
           <p>About Us</p>
           <Link className="hover:cursor-pointer" to="/about-us">
-            <p className="mt-10" onClick={scrollToTop}>Our Story</p>
-           
+            <p className="mt-10" onClick={scrollToTop}>
+              Our Story
+            </p>
           </Link>
-          <p>Privacy Policy</p>
-          <p>Cancellations Policy</p>
-          <p>Refund policy</p>
+          <Link to="/priviacy-policy">
+            <p onClick={scrollToTop}>Privacy Policy</p>
+          </Link>
+          <Link to="/cancellation-policy">
+            <p>Cancellations Policy</p>
+          </Link>
+          <Link to="/refund-policy">
+            <p onClick={scrollToTop}>Refund policy</p>
+          </Link>
         </div>
         <div>
           <p>Contact Info</p>
@@ -57,7 +65,7 @@ export default function Footer() {
       </div>
 
       <div className="bg-black text-white text-center">
-        <p>© {d.getFullYear()} Taxi service in joddhpur</p>
+        <p>© {d.getFullYear()} Taxi service in jodhpur</p>
       </div>
     </div>
   );

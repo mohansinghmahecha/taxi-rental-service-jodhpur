@@ -17,6 +17,10 @@ import Floating from "./components/WhatsApp/Floating.js";
 import SeightSeenPage from "./components/sightSeensPage/SightSeenPage.js";
 import Reviews from "./components/small-containers/Reviews.js";
 import OneWayTaxi from "./components/one-way-taxi/OneWayTaxi.js";
+import RefundPolicy from "./components/important/RefundPolicy.js";
+import PrivacyPolicy from "./components/important/PrivacyPolicy.js";
+import CancilationPolicy from "./components/important/CancilationPolicy.js";
+import JodhpurBlog from "./components/blogs/jodhpur/JodhpurBlog.js";
 
 export default function App() {
   return (
@@ -34,20 +38,24 @@ export default function App() {
                 <OurPackages />
                 <LocationOfffer /> {/* Popular Destinations */}
                 <NormalParagraph />
-
                 <Reviews />
                 <Partners />
               </>
             }
           />
-          <Route path="/onewaytaxi/:cityName" element={<SeightSeenPage/>} />
+          <Route path="/onewaytaxi/:cityName" element={<SeightSeenPage />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contect-us" element={<ContectUs />} />
           <Route
             path="/taxi-services/:LocationName"
             element={<DetailedInfo />}
           />
-          <Route path="/one-way-taxi" element={<OneWayTaxi/>}/>
+          <Route path="/one-way-taxi" element={<OneWayTaxi />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
+          <Route path="/priviacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/cancellation-policy" element={<CancilationPolicy />} />
+          {/* blog routes */}
+          <Route path="/car-rent-jodhpur" element={<JodhpurBlog />} />
 
           <Route path="/*" element={<NotFound />} />
         </Routes>
