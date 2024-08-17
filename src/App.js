@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { Suspense } from "react";
 import Intro from "./components/introduction/Intro";
 import MainNevbar from "./components/navbar/MainNevbar";
 import OurPackages from "./components/our-packages/OurPackages";
@@ -16,7 +17,6 @@ import ContectUs from "./components/contect-us/ContectUs.js";
 import Floating from "./components/WhatsApp/Floating.js";
 import SeightSeenPage from "./components/sightSeensPage/SightSeenPage.js";
 import Reviews from "./components/small-containers/Reviews.js";
-import OneWayTaxi from "./components/one-way-taxi/OneWayTaxi.js";
 import RefundPolicy from "./components/important/RefundPolicy.js";
 import PrivacyPolicy from "./components/important/PrivacyPolicy.js";
 import CancilationPolicy from "./components/important/CancilationPolicy.js";
@@ -26,6 +26,11 @@ import PushkatBlog from "./components/blogs/pushkar/PushkatBlog.js";
 import DelhiBlog from "./components/blogs/delhi/DelhiBlog.js";
 
 export default function App() {
+  // Step 1: Lazy load the OneWayTaxi component
+  const OneWayTaxi = React.lazy(() =>
+    import("./components/one-way-taxi/OneWayTaxi.js")
+  );
+
   return (
     <BrowserRouter>
       <div className="bg-white">
@@ -53,7 +58,14 @@ export default function App() {
             path="/taxi-services/:LocationName"
             element={<DetailedInfo />}
           />
-          <Route path="/one-way-taxi" element={<OneWayTaxi />} />
+          <Route
+            path="/one-way-taxi"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <OneWayTaxi />
+              </Suspense>
+            }
+          />
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/priviacy-policy" element={<PrivacyPolicy />} />
           <Route path="/cancellation-policy" element={<CancilationPolicy />} />
