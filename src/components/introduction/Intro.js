@@ -10,14 +10,14 @@ export default function Intro() {
           WELCOME TO JCR CAB & CAR RENTAL RAJASTHAN
         </p>
 
-        <span className="paragraph">
+        <p className="text-start ">
           Experience the magic of Jodhpur at your own pace. Our diverse fleet,
           from budget-friendly hatchbacks to luxurious sedans, caters to every
           need. Explore the iconic Mehrangarh Fort, indulge in local cuisine, or
           simply soak in the city's vibrant energy. Enjoy hassle-free travel
           with our easy online booking and round-the-clock assistance. Whether
           it's a family vacation, business trip, or solo adventure
-        </span>
+        </p>
         <p>
           we provide service 24*7 for your cab and taxi rental needs and queries
           about online and offline cab booking in jodhpur. We have well Trained

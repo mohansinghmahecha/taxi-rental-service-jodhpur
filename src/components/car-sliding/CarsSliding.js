@@ -14,7 +14,7 @@ export default function CarsSliding() {
       Name: "INNOVA CRYSTA",
       Occupancy: "6/7",
       InsideCity: "8h/80km,3000rs-12h/100km,3500rs",
-      Outsidestation: "17rs/km {300km daily}",
+      Outsidestation: "17rs/km || 300km daily",
       Drivernightcharge: "300rs",
     },
     {
@@ -23,7 +23,7 @@ export default function CarsSliding() {
       Name: "TOYOTA INNOVA",
       Occupancy: "6/7",
       InsideCity: "8h/80km,3000rs-12h/100km,3500rs",
-      Outsidestation: "17rs/km {300km daily}",
+      Outsidestation: "17rs/km || 300km daily",
       Drivernightcharge: "300rs",
     },
     {
@@ -32,7 +32,7 @@ export default function CarsSliding() {
       Name: "TOYOTA ETIOS",
       Occupancy: "4",
       InsideCity: "8h/80km, 2000rs-12h/100km,2400rs",
-      Outsidestation: "11rs/km {300km daily}",
+      Outsidestation: "11rs/km || 300km daily",
       Drivernightcharge: "300rs",
     },
     {
@@ -41,7 +41,7 @@ export default function CarsSliding() {
       Name: "SWIFT DZIRE",
       Occupancy: "4",
       InsideCity: "8h/80km, 2000rs-12h/100km,2400rs",
-      Outsidestation: "11rs/km {300km daily}",
+      Outsidestation: "11rs/km || 300km daily",
       Drivernightcharge: "300rs",
     },
     {
@@ -50,7 +50,7 @@ export default function CarsSliding() {
       Name: "TEMPO TRAVELLER",
       Occupancy: "12",
       InsideCity: "8h/80km,4500rs-12h/100km,4500rs",
-      Outsidestation: "25rs per km {300km daily}",
+      Outsidestation: "25rs per km || 300km daily",
       Drivernightcharge: "300rs",
     },
     {
@@ -59,7 +59,7 @@ export default function CarsSliding() {
       Name: "TEMPO TRAVELLER",
       Occupancy: "17",
       InsideCity: "8h/80km,4500rs-12h/100km,5500rs",
-      Outsidestation: "27rs per km {300km daily}",
+      Outsidestation: "27rs per km || 300km daily",
       Drivernightcharge: "300rs",
     },
   ];

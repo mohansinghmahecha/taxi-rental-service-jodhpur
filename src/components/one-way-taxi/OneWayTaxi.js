@@ -68,7 +68,12 @@ export default function OneWayTaxi() {
             <div className="flex gap-10 flex-wrap justify-center p-4">
               {locationdataforVisit.map((location, index) => (
                 <Link to={location.navigate} key={index}>
-                  <div className="w-[333px] h-[380px] rounded-lg p-4 border bg-white">
+                  <div
+                    className="w-[333px] h-[380px] rounded-lg p-4 border bg-white "
+                    onClick={() => {
+                      window.scroll({ top: "0", behavior: "smooth" });
+                    }}
+                  >
                     <div className="w-full h-[300px] overflow-hidden">
                       <img
                         className="hover:cursor-pointer hover:-translate-y-6"

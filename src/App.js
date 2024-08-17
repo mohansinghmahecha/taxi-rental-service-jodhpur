@@ -26,7 +26,7 @@ import PushkatBlog from "./components/blogs/pushkar/PushkatBlog.js";
 import DelhiBlog from "./components/blogs/delhi/DelhiBlog.js";
 
 export default function App() {
-  // Step 1: Lazy load the OneWayTaxi component
+  // Lazy load the OneWayTaxi component
   const OneWayTaxi = React.lazy(() =>
     import("./components/one-way-taxi/OneWayTaxi.js")
   );
@@ -56,7 +56,7 @@ export default function App() {
           <Route path="/contect-us" element={<ContectUs />} />
           <Route
             path="/taxi-services/:LocationName"
-            element={<DetailedInfo />}
+            element={<DetailedInfo />} /* texi services in details */
           />
           <Route
             path="/one-way-taxi"

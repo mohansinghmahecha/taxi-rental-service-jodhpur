@@ -1,17 +1,17 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import img1 from "../../assets/car.jpg"; // Assuming a generic default image
-import Partners from "../our-partners/Partners";
-import "./CardsDetail.css";
-import Mehrangarh from "../../assets/mehrangadh-right.jpg";
-import rajasthaniMan from "../../assets/rajasthani-man.jpg";
-import barmerImage from "../../assets/barmer.jpg";
-import jaipur from "../../assets/jaipur.jpg";
-import paliImage from "../../assets/pali.jpg";
-import osianImage from "../../assets/ossian.jpg";
-import WhyChooseUs from "../small-containers/WhyChooseUs";
+  import React from "react";
+  import { useParams } from "react-router-dom";
+  import img1 from "../../assets/premium_photo-1661962428918-6a57ab674e23.jpg"; // Assuming a generic default image
+  import Partners from "../our-partners/Partners";
+  import "./CardsDetail.css";
+  import Mehrangarh from "../../assets/mehrangadh-right.jpg";
+  import rajasthaniMan from "../../assets/rajasthani-man.jpg";
+  import barmerImage from "../../assets/barmer.jpg";
+  import jaipur from "../../assets/jaipur.jpg";
+  import paliImage from "../../assets/pali.jpg";
+  import osianImage from "../../assets/ossian.jpg";
+  import WhyChooseUs from "../small-containers/WhyChooseUs";
 
-export default function DetailedInfo() {
+  export default function DetailedInfo() {
   const { LocationName } = useParams();
 
   const detailedData = {
@@ -73,7 +73,7 @@ export default function DetailedInfo() {
         </div>
       ),
       paragraphs: (
-        <div>
+        <div className="p-4">
           <p className="text-center m-4">
             By choosing a{" "}
             <span className="font-bold"> taxi service in Jaipur</span>, you can
@@ -207,7 +207,7 @@ export default function DetailedInfo() {
     },
     jodhpur: {
       description: (
-        <div>
+        <div className="p-4">
           <p className="p-box">
             Jodhpur, the Blue City of Rajasthan, is a mesmerizing blend of
             history, culture, and architectural brilliance. Known for its
@@ -246,7 +246,10 @@ export default function DetailedInfo() {
             the Rajputs. A taxi ride to Mehrangarh Fort is a must for anyone
             visiting Jodhpur.
           </p>
-
+        </div>
+      ),
+      paragraphs: (
+        <div className="p-4">
           <ul className="p-box">
             <li>
               <strong>Mehrangarh Fort Museum</strong> - Explore the museum's
@@ -269,10 +272,6 @@ export default function DetailedInfo() {
               the Maharajas.
             </li>
           </ul>
-        </div>
-      ),
-      paragraphs: (
-        <>
           <p className="p-box">
             Not far from the fort is the <strong>Jaswant Thada</strong>, a
             stunning white marble cenotaph built in memory of Maharaja Jaswant
@@ -439,15 +438,15 @@ export default function DetailedInfo() {
             enthusiasts alike. With a taxi at your service, you can easily visit
             Toorji Ka Jhalra and other hidden gems in Jodhpur{" "}
           </p>
-        </>
+        </div>
       ),
       image: Mehrangarh,
     },
     Balotra: {
       description: (
         <>
-          <div>
-            <p>
+          <div className="p-4">
+            <p className="mt-8">
               Balotra, a small yet vibrant town located in the Barmer district
               of Rajasthan, is an emerging destination that offers a unique
               blend of cultural heritage, religious significance, and
@@ -462,7 +461,7 @@ export default function DetailedInfo() {
               artisanal crafts, Balotra has something to offer for everyone.
             </p>
 
-            <p>
+            <p className="mt-8">
               One of the primary attractions in Balotra is the revered{" "}
               <strong>Rani Bhatiyani Temple</strong>, also known as Jasol Mata
               Temple. This temple is dedicated to Rani Bhatiyani, a local deity
@@ -475,7 +474,12 @@ export default function DetailedInfo() {
               visit to the Rani Bhatiyani Temple is a spiritual experience,
               offering peace and serenity to those who seek it.
             </p>
-
+          </div>
+        </>
+      ),
+      paragraphs: (
+        <>
+          <ul className="p-box p-4">
             <ul>
               <li>
                 <strong>Jasol Village</strong> - Explore the picturesque village
@@ -509,12 +513,6 @@ export default function DetailedInfo() {
               patterns, and high-quality craftsmanship make Balotra's textiles
               highly sought after by both locals and tourists alike.
             </p>
-          </div>
-        </>
-      ),
-      paragraphs: (
-        <>
-          <ul className="p-box">
             <li>
               <strong>Ajrakh Block Printing</strong> - Discover the art of
               Ajrakh block printing, a traditional technique used to create
@@ -532,7 +530,7 @@ export default function DetailedInfo() {
             </li>
           </ul>
 
-          <p className="p-box">
+          <p className="p-box p-4">
             Another notable attraction near Balotra is the{" "}
             <strong>Juna Fort</strong>, an ancient fortress that stands as a
             testament to the region's rich history. Although now in ruins, Juna
@@ -546,7 +544,7 @@ export default function DetailedInfo() {
             walls.
           </p>
 
-          <ul className="p-box">
+          <ul className="p-box p-4">
             <li>
               <strong>Historical Significance</strong> - Learn about the
               historical significance of Juna Fort, which played a crucial role
@@ -564,7 +562,7 @@ export default function DetailedInfo() {
             </li>
           </ul>
 
-          <p className="p-box">
+          <p className="p-box p-4">
             For those interested in the spiritual and cultural aspects of
             Rajasthan, a visit to the nearby <strong>Siwana Fort</strong> is
             highly recommended. Located about 40 kilometers from Balotra, Siwana
@@ -579,7 +577,7 @@ export default function DetailedInfo() {
             awaiting those who make the journey.
           </p>
 
-          <ul className="p-box">
+          <ul className="p-box p-4">
             <li>
               <strong>Thar Desert Views</strong> - Experience the breathtaking
               views of the Thar Desert and the surrounding countryside from the
@@ -597,7 +595,7 @@ export default function DetailedInfo() {
             </li>
           </ul>
 
-          <p className="p-box">
+          <p className="p-box p-4">
             In addition to its historical and cultural attractions, Balotra is
             also known for its vibrant local markets, where visitors can shop
             for a variety of goods ranging from traditional Rajasthani
@@ -612,7 +610,7 @@ export default function DetailedInfo() {
             piece of Rajasthan's rich heritage.
           </p>
 
-          <ul className="p-box">
+          <ul className="p-box p-4">
             <li>
               <strong>Rajasthani Jewelry</strong> - Shop for traditional
               Rajasthani jewelry in Balotra, known for its intricate designs and
@@ -630,7 +628,7 @@ export default function DetailedInfo() {
             </li>
           </ul>
 
-          <p className="p-box">
+          <p className="p-box p-4">
             Balotra is not just a destination for tourists; it is a place where
             you can immerse yourself in the rich culture and traditions of
             Rajasthan. From its ancient forts and temples to its thriving
@@ -650,7 +648,7 @@ export default function DetailedInfo() {
     Barmer: {
       description: (
         <>
-          <div>
+          <div className="p-4">
             <p>
               Barmer, a captivating town located in the Thar Desert of
               Rajasthan, is a destination steeped in history, culture, and
@@ -700,60 +698,59 @@ export default function DetailedInfo() {
                 </li>
               </ul>
             </div>
-
-            <p>
-              Barmer is also renowned for its thriving handicrafts industry,
-              which includes traditional Rajasthani textiles, wood carvings,
-              pottery, and embroidery. The town is famous for its{" "}
-              <strong>Ajrakh prints</strong>, a form of block printing that
-              dates back centuries and is known for its intricate patterns and
-              vibrant colors. Visitors to Barmer can explore the local markets
-              and workshops where these exquisite handicrafts are made. The
-              craftsmen of Barmer have passed down their skills through
-              generations, ensuring that the traditional techniques remain
-              alive. The colorful textiles, beautifully carved wooden items, and
-              intricately embroidered fabrics found in Barmer are a testament to
-              the town's rich cultural heritage and make for perfect souvenirs.
-            </p>
-
-            <ul>
-              <li>
-                <strong>Ajrakh Prints</strong> - Discover the traditional Ajrakh
-                block printing technique, known for its intricate patterns and
-                vibrant colors.
-              </li>
-              <li>
-                <strong>Wood Carvings</strong> - Explore the exquisite wood
-                carvings of Barmer, handcrafted by skilled artisans using
-                age-old techniques.
-              </li>
-              <li>
-                <strong>Embroidery and Textiles</strong> - Purchase beautifully
-                embroidered textiles and fabrics that reflect the rich cultural
-                heritage of Barmer.
-              </li>
-            </ul>
-
-            <p>
-              The <strong>Kiradu Temples</strong>, located about 35 kilometers
-              from Barmer, are another must-visit attraction. These ancient
-              temples, often referred to as the "Khajuraho of Rajasthan," are
-              renowned for their intricate stone carvings and architectural
-              beauty. The temples date back to the 11th century and were built
-              by the Paramara dynasty. Despite their age, the temples have
-              retained much of their original grandeur, with detailed carvings
-              depicting scenes from Hindu mythology, including gods, goddesses,
-              and various celestial beings. The most prominent of these temples
-              is the Someshwara Temple, dedicated to Lord Shiva, which features
-              a stunning array of carvings and sculptures. The Kiradu Temples
-              are a testament to the artistic and architectural excellence of
-              the period and are a must-see for history and art enthusiasts.
-            </p>
           </div>
         </>
       ),
       paragraphs: (
-        <>
+        <div className="p-4">
+          <p>
+            Barmer is also renowned for its thriving handicrafts industry, which
+            includes traditional Rajasthani textiles, wood carvings, pottery,
+            and embroidery. The town is famous for its{" "}
+            <strong>Ajrakh prints</strong>, a form of block printing that dates
+            back centuries and is known for its intricate patterns and vibrant
+            colors. Visitors to Barmer can explore the local markets and
+            workshops where these exquisite handicrafts are made. The craftsmen
+            of Barmer have passed down their skills through generations,
+            ensuring that the traditional techniques remain alive. The colorful
+            textiles, beautifully carved wooden items, and intricately
+            embroidered fabrics found in Barmer are a testament to the town's
+            rich cultural heritage and make for perfect souvenirs.
+          </p>
+
+          <ul>
+            <li>
+              <strong>Ajrakh Prints</strong> - Discover the traditional Ajrakh
+              block printing technique, known for its intricate patterns and
+              vibrant colors.
+            </li>
+            <li>
+              <strong>Wood Carvings</strong> - Explore the exquisite wood
+              carvings of Barmer, handcrafted by skilled artisans using age-old
+              techniques.
+            </li>
+            <li>
+              <strong>Embroidery and Textiles</strong> - Purchase beautifully
+              embroidered textiles and fabrics that reflect the rich cultural
+              heritage of Barmer.
+            </li>
+          </ul>
+
+          <p>
+            The <strong>Kiradu Temples</strong>, located about 35 kilometers
+            from Barmer, are another must-visit attraction. These ancient
+            temples, often referred to as the "Khajuraho of Rajasthan," are
+            renowned for their intricate stone carvings and architectural
+            beauty. The temples date back to the 11th century and were built by
+            the Paramara dynasty. Despite their age, the temples have retained
+            much of their original grandeur, with detailed carvings depicting
+            scenes from Hindu mythology, including gods, goddesses, and various
+            celestial beings. The most prominent of these temples is the
+            Someshwara Temple, dedicated to Lord Shiva, which features a
+            stunning array of carvings and sculptures. The Kiradu Temples are a
+            testament to the artistic and architectural excellence of the period
+            and are a must-see for history and art enthusiasts.
+          </p>
           <ul>
             <li>
               <strong>Architectural Marvel</strong> - Marvel at the intricate
@@ -883,16 +880,16 @@ export default function DetailedInfo() {
             Rajasthan, make sure to include Barmer in your itinerary and
             discover the cultural heart of this magnificent state.
           </p>
-        </>
+        </div>
       ),
       image: barmerImage,
     },
     Ajmer: {
       description: (
         <>
-          <h1>Explore Ajmer: The Spiritual Oasis of Rajasthan</h1>
+          <h1 className="text-center text-3xl font-bold ">Explore Ajmer: The Spiritual Oasis of Rajasthan</h1>
 
-          <div class="section">
+          <div className=" p-4 ">
             <p>
               Ajmer, nestled in the heart of Rajasthan, is a city that
               seamlessly blends history, spirituality, and natural beauty. Known
@@ -929,7 +926,7 @@ export default function DetailedInfo() {
             </ul>
           </div>
 
-          <div class="section">
+          <div className="p-4">
             <p>
               The <strong>Ajmer Sharif Dargah</strong> is undoubtedly the crown
               jewel of Ajmer. This sacred shrine, dedicated to Khwaja Moinuddin
@@ -946,25 +943,28 @@ export default function DetailedInfo() {
               marked by grand processions, spiritual discourses, and musical
               performances, creating an atmosphere of pure devotion and joy.
             </p>
-
-            <ul>
-              <li>
-                <strong>Historical Significance</strong> - Discover the rich
-                history of Taragarh Fort, one of the oldest hill forts in India,
-                built by the Chauhan dynasty in the 7th century.
-              </li>
-              <li>
-                <strong>Rajput Architecture</strong> - Explore the fort's Rajput
-                architecture, including massive gates, stone walls, bastions,
-                and labyrinthine tunnels.
-              </li>
-              <li>
-                <strong>Panoramic Views</strong> - Enjoy breathtaking panoramic
-                views of Ajmer and the Aravalli hills from the top of Taragarh
-                Fort, a must-visit for history buffs and photographers.
-              </li>
-            </ul>
           </div>
+        </>
+      ),
+      paragraphs: (
+        <div className="p-4">
+          <ul>
+            <li>
+              <strong>Historical Significance</strong> - Discover the rich
+              history of Taragarh Fort, one of the oldest hill forts in India,
+              built by the Chauhan dynasty in the 7th century.
+            </li>
+            <li>
+              <strong>Rajput Architecture</strong> - Explore the fort's Rajput
+              architecture, including massive gates, stone walls, bastions, and
+              labyrinthine tunnels.
+            </li>
+            <li>
+              <strong>Panoramic Views</strong> - Enjoy breathtaking panoramic
+              views of Ajmer and the Aravalli hills from the top of Taragarh
+              Fort, a must-visit for history buffs and photographers.
+            </li>
+          </ul>
 
           <div class="section">
             <p>
@@ -1156,16 +1156,16 @@ export default function DetailedInfo() {
               </li>
             </ul>
           </div>
-        </>
+        </div>
       ),
       image: img1,
     },
     Pali: {
       description: (
         <>
-          <div>
+          <div className="p-4">
             <div class="container">
-              <h1 className="font-bold">
+              <h1 className=" text-3xl font-bold">
                 Discover Pali: A Hidden Gem of Rajasthan
               </h1>
 
@@ -1223,7 +1223,7 @@ export default function DetailedInfo() {
       ),
       paragraphs: (
         <>
-          <div class="section">
+          <div className="p-4">
             <p>
               The <strong>Meghmani Fort</strong> is another remarkable
               attraction in Pali. This ancient fort, built during the medieval
@@ -1256,7 +1256,7 @@ export default function DetailedInfo() {
             </ul>
           </div>
 
-          <div class="section">
+          <div className="p-4">
             <p>
               For those interested in spiritual and historical sites, the{" "}
               <strong>Om Banna Temple</strong> (also known as the Bullet Baba
@@ -1289,7 +1289,7 @@ export default function DetailedInfo() {
             </ul>
           </div>
 
-          <div class="section">
+          <div className="p-4">
             <p>
               Pali is also home to the tranquil <strong>Bangur Museum</strong>,
               which showcases the region's rich cultural heritage and history.
@@ -1321,7 +1321,7 @@ export default function DetailedInfo() {
             </ul>
           </div>
 
-          <div class="section">
+          <div className="p-4">
             <p>
               For nature lovers, the <strong>Jawai Dam</strong> near Pali is a
               must-visit. This picturesque dam is surrounded by rolling hills
@@ -1341,8 +1341,11 @@ export default function DetailedInfo() {
     Osian: {
       description: (
         <>
-          <div class="container">
-            <h1 className="font-bold text-4xl"> Explore Ossian: The Ancient Jewel of Rajasthan</h1>
+          <div className="p-4">
+            <h1 className="font-bold text-4xl">
+              {" "}
+              Explore Ossian: The Ancient Jewel of Rajasthan
+            </h1>
 
             <div class="section">
               <p className="p-box">
@@ -1397,7 +1400,7 @@ export default function DetailedInfo() {
       ),
       paragraphs: (
         <>
-          <div class="section">
+          <div className="p-4">
             <p className="p-box">
               Another notable site in Ossian is the <strong>Sun Temple</strong>,
               dedicated to the Sun God, Surya. This temple is renowned for its
@@ -1431,7 +1434,7 @@ export default function DetailedInfo() {
             </ul>
           </div>
 
-          <div class="section">
+          <div className="p-4">
             <p className="p-box">
               The <strong>Mahavira Temple</strong> is another important landmark
               in Ossian, dedicated to Lord Mahavira, the 24th Tirthankara. This
@@ -1463,7 +1466,7 @@ export default function DetailedInfo() {
             </ul>
           </div>
 
-          <div class="section">
+          <div className="p-4">
             <p className="p-box">
               Ossian also boasts the <strong>Ranakpur Fort</strong>, an ancient
               fortification that adds to the town's historical charm. Although
@@ -1495,7 +1498,7 @@ export default function DetailedInfo() {
             </ul>
           </div>
 
-          <div class="section">
+          <div className="p-4">
             <p className="p-box">
               The <strong>Ossian Desert</strong> surrounding the town offers a
               serene and picturesque setting for nature enthusiasts. The desert
@@ -1526,7 +1529,7 @@ export default function DetailedInfo() {
             </ul>
           </div>
 
-          <div class="section">
+          <div className="p-4">
             <p className="p-box">
               For those interested in local crafts, the{" "}
               <strong>Ossian Markets</strong> offer a vibrant array of
@@ -1583,4 +1586,4 @@ export default function DetailedInfo() {
       <Partners />
     </>
   );
-}
+  }

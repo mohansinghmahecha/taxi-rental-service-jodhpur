@@ -6,7 +6,7 @@
 }
 
 .logo-size {
-  font-size: 2rem;
+  font-size: 3rem;
   position: relative;
   display: inline-block;
   border-radius: 50%;
@@ -44,7 +44,7 @@
 
 /* Call button - Running background effect */
 .whatsapp div:nth-child(2) .logo-size {
-  font-size: 2.2rem;
+  font-size: 3rem;
   /* Ensure the font size is the same */
   padding: 2px;
   /* Increase padding to match the WhatsApp button's size */

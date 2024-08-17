@@ -24,8 +24,10 @@ export default function Footer() {
         </div>
 
         <div>
-          <p>Support</p>
-          <p className="mt-10">Call Us</p>
+          <p className="decoration-dashed	text-white mt-10">Support</p>
+          <p className=" hover:cursor-pointer mt-2" onClick={()=>{
+            window.location.href = "tel:+919001502506";
+          }}>Call Us</p>
           <p
             className="hover:cursor-pointer"
             onClick={() => {
@@ -37,9 +39,9 @@ export default function Footer() {
         </div>
 
         <div>
-          <p>About Us</p>
+          <p className="decoration-dashed	text-white mt-10"> About Us</p>
           <Link className="hover:cursor-pointer" to="/about-us">
-            <p className="mt-10" onClick={scrollToTop}>
+            <p className="mt-2" onClick={scrollToTop}>
               Our Story
             </p>
           </Link>
@@ -54,8 +56,8 @@ export default function Footer() {
           </Link>
         </div>
         <div>
-          <p>Contact Info</p>
-          <p className="mt-10">
+          <p className="decoration-dashed	text-white mt-10">Contact Info</p>
+          <p className="mt-2">
             Near Airport Road 5 Batti Circle Jodhpur , 342001
           </p>
           <p>+91 9001502506</p>
