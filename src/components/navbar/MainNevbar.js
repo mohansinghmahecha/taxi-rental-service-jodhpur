@@ -1,4 +1,4 @@
-import logo from "../../assets/JCR_Logo_white.webp";
+import logo from "../../assets/main-logo-white.webp";
 import NavBarMainList from "./NavBarMainList";
 import { Link } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";

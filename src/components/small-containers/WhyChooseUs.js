@@ -3,6 +3,8 @@ import { FaOilCan } from "react-icons/fa6";
 import { GiCarWheel } from "react-icons/gi";
 import { FaWifi } from "react-icons/fa";
 import { BsCashCoin } from "react-icons/bs";
+import { GrUserManager } from "react-icons/gr";
+import { GrUserSettings } from "react-icons/gr";
 
 export default function WhyChooseUs() {
   return (
@@ -16,7 +18,7 @@ export default function WhyChooseUs() {
           {/* item start */}
           <div className="flex justify-start items-start w-full">
             <div>
-              <BsCashCoin className="w-20 h-10" />
+              <BsCashCoin className="w-20 h-10 text-green-600" />
             </div>
             <div>
               <p>Affordable Price For Car Renting</p>
@@ -27,10 +29,10 @@ export default function WhyChooseUs() {
           {/* item start */}
           <div className="flex justify-start items-start w-full">
             <div>
-              <BsCashCoin className="w-20 h-10 text-green-400" />
+              <GrUserManager className="w-20 h-10 text-green-400" />
             </div>
             <div>
-              <p>Choose Us Now</p>
+              <p>Professionl Drivers</p>
             </div>
           </div>
 
@@ -51,7 +53,7 @@ export default function WhyChooseUs() {
           {/* item start */}
           <div className="flex justify-start items-start w-full">
             <div>
-              <GiCarWheel className="w-20 h-10" />
+              <GrUserSettings className="w-20 h-10" />
             </div>
             <div>
               <p>Fast Service</p>
