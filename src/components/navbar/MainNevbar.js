@@ -55,7 +55,7 @@ const MainNevbar = () => {
             Call us for Booking +919001502506
           </p>
           <span class="text-xs md:text-sm p-1 rounded-lg bg-orange-500">
-            contact@cartoursjodhpur.com
+            toursshreeganesh5@gmail.com
           </span>
           <FaFacebook
             onClick={FbBoxOpen}
