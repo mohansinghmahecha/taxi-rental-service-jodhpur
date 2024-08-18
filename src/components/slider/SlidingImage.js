@@ -1,8 +1,8 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
-import img1 from "../../assets/slide1.jpg";
-import img2 from "../../assets/rajasthan-wallpaper.jpg";
-import img3 from "../../assets/mehrangadh-right.jpg";
+import img1 from "../../assets/slide-image/slide1.webp";
+import img2 from "../../assets/slide-image/rajasthan-wallpaper.webp";
+import img3 from "../../assets/slide-image/mehrangadh-right.webp";
 import "react-slideshow-image/dist/styles.css";
 import "../navbar/MainNevbar.css";
 

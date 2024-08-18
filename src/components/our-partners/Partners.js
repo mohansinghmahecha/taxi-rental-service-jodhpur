@@ -90,7 +90,7 @@ export default function Partners() {
                   src={item.img}
                   alt={`Partner ${i}`}
                   className="partner-logo"
-                  loading="lazy"
+              
                 />
               ))}
             </div>

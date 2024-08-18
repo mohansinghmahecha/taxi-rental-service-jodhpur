@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import img1 from "../../assets/premium_photo-1661962428918-6a57ab674e23.jpg"; // Assuming a generic default image
 import Partners from "../our-partners/Partners";
 import "./CardsDetail.css";
-import Mehrangarh from "../../assets/mehrangadh-right.jpg";
+import Mehrangarh from "../../assets/slide-image/mehrangadh-right.webp";
 import rajasthaniMan from "../../assets/rajasthani-man.jpg";
 import barmerImage from "../../assets/barmer.jpg";
 import jaipur from "../../assets/jaipur.jpg";

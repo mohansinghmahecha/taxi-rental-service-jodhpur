@@ -1,9 +1,9 @@
 import "./LocationOffer.css";
-import jodhpur from "../assets/locations/jodhpur.jpg";
-import delhi from "../assets/locations/delhi.jpg";
-import JaipurCity from "../assets/locations/jaipur-city.jpg";
-import jaisalmer from "../assets/locations/jaisalmer.jpg";
-import pushkar from "../assets/locations/pushkar.jpg";
+import jodhpur from "../assets/locations/jodhpur.webp";
+import delhi from "../assets/locations/delhi.webp";
+import JaipurCity from "../assets/locations/jaipur-city.webp";
+import jaisalmer from "../assets/locations/jaisalmer.webp";
+import pushkar from "../assets/locations/pushkar.webp";
 import fallbackImage from "../assets/locations/fallback.webp";
 import { Link } from "react-router-dom";
 import { useEffect, useCallback, useMemo } from "react";

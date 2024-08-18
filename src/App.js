@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutUs from "./components/about-us/AboutUs.js";
 
 import Footer from "./components/footer/Footer.js";
-import DetailedInfo from "./components/taxi-services/DetailedInfo.js";
+// import DetailedInfo from "./components/taxi-services/DetailedInfo.js";
 import LocationOfffer from "./browse-location/LocationOffer.js";
 import Partners from "./components/our-partners/Partners.js";
 import NotFound from "./components/not-found/NotFound.js";
@@ -32,11 +32,14 @@ export default function App() {
     import("./components/one-way-taxi/OneWayTaxi.js")
   );
 
+  const DetailedInfo = React.lazy(() =>
+    import("./components/taxi-services/DetailedInfo.js")
+  );
   return (
     <BrowserRouter>
       <div className="bg-white">
         <MainNevbar />
-        <ScrollToTop/>
+        <ScrollToTop />
 
         <Routes>
           <Route
@@ -58,7 +61,11 @@ export default function App() {
           <Route path="/contect-us" element={<ContectUs />} />
           <Route
             path="/taxi-services/:LocationName"
-            element={<DetailedInfo />} /* texi services in details */
+            element={
+              <Suspense fallback={<div>Loading.. Our Blog.</div>}>
+                <DetailedInfo />
+              </Suspense>
+            } /* texi services in details */
           />
           <Route
             path="/one-way-taxi"
