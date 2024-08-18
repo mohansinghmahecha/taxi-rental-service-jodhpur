@@ -66,18 +66,18 @@ export default function CarsSliding() {
 
   return (
     <div className="main">
-      <div className="constainer flex flex-wrap gap-8 p-4 box">
+      <div className="constainer flex flex-wrap  gap-8  p-4 box ">
         {carData.map((item, index) => (
-          <div key={index} className="block rounded-lg shadow-md">
+          <div key={index} className=" block rounded-lg shadow-xl">
             <img
               src={item.img}
-              alt={item.Name} // Update alt text to describe the image
-              width={300} // Set an explicit width for the image
-              height={200} // Set an explicit height for the image
+              alt={item.img}
               style={{
                 objectFit: "cover",
                 padding: "10px",
-                display: "block",
+                display: "flex",
+                width: "auto",
+                height: "200px",
                 margin: "auto",
               }}
             />
@@ -90,7 +90,7 @@ export default function CarsSliding() {
               <p className="">{item.Occupancy}</p>
             </div>
 
-            <div className="flex text-start p-2 border border-gray-400">
+            <div className="flex text-start  p-2 border border-gray-400">
               <p className="font-bold">InsideCity:&nbsp;</p>
               <p>{item.InsideCity}</p>
             </div>
