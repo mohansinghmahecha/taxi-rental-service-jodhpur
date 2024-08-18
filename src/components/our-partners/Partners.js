@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css"; // Ensure your CSS file path is correct
 import "./Partner.css";
-import oyo from "../../assets/oyo.png";
+import oyo from "../../assets/partners/oyo.png";
 import aha from "../../assets/partners/AHA-Taxis.png";
 import hindusthantimes from "../../assets/partners/Hindustan-Times-Logo.png";
 import justdial from "../../assets/partners/justdial.jpg";

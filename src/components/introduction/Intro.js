@@ -1,5 +1,5 @@
 import car2 from "../../assets/jeeps.jpg";
-import bigcar from "../../assets/car.jpg";
+
 import "./Intro.css";
 
 export default function Intro() {
@@ -53,10 +53,9 @@ export default function Intro() {
       <div className="image-container img2 ">
         <img
           src={car2}
-          alt={bigcar} 
+          alt={car2}
           width={550}
           height={100}
-
           className="  border border-black rounded-full  p-10 "
         />
       </div>

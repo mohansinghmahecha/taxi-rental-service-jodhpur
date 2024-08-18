@@ -1,17 +1,17 @@
-  import React from "react";
-  import { useParams } from "react-router-dom";
-  import img1 from "../../assets/premium_photo-1661962428918-6a57ab674e23.jpg"; // Assuming a generic default image
-  import Partners from "../our-partners/Partners";
-  import "./CardsDetail.css";
-  import Mehrangarh from "../../assets/mehrangadh-right.jpg";
-  import rajasthaniMan from "../../assets/rajasthani-man.jpg";
-  import barmerImage from "../../assets/barmer.jpg";
-  import jaipur from "../../assets/jaipur.jpg";
-  import paliImage from "../../assets/pali.jpg";
-  import osianImage from "../../assets/ossian.jpg";
-  import WhyChooseUs from "../small-containers/WhyChooseUs";
+import React from "react";
+import { useParams } from "react-router-dom";
+import img1 from "../../assets/premium_photo-1661962428918-6a57ab674e23.jpg"; // Assuming a generic default image
+import Partners from "../our-partners/Partners";
+import "./CardsDetail.css";
+import Mehrangarh from "../../assets/mehrangadh-right.jpg";
+import rajasthaniMan from "../../assets/rajasthani-man.jpg";
+import barmerImage from "../../assets/barmer.jpg";
+import jaipur from "../../assets/jaipur.jpg";
+import paliImage from "../../assets/pali.jpg";
+import osianImage from "../../assets/ossian.jpg";
+import WhyChooseUs from "../small-containers/WhyChooseUs";
 
-  export default function DetailedInfo() {
+export default function DetailedInfo() {
   const { LocationName } = useParams();
 
   const detailedData = {
@@ -887,7 +887,9 @@
     Ajmer: {
       description: (
         <>
-          <h1 className="text-center text-3xl font-bold ">Explore Ajmer: The Spiritual Oasis of Rajasthan</h1>
+          <h1 className="text-center text-3xl font-bold ">
+            Explore Ajmer: The Spiritual Oasis of Rajasthan
+          </h1>
 
           <div className=" p-4 ">
             <p>
@@ -1165,7 +1167,7 @@
         <>
           <div className="p-4">
             <div class="container">
-              <h1 className=" text-3xl font-bold">
+              <h1 className=" text-3xl text-center font-bold">
                 Discover Pali: A Hidden Gem of Rajasthan
               </h1>
 
@@ -1342,8 +1344,8 @@
       description: (
         <>
           <div className="p-4">
-            <h1 className="font-bold text-4xl">
-              {" "}
+            <h1 className="font-bold text-4xl text-center">
+              
               Explore Ossian: The Ancient Jewel of Rajasthan
             </h1>
 
@@ -1565,25 +1567,27 @@
   };
 
   return (
-    <>
-      <h1 className="text-center text-4xl mt-10 text-orange-500 font-bold">
-        Welcome in {LocationName}
-      </h1>
-      <div className="  w-full dynamic-conainer ">
-        <div className="">
-          <p className="p-box">{detailedData[LocationName].description}</p>
+    <div>
+      <div className="w-full">
+        <h1 className="text-center text-4xl mt-10 text-orange-500 font-bold">
+          Welcome in {LocationName}
+        </h1>
+        <div className=" dynamic-conainer ">
+          <div className="">
+            <p className="p-box">{detailedData[LocationName].description}</p>
+          </div>
+          <img
+            src={detailedData[LocationName].image}
+            alt={detailedData[LocationName].image}
+            loading="lazy"
+            className="image-container"
+          />
         </div>
-        <img
-          src={detailedData[LocationName].image}
-          alt={detailedData[LocationName].image}
-          loading="lazy"
-          className="image-container"
-        />
+        <div className="p-box">{detailedData[LocationName].paragraphs}</div>
       </div>
-      <div className="p-box">{detailedData[LocationName].paragraphs}</div>
 
       <WhyChooseUs />
       <Partners />
-    </>
+    </div>
   );
-  }
+}

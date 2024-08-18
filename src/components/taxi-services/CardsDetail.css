@@ -1,16 +1,29 @@
 .p-box {
-    margin-left: 130px;
-    margin-top: 20px;
+    margin: 2px auto;
+    /* Centers the content horizontally */
+    padding: 5px;
+    /* Adds padding inside the box */
+    max-width: 1300px;
+    /* Limits the maximum width for better control on larger screens */
+    width: 95%;
 }
+  
 
 .dynamic-conainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    gap: 15px;
+    /* Adds space between the grid items */
+  
+    /* Constrains the grid width */
+    margin: 0 auto;
+    /* Centers the grid container */
+    width: 100%;
+    /* Ensures the grid container spans the full available width */
 }
 
 .image-container {
-    display: flex;
     background-color: orange;
     justify-content: center;
     align-items: center;
@@ -19,30 +32,29 @@
     object-fit: contain;
     overflow: hidden;
     border-radius: 10px;
-    /* Rounded corners for a softer look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 2px;
-    margin-right: 5px;
-
-    /* 3D shadow effect */
-
-    /* Prevents overflow and extra space */
+    margin-top: 50px;
+ 
+    /* Centers the image container */
 }
 
 .image-container img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
-    /* Ensures the image covers the container */
     display: block;
-    /* Prevents inline space issues */
 }
+
+/* Media Queries for Responsive Design */
 
 @media only screen and (min-width: 922px) {
     .p-box {
-        margin-left: 5px;
-        margin-top: 20px;
-        margin-right: 5px;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-right: 10px;
+        padding: 10px 20px;
+        /* Adds padding for larger screens */
     }
 }
 
@@ -50,22 +62,34 @@
     .p-box {
         margin-left: 10px;
         margin-top: 10px;
+        margin-right: 10px;
+        padding: 10px 15px;
+        /* Adjust padding for medium screens */
+    }
+
+    .dynamic-conainer {
+        gap: 10px;
+        /* Reduces space between grid items on medium screens */
     }
 }
 
 @media only screen and (max-width: 600px) {
     .p-box {
-        margin-left: 10px;
-        margin-top: 20px;
-        margin-right: 10px;
+        padding: 2px;
+        /* Increases padding for better touch interaction */
+        max-width: 100%;
+        /* Removes max-width constraint on mobile */
+        margin: 5px 10px;
+        /* Adds some space on the sides */
     }
 
     .dynamic-conainer {
-        display: grid;
         grid-template-columns: 1fr;
         /* Single column layout */
         grid-template-rows: auto;
         /* Adjusts row height automatically */
+        gap: 10px;
+        /* Reduces space between grid items */
     }
 
     .image-container {
@@ -77,8 +101,6 @@
 
     .image-container img {
         max-height: 100%;
-        /* Ensures the image fits within its container */
         max-width: 100%;
-        /* Keeps the image within bounds */
     }
 }

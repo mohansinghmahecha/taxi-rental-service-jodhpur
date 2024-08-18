@@ -24,6 +24,7 @@ import JodhpurBlog from "./components/blogs/jodhpur/JodhpurBlog.js";
 import JaisalmerBlog from "./components/blogs/jaisalmer/JaisalmerBlog.js";
 import PushkatBlog from "./components/blogs/pushkar/PushkatBlog.js";
 import DelhiBlog from "./components/blogs/delhi/DelhiBlog.js";
+import ScrollToTop from "./components/ScrollToTop.js";
 
 export default function App() {
   // Lazy load the OneWayTaxi component
@@ -35,6 +36,7 @@ export default function App() {
     <BrowserRouter>
       <div className="bg-white">
         <MainNevbar />
+        <ScrollToTop/>
 
         <Routes>
           <Route
