@@ -1,7 +1,7 @@
 import React from "react";
-import hemaMalini from "../../assets/vip-reviews/hema-malini.jpg";
-import mukesh from "../../assets/vip-reviews/Mukesh.jpg";
-import kainaatArira from "../../assets/vip-reviews/kainaat-arira.png";
+import hemaMalini from "../../assets/vip-reviews/hema-malini.webp";
+import mukesh from "../../assets/vip-reviews/Mukesh.webp";
+import kainaatArira from "../../assets/vip-reviews/kainaat-arira.webp";
 
 export default function Reviews() {
   return (
@@ -15,7 +15,13 @@ export default function Reviews() {
           {/* item start */}
           <div className="flex flex-col justify-center items-center  min-h-[350px] w-[300px] bg-orange-400 rounded-lg">
             <div className="">
-              <img src={mukesh} alt="" className="rounded-full h-20" />
+              <img
+                src={mukesh}
+                alt="actor mukesh in car tours used our service"
+                width={100}
+                height={100}
+                className="rounded-full "
+              />
             </div>
 
             <p className="p-4">
@@ -33,7 +39,13 @@ export default function Reviews() {
           {/* item start */}
           <div className="flex flex-col justify-center items-center  min-h-[350px] w-[300px] bg-orange-400 rounded-lg">
             <div className="">
-              <img src={kainaatArira} alt="" className="rounded-full h-20" />
+              <img
+                src={kainaatArira}
+                alt=""
+                width={100}
+                height={100}
+                className="rounded-full "
+              />
             </div>
 
             <p className="p-4">
@@ -51,7 +63,13 @@ export default function Reviews() {
           {/* item start */}
           <div className="flex flex-col justify-center items-center min-h-[350px] w-[300px] bg-orange-400 rounded-lg">
             <div className="">
-              <img src={hemaMalini} alt="" className="rounded-full h-20" />
+              <img
+                src={hemaMalini}
+                alt=""
+                width={100}
+                height={100}
+                className="rounded-full mb-8"
+              />
             </div>
 
             <p className="p-4">

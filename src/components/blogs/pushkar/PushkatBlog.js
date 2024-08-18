@@ -1,5 +1,5 @@
 import React from "react";
-import pushkharlakh from "../../../assets/pushkar-lake.jpg";
+import pushkharlakh from "../../../assets/pushkar-lake.webp";
 
 export default function PushkatBlog() {
   return (

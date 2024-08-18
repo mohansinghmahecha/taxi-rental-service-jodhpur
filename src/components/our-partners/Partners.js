@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css"; // Ensure your CSS file path is correct
 import "./Partner.css";
-import oyo from "../../assets/partners/oyo.png";
-import aha from "../../assets/partners/AHA-Taxis.png";
-import hindusthantimes from "../../assets/partners/Hindustan-Times-Logo.png";
-import justdial from "../../assets/partners/justdial.jpg";
-import makemytrip from "../../assets/partners/Make-My-Trip-Logo.png";
-import rentcars from "../../assets/partners/rentalcars-com-.png";
-import rome from "../../assets/partners/rome.png";
-import treeboLogo from "../../assets/partners/treebo_logo.png";
-import tripadvisor from "../../assets/partners/tripadvisor.png";
+import oyo from "../../assets/partners/oyo.webp";
+import aha from "../../assets/partners/AHA-Taxis.webp";
+import hindusthantimes from "../../assets/partners/Hindustan-Times-Logo.webp";
+import justdial from "../../assets/partners/justdial.webp";
+import makemytrip from "../../assets/partners/Make-My-Trip-Logo.webp";
+import rentcars from "../../assets/partners/rentalcars-com.webp";
+import rome from "../../assets/partners/rome.webp";
+import treeboLogo from "../../assets/partners/treebo_logo.webp";
+import tripadvisor from "../../assets/partners/tripadvisor.webp";
 
 export default function Partners() {
   const partnersData = [

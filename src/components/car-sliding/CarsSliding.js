@@ -1,10 +1,10 @@
 import "./CarSliding.css";
-import innova_crysta from "../../assets/cars-details/innova_crysta.jpg";
-import swiftDezire from "../../assets/cars-details/SWIFT-DZIRE.jpg";
-import tempo1 from "../../assets/cars-details/TEMPO-TRAVELLER1.jpg";
-import tempo2 from "../../assets/cars-details/TEMPO-TRAVELLER.jpg";
-import etios from "../../assets/cars-details/TOYOTA-ETIOS.png";
-import innova from "../../assets/cars-details/TOYOTA-INNOVA.png";
+import innova_crysta from "../../assets/cars-details/innova_crysta.webp";
+import swiftDezire from "../../assets/cars-details/SWIFT-DZIRE.webp";
+import tempo1 from "../../assets/cars-details/TEMPO-TRAVELLER1.webp";
+import tempo2 from "../../assets/cars-details/TEMPO-TRAVELLER.webp";
+import etios from "../../assets/cars-details/TOYOTA-ETIOS.webp";
+import innova from "../../assets/cars-details/TOYOTA-INNOVA.webp";
 
 export default function CarsSliding() {
   const carData = [

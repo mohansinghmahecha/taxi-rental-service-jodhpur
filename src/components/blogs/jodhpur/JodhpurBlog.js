@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "../../../assets/backround-black.jpg";
+import backgroundImage from "../../../assets/backround-black.webp";
 
 export default function JodhpurBlog() {
   return (

@@ -1,5 +1,5 @@
 import "./Footer.css";
-import img1 from "../../assets/main-logo.jpg";
+import img1 from "../../assets/main-logo.webp";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="footer-container p-14">
         <div>
           <div>
-            <img src={img1} alt="" />
+            <img src={img1} alt="car tours jodhpur logo " width={250} height={200}/>
             <p>
               Welcome to the official website of Rajasthan Trips. We offer
               jodhpur tour and travlers
