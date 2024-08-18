@@ -14,7 +14,6 @@ import NotFound from "./components/not-found/NotFound.js";
 import NormalParagraph from "./components/small-containers/NormalParagraph.js";
 import ContectUs from "./components/contect-us/ContectUs.js";
 import Floating from "./components/WhatsApp/Floating.js";
-// import SeightSeenPage from "./components/sightSeensPage/SightSeenPage.js";
 import Reviews from "./components/small-containers/Reviews.js";
 import RefundPolicy from "./components/important/RefundPolicy.js";
 import PrivacyPolicy from "./components/important/PrivacyPolicy.js";

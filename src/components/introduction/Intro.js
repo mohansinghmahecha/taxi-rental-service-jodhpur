@@ -6,17 +6,26 @@ export default function Intro() {
   return (
     <div className="grid-container paragraph ">
       <div className="">
-        <p className="mb-5 font-bold text-center md:m-3 ">
-          WELCOME TO JCR CAB & CAR RENTAL RAJASTHAN
-        </p>
+        <h1 className="mb-5 font-bold text-center md:m-3 text-3xl text-yellow-500 underline-offset-auto	">
+          CAR TOURS JODHPUR
+        </h1>
+        <h2>
+          Car Tours Jodhpur is a Leading Provider of car, cab and taxi service
+          in jodhpur.Now you can easily book your favourite cab, taxi or car in
+          jodhpur at a reasonable price.
+        </h2>
 
         <p className="text-start ">
           Experience the magic of Jodhpur at your own pace. Our diverse fleet,
           from budget-friendly hatchbacks to luxurious sedans, caters to every
-          need. Explore the iconic Mehrangarh Fort, indulge in local cuisine, or
-          simply soak in the city's vibrant energy. Enjoy hassle-free travel
-          with our easy online booking and round-the-clock assistance. Whether
-          it's a family vacation, business trip, or solo adventure
+          need. Explore the iconic{" "}
+          <strong>
+            Mehrangarh Fort, indulge in local cuisine, or simply soak in the
+            city's vibrant energy.
+          </strong>{" "}
+          Enjoy hassle-free travel with our easy online booking and
+          round-the-clock assistance. Whether it's a family vacation, business
+          trip, or solo adventure
         </p>
         <p>
           we provide service 24*7 for your cab and taxi rental needs and queries
@@ -24,6 +33,15 @@ export default function Intro() {
           staff who thoroughly know all the local and rural area. Our growing
           base of loyal clients and riders is a testimony in itself that we are
           the best cab service provider in jodhpur.
+        </p>
+        <h3>
+          We offer tour taxi service in jodhpur rajasthan with certified drivers
+          and Clean new cars. you can book from here for local and outstation
+          tour.
+        </h3>
+        <p>
+          Our growing base of loyal clients and riders is a testimony in itself
+          that we are the <strong>best cab service provider in jodhpur.</strong>
         </p>
         <p>
           <ul>
