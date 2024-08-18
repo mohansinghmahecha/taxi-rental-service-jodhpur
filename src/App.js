@@ -14,7 +14,7 @@ import NotFound from "./components/not-found/NotFound.js";
 import NormalParagraph from "./components/small-containers/NormalParagraph.js";
 import ContectUs from "./components/contect-us/ContectUs.js";
 import Floating from "./components/WhatsApp/Floating.js";
-import SeightSeenPage from "./components/sightSeensPage/SightSeenPage.js";
+// import SeightSeenPage from "./components/sightSeensPage/SightSeenPage.js";
 import Reviews from "./components/small-containers/Reviews.js";
 import RefundPolicy from "./components/important/RefundPolicy.js";
 import PrivacyPolicy from "./components/important/PrivacyPolicy.js";
@@ -31,8 +31,13 @@ export default function App() {
     import("./components/one-way-taxi/OneWayTaxi.js")
   );
 
+  // details js lazy load
   const DetailedInfo = React.lazy(() =>
     import("./components/taxi-services/DetailedInfo.js")
+  );
+  // sight seen
+  const SeightSeenPage = React.lazy(() =>
+    import("./components/sightSeensPage/SightSeenPage.js")
   );
   return (
     <BrowserRouter>
@@ -55,7 +60,14 @@ export default function App() {
               </>
             }
           />
-          <Route path="/onewaytaxi/:cityName" element={<SeightSeenPage />} />
+          <Route
+            path="/onewaytaxi/:cityName"
+            element={
+              <Suspense fallback={<div>Our Schenious Are Loading</div>}>
+                <SeightSeenPage />
+              </Suspense>
+            }
+          />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contect-us" element={<ContectUs />} />
           <Route
