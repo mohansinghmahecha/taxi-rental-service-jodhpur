@@ -23,6 +23,7 @@ import JaisalmerBlog from "./components/blogs/jaisalmer/JaisalmerBlog.js";
 import PushkatBlog from "./components/blogs/pushkar/PushkatBlog.js";
 import DelhiBlog from "./components/blogs/delhi/DelhiBlog.js";
 import ScrollToTop from "./components/ScrollToTop.js";
+import TermAndConsition from "./components/important/TermAndConsition.js";
 
 export default function App() {
   // Lazy load the OneWayTaxi component
@@ -88,6 +89,7 @@ export default function App() {
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/priviacy-policy" element={<PrivacyPolicy />} />
           <Route path="/cancellation-policy" element={<CancilationPolicy />} />
+          <Route path="/term-and-conditions" element={<TermAndConsition />} />
           {/* blog routes */}
           <Route path="/car-rent-jodhpur" element={<JodhpurBlog />} />
           <Route path="/car-rent-jaisalmer" element={<JaisalmerBlog />} />

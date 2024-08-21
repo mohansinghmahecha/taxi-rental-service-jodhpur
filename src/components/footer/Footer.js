@@ -15,7 +15,12 @@ export default function Footer() {
       <div className="footer-container p-14">
         <div>
           <div>
-            <img src={img1} alt="car tours jodhpur logo " width={250} height={200}/>
+            <img
+              src={img1}
+              alt="car tours jodhpur logo "
+              width={250}
+              height={200}
+            />
             <p>
               Welcome to the official website of Rajasthan Trips. We offer
               jodhpur tour and travlers
@@ -25,9 +30,14 @@ export default function Footer() {
 
         <div>
           <p className="decoration-dashed	text-white mt-10">Support</p>
-          <p className=" hover:cursor-pointer mt-2" onClick={()=>{
-            window.location.href = "tel:+919001502506";
-          }}>Call Us</p>
+          <p
+            className=" hover:cursor-pointer mt-2"
+            onClick={() => {
+              window.location.href = "tel:+919001502506";
+            }}
+          >
+            Call Us
+          </p>
           <p
             className="hover:cursor-pointer"
             onClick={() => {
@@ -50,6 +60,9 @@ export default function Footer() {
           </Link>
           <Link to="/cancellation-policy">
             <p>Cancellations Policy</p>
+          </Link>
+          <Link to="/term-and-conditions">
+            <p>Term and condition</p>
           </Link>
           <Link to="/refund-policy">
             <p onClick={scrollToTop}>Refund policy</p>
