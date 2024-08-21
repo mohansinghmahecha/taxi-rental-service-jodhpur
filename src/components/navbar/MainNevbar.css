@@ -1,9 +1,33 @@
+/* Slideshow for mobile devices */
+
+
+/* Slideshow for laptop devices */
+.slide-laptop {
+    position: relative;
+    height: 560px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.p-laptop {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.innerp {
+    font-size: 1.2rem;
+    color: #fb923c;
+}
+
+
 .main-menu {
     width: 100%;
     height: auto;
-
 }
-.width-full{
+
+
+.width-full {
     width: 100%;
 }
 
@@ -12,7 +36,6 @@
     width: 100%;
     grid-template-columns: 120px 1fr 2fr 60px;
     grid-template-rows: 1fr;
-
 }
 
 .parent-component {
@@ -24,11 +47,10 @@
     align-items: center;
     position: relative;
     padding: 2px;
-    justify-items: center
+    justify-items: center;
 }
 
 .details {
-
     display: grid;
     position: absolute;
     grid-column-start: 1;
@@ -37,7 +59,6 @@
     top: 60px;
     height: 100px;
     width: 100%;
-
 }
 
 .itms {
@@ -50,9 +71,6 @@
     margin: 0px 10px 0px 10px;
     padding: 2px;
     display: inline;
-    border-top: 0px solid #009ddc;
-    border-left: 0px solid #009ddc;
-    border-right: 0px solid #009ddc;
     border-bottom: 1px solid #009ddc;
 }
 
@@ -66,14 +84,14 @@
     cursor: pointer;
     width: 100%;
     padding: 10px;
-    list-style: 'none';
+    list-style: none;
     margin: 0;
-
 }
 
 .custom-font {
     font-size: 14px;
 }
+
 .icon {
     position: absolute;
     left: 10px;
@@ -83,8 +101,9 @@
     opacity: 0.5;
     height: 400px;
     width: 100px;
-  }
-  .icon2 {
+}
+
+.icon2 {
     position: absolute;
     right: 10px;
     top: 30%;
@@ -93,43 +112,65 @@
     opacity: 0.5;
     height: 400px;
     width: 100px;
-  }
+}
 
-  /* sight seen  */
-  .one-way {
+/* sight seen  */
+.one-way {
     position: absolute;
-    top: 100%; /* Position submenu below the parent */
+    top: 100%;
+    /* Position submenu below the parent */
     left: 0;
     width: 100%;
-    background-color: #ffe066; /* Adjust background color as needed */
-    border: 1px solid #ccc; /* Example border styling */
+    background-color: #ffe066;
+    /* Adjust background color as needed */
+    border: 1px solid #ccc;
+    /* Example border styling */
     padding: 5px;
-  }
-  
-  .open-oneway:hover .one-way {
-    display: block; /* Show submenu when hovering over .open-oneway */
-  }
-  /* sight seen end */
-  
+}
 
-.mobile-submenu-maincontainer{
+.open-oneway:hover .one-way {
+    display: block;
+    /* Show submenu when hovering over .open-oneway */
+}
+
+/* sight seen end */
+
+.mobile-submenu-maincontainer {
     display: none;
 }
 
-
-
-
 @media only screen and (max-width: 749px) {
+
+    .slide-mobile {
+        height: 350px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .p-mobile {
+        font-weight: bold;
+
+        font-size: 25px;
+    }
+
+    .innerp {
+        font-size: 0.8rem;
+        color: #fb923c;
+    }
+
     .sub-main {
         display: none;
     }
-    .mobile-submenu-maincontainer{
+
+    .mobile-submenu-maincontainer {
         display: block;
         width: 100%;
         position: relative;
-
     }
-    .menu-container{
+
+    .menu-container {
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -137,19 +178,18 @@
         height: 50px;
         padding: 10px;
         align-items: left;
-       
-        
     }
-    .menu-box{
-        display: flex;        
+
+    .menu-box {
+        display: flex;
         width: 100%;
         padding: 10px;
         background-color: rgb(237, 208, 60);
         gap: 20px;
         font-size: large;
     }
+
     .icon {
-       
         position: absolute;
         left: 10px;
         top: 50%;
@@ -158,8 +198,9 @@
         opacity: 0.6;
         height: 130px;
         width: 100px;
-      }
-      .icon2 {
+    }
+
+    .icon2 {
         position: absolute;
         right: 10px;
         top: 50%;
@@ -168,31 +209,23 @@
         opacity: 0.6;
         height: 130px;
         width: 100px;
-      }
-
-
-
-
-
-
+    }
 }
 
 @media only screen and (min-width: 749px) and (max-width: 1057px) {
     .main-menu {
         width: 100%;
         height: auto;
-    
     }
-    
+
     .custom-font {
         font-size: 12px;
     }
+
     .sub-main {
         display: grid;
         width: 100%;
         grid-template-columns: 10px 1fr 2fr 4px;
         grid-template-rows: 1fr;
-    
     }
-    
 }

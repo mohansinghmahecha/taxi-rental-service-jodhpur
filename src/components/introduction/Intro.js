@@ -1,4 +1,4 @@
-import car2 from "../../assets/jeeps.webp";
+import car2 from "../../assets/intro-pic.jpg";
 
 import "./Intro.css";
 
@@ -72,9 +72,9 @@ export default function Intro() {
         <img
           src={car2}
           alt={car2}
-          width={550}
+          width={450}
           height={100}
-          className="  border border-black rounded-full  p-10 "
+          className="  border  "
         />
       </div>
     </div>

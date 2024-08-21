@@ -1,5 +1,7 @@
 import "./Footer.css";
 import img1 from "../../assets/main-logo.webp";
+
+
 import { Link } from "react-router-dom";
 
 export default function Footer() {

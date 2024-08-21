@@ -76,7 +76,7 @@ export default function Partners() {
   const chunkedPartnersData = chunkArray(partnersData, chunkSize);
 
   return (
-    <div className="p-20 bg-orange-500 mt-0">
+    <div className="p-1 bg-orange-500 mt-0">
       <h2 className="mt-2 text-3xl font-semibold text-center p-8">
         Our Partners
       </h2>
@@ -90,7 +90,6 @@ export default function Partners() {
                   src={item.img}
                   alt={`Partner ${i}`}
                   className="partner-logo"
-              
                 />
               ))}
             </div>

@@ -2,10 +2,11 @@ import logo from "../../assets/main-logo-white.webp";
 import NavBarMainList from "./NavBarMainList";
 import { Link } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+
 import { RiMenu3Fill } from "react-icons/ri";
 import { MdArrowDropDown } from "react-icons/md";
 import "./MainNevbar.css";
+import instaLogo from "../../assets/insta-logo.png";
 import { useState } from "react";
 
 const MainNevbar = () => {
@@ -59,11 +60,14 @@ const MainNevbar = () => {
           </span>
           <FaFacebook
             onClick={FbBoxOpen}
-            className="w-8 h-10 text-blue-500 ml-1"
+            className="w-8 h-10 text-blue-500 ml-1 hover:cursor-pointer"
           />
-          <AiFillInstagram
+          <img
+            src={instaLogo}
+            alt="social-media-icon"
+            width={35}
+            className="ml-[4px] hover:cursor-pointer"
             onClick={intaBoxOpen}
-            className="w-8 h-10 text-red-500 ml-1"
           />
         </div>
 

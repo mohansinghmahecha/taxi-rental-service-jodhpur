@@ -1,6 +1,6 @@
 import React from "react";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { MdPhoneCallback } from "react-icons/md";
+import callLogo from "../../assets/call-logo.png";
+import whatsappLogo from "../../assets/whatsapp-logo.png";
 import "./Floating.css";
 
 function whatsappopen() {
@@ -15,17 +15,20 @@ export default function Floating() {
   return (
     <div className="whatsapp flex flex-col w-30 gap-4">
       <div>
-        <IoLogoWhatsapp
-          className="text-green-900 logo-size animate-bounce hover:cursor-pointer"
+        <img
+          src={whatsappLogo}
+          className="logo-size animate-bounce hover:cursor-pointer w-10 h-10"
+          alt="whatsApp"
           onClick={whatsappopen}
         />
-      </div>
-      <div>
-        <MdPhoneCallback
-          className="text-blue-900 logo-size hover:cursor-pointer"
-          onClick={callNumber} // Add this onClick handler
+        <img
+          src={callLogo}
+          alt="call-logo"
+          className="  hover:cursor-pointer  w-10 h-10 mt-2"
+          onClick={callNumber}
         />
       </div>
+      <div></div>
     </div>
   );
 }

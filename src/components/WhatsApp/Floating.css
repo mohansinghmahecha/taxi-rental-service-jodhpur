@@ -9,7 +9,7 @@
   font-size: 3rem;
   position: relative;
   display: inline-block;
-  border-radius: 50%;
+
 }
 
 .whatsapp div {
@@ -17,42 +17,10 @@
   width: fit-content;
 }
 
-/* WhatsApp button - Border effect */
-.whatsapp div:first-child::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  border-radius: 50%;
-  background: linear-gradient(45deg, #ff00cc, #bcbce1, #00ffcc, #ff0033);
-  background-size: 400% 400%;
-  z-index: -1;
-  animation: borderShine 5s linear infinite;
-  mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  /* Ensures the gradient is only visible on the border */
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  /* Ensures compatibility with WebKit browsers */
-  mask-composite: exclude;
-  -webkit-mask-composite: xor;
-}
+
 
 /* Call button - Running background effect */
-.whatsapp div:nth-child(2) .logo-size {
-  font-size: 3rem;
-  /* Ensure the font size is the same */
-  padding: 2px;
-  /* Increase padding to match the WhatsApp button's size */
-  background: linear-gradient(45deg, #0066ff, #3686ff, #81e00d, #51d639);
-  background-size: 400% 400%;
-  animation: backgroundRun 5s linear infinite;
-  border-radius: 50%;
-}
+
 
 @keyframes borderShine {
   0% {
