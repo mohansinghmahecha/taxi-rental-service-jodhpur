@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./CarSliding.css";
 
-import innova_crysta from "../../assets/cars-details/crysta.png";
+import innova_crysta from "../../assets/cars-details/new-image.jpg";
 import swiftDezire from "../../assets/cars-details/SWIFT-DZIRE.jpg";
-import tempo1 from "../../assets/cars-details/TEMPO-TRAVELLER1.webp";
+import tempo1 from "../../assets/cars-details/new-tampo.png";
 import etios from "../../assets/cars-details/toyoto-etios.png";
 import innova from "../../assets/cars-details/TOYOTA-INNOVA.webp";
 import ub from "../../assets/cars-details/Urbania-LWB.png";
-import kiaCarans from "../../assets/cars-details/kia-carans.png";
+import kiaCarans from "../../assets/cars-details/new-kia-carans.jpg";
 import tourM from "../../assets/cars-details/tour-m.png";
 
 export default function CarsSliding() {
+  const [autoPlay, setAutoPlay] = useState(true);
+
   const carData = [
     {
       id: 1,
@@ -55,8 +57,8 @@ export default function CarsSliding() {
       img: tempo1,
       Name: "TEMPO TRAVELLER",
       Occupancy: "12",
-      InsideCity: "8h/80km,4500rs-12h/100km,4500rs",
-      Outsidestation: "25rs per km || 300km daily",
+      InsideCity: "8h/80km,4500rs-12h/100km,5500rs",
+      Outsidestation: "26rs per km || 300km daily",
       Drivernightcharge: "300rs",
     },
     {
@@ -64,25 +66,25 @@ export default function CarsSliding() {
       img: ub,
       Name: "TEMPO TRAVELLER",
       Occupancy: "17",
-      InsideCity: "8h/80km,4500rs-12h/100km,5500rs",
-      Outsidestation: "27rs per km || 300km daily",
+      InsideCity: "8h/80km,6000rs-12h/100km,8000rs",
+      Outsidestation: "35rs per km || 300km daily",
       Drivernightcharge: "300rs",
     },
     {
       id: 7,
       img: kiaCarans,
       Name: "Kia Carens",
-      Occupancy: "17",
-      InsideCity: "8h/80km,4500rs-12h/100km,5500rs",
-      Outsidestation: "27rs per km || 300km daily",
+      Occupancy: "6",
+      InsideCity: "8h/80km,2500rs-12h/100km,3000rs",
+      Outsidestation: "14rs per km || 300km daily",
       Drivernightcharge: "300rs",
     },
     {
       id: 8,
       img: tourM,
       Name: "Maruti Ertiga",
-      Occupancy: "17",
-      InsideCity: "8h/80km,4500rs-12h/100km,5500rs",
+      Occupancy: "6",
+      InsideCity: "8h/80km,2500rs-12h/100km,3000rs",
       Outsidestation: "27rs per km || 300km daily",
       Drivernightcharge: "300rs",
     },
@@ -107,28 +109,43 @@ export default function CarsSliding() {
     },
   };
 
+  const handleItemClick = () => {
+    setAutoPlay(false);
+  };
+
   return (
     <div className="main">
       <Carousel
         responsive={responsive}
         infinite={true}
-        autoPlay={true}
+        autoPlay={autoPlay}
         autoPlaySpeed={2000}
         additionalTransfrom={-10} // Adds extra space when sliding
         arrows={true} // Adds arrows for manual control
         showDots={true} // Shows dots for each slide
       >
         {carData.map((item, index) => (
-          <div key={index} style={{
-            padding:"40px"
-          }} className="slide-item">
+          <div
+            key={index}
+            style={{ padding: "40px" }}
+            className="slide-item"
+            onClick={handleItemClick}
+          >
             <img src={item.img} alt={item.Name} className="car-image" />
-            <div className="car-info">
-              <p className="car-name">{item.Name}</p>
-              <p>Occupancy: {item.Occupancy}</p>
-              <p>Inside City: {item.InsideCity}</p>
-              <p>Outside Station: {item.Outsidestation}</p>
-              <p>Driver Night Charge: {item.Drivernightcharge}</p>
+            <div className="car-info forbold">
+              <p className="car-name text-orange-400">{item.Name}</p>
+              <p className="">
+                Occupancy: <span>{item.Occupancy}</span>
+              </p>
+              <p>
+                Inside City: <span>{item.InsideCity}</span>{" "}
+              </p>
+              <p>
+                Outside Station: <span>{item.Outsidestation}</span>{" "}
+              </p>
+              <p>
+                Driver Night Charge: <span>{item.Drivernightcharge}</span>{" "}
+              </p>
             </div>
           </div>
         ))}

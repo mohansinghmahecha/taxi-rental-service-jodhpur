@@ -33,6 +33,12 @@
         width: 100%;
     }
 
+    .img2 img {
+        /* display: none; */
+        width: 250px;
+        height: 320px;
+
+    }
 
     .paragraph {
         padding: 25px;
@@ -46,7 +52,7 @@
         /* display: none; */
         width: 150px;
         height: 200px;
-    
+
     }
 
     .grid-container {
@@ -59,7 +65,7 @@
 
     .paragraph {
         padding: 20px;
-      
+
     }
 
 
