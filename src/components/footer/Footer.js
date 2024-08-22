@@ -3,6 +3,7 @@ import img1 from "../../assets/main-logo.webp";
 
 
 import { Link } from "react-router-dom";
+import SocialMedia from "../WhatsApp/SocialMedia";
 
 export default function Footer() {
   const d = new Date();
@@ -80,7 +81,9 @@ export default function Footer() {
           <p>toursshreeganesh5@gmail.com</p>
         </div>
       </div>
-
+<div>
+  <SocialMedia/>
+</div>
       <div className="bg-black text-white text-center">
         <p>© {d.getFullYear()} Taxi service in jodhpur</p>
       </div>

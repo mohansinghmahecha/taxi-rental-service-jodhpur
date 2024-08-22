@@ -24,6 +24,7 @@ import PushkatBlog from "./components/blogs/pushkar/PushkatBlog.js";
 import DelhiBlog from "./components/blogs/delhi/DelhiBlog.js";
 import ScrollToTop from "./components/ScrollToTop.js";
 import TermAndConsition from "./components/important/TermAndConsition.js";
+import SocialMedia from "./components/WhatsApp/SocialMedia.js";
 
 export default function App() {
   // Lazy load the OneWayTaxi component
@@ -52,6 +53,7 @@ export default function App() {
               <>
                 <SlidingImage />
                 <Intro />
+                <SocialMedia/>
                 <OurPackages />
                 <LocationOfffer /> {/* Popular Destinations */}
                 <NormalParagraph />

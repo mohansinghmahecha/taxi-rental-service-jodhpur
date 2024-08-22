@@ -11,26 +11,36 @@ import { useState } from "react";
 
 const MainNevbar = () => {
   const [isMenuOpen, setisMenuOpened] = useState(false);
+  const [isTaxiServicesOpen, setIsTaxiServicesOpen] = useState(false);
+  const [isSightSeenOpen, setIsSightSeenOpen] = useState(false);
 
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseOver = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseOut = () => {
-    setIsHovered(false);
-  };
-
-  const onMenuClick = () => {
+  const toggleMenu = () => {
     setisMenuOpened(!isMenuOpen);
   };
+
+  const toggleTaxiServices = () => {
+    setIsTaxiServicesOpen(!isTaxiServicesOpen);
+    if (isSightSeenOpen) setIsSightSeenOpen(false);
+  };
+
+  const toggleSightSeen = () => {
+    setIsSightSeenOpen(!isSightSeenOpen);
+    if (isTaxiServicesOpen) setIsTaxiServicesOpen(false);
+  };
+
+  const closeMenu = () => {
+    setisMenuOpened(false);
+    setIsTaxiServicesOpen(false);
+    setIsSightSeenOpen(false);
+  };
+
   function FbBoxOpen() {
     window.open(
       "https://www.facebook.com/share/AE3w4KDPuhyL7bF5/?mibextid=qi2Omg",
       "_blank"
     );
   }
+
   function intaBoxOpen() {
     window.open(
       "https://www.instagram.com/cartoursjodhpur/?igsh=OTkwZmVyYTc5c3Ru",
@@ -38,24 +48,14 @@ const MainNevbar = () => {
     );
   }
 
-  // for sight seen menu
-  const [isSight, setIsSinght] = useState(false);
-  const handleMouseEnter = () => {
-    setIsSinght(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsSinght(false);
-  };
-
   return (
     <nav>
       <div className="main-menu">
-        <div class="flex bg-black w-full text-white p-2 items-center justify-between md:justify-end">
-          <p class="text-xs md:text-sm md:mr-4">
+        <div className="flex bg-black w-full text-white p-2 items-center justify-between md:justify-end">
+          <p className="text-xs md:text-sm md:mr-4">
             Call us for Booking +919001502506
           </p>
-          <span class="text-xs md:text-sm p-1 rounded-lg bg-orange-500">
+          <span className="text-xs md:text-sm p-1 rounded-lg bg-orange-500">
             toursshreeganesh5@gmail.com
           </span>
           <FaFacebook
@@ -76,24 +76,22 @@ const MainNevbar = () => {
 
           <Link to="/">
             <div>
-              <img src={logo} alt={logo} width={180} height={100} />
+              <img src={logo} alt="logo" width={180} height={100} />
             </div>
           </Link>
           <div>
-            <div className="  ">
+            <div className="">
               <NavBarMainList />
             </div>
           </div>
         </div>
 
-        {/* important   for     here */}
-
-        {/* for mobile menu */}
+        {/* Mobile menu */}
 
         <div className="mobile-submenu-maincontainer">
           <div className="menu-container">
             <div className="image-logo">
-              <Link to="/">
+              <Link to="/" onClick={closeMenu}>
                 <img
                   src={logo}
                   alt="car tour jodhpur logo"
@@ -105,94 +103,106 @@ const MainNevbar = () => {
             <div className="burger-icon">
               <RiMenu3Fill
                 style={{ cursor: "pointer", width: "25px", height: "30px" }}
-                onClick={onMenuClick}
+                onClick={toggleMenu}
               />
             </div>
           </div>
 
           {isMenuOpen && (
-            <div className="menu-box border  " onClick={onMenuClick}>
+            <div className="menu-box border">
               <div className="flex flex-col gap-4 text-2xl">
-                {/* start */}
-
-                <div className="custom-font items ">
-                  <Link to="/about-us">About Us</Link>
+                <div className="custom-font">
+                  <Link to="/about-us" onClick={closeMenu}>
+                    About Us
+                  </Link>
                 </div>
 
-                <div
-                  className=" custom-font  "
-                  onMouseOver={handleMouseOver}
-                  onMouseOut={handleMouseOut}
-                >
+                <div className="custom-font" onClick={toggleTaxiServices}>
                   <span>
                     Taxi Services <MdArrowDropDown className="inline" />
                   </span>
-
-                  {isHovered && (
-                    <ul className="block ml-4  font-bold  text-white">
+                  {isTaxiServicesOpen && (
+                    <ul className="block ml-4 font-bold text-white">
                       <li className="border-b border-blue-400">
-                        <Link to="/taxi-services/jaipur">Jaipur</Link>
+                        <Link to="/taxi-services/jaipur" onClick={closeMenu}>
+                          Jaipur
+                        </Link>
                       </li>
                       <li className="border-b border-blue-400">
-                        <Link to="/taxi-services/jodhpur">Jodhpur</Link>
+                        <Link to="/taxi-services/jodhpur" onClick={closeMenu}>
+                          Jodhpur
+                        </Link>
                       </li>
                       <li className="border-b border-blue-400">
-                        <Link to="/taxi-services/Balotra">Balotra</Link>
+                        <Link to="/taxi-services/Balotra" onClick={closeMenu}>
+                          Balotra
+                        </Link>
                       </li>
                       <li className="border-b border-blue-400">
-                        <Link to="/taxi-services/Barmer">Barmer</Link>
+                        <Link to="/taxi-services/Barmer" onClick={closeMenu}>
+                          Barmer
+                        </Link>
                       </li>
                       <li className="border-b border-blue-400">
-                        <Link to="/taxi-services/Ajmer">Ajmer</Link>
+                        <Link to="/taxi-services/Ajmer" onClick={closeMenu}>
+                          Ajmer
+                        </Link>
                       </li>
                       <li className="border-b border-blue-400">
-                        <Link to="/taxi-services/Pali">Pali</Link>
+                        <Link to="/taxi-services/Pali" onClick={closeMenu}>
+                          Pali
+                        </Link>
                       </li>
                       <li className="border-b border-blue-400">
-                        <Link to="/taxi-services/Osian">Osian</Link>
+                        <Link to="/taxi-services/Osian" onClick={closeMenu}>
+                          Osian
+                        </Link>
                       </li>
                     </ul>
                   )}
                 </div>
 
-                <div
-                  className="custom-font hover:cursor-pointer"
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <span className="">
+                <div className="custom-font" onClick={toggleSightSeen}>
+                  <span>
                     Sight Seen <MdArrowDropDown className="inline" />
                   </span>
-                  {isSight && (
-                    <ul
-                      className="ml-4  text-white custom-font"
-                      onClick={() => setIsSinght(false)}
-                    >
+                  {isSightSeenOpen && (
+                    <ul className="ml-4 text-white custom-font">
                       <li className="border-b border-blue-400">
-                        <Link to="/onewaytaxi/:Jodhpur">Jodhpur</Link>
+                        <Link to="/onewaytaxi/:Jodhpur" onClick={closeMenu}>
+                          Jodhpur
+                        </Link>
                       </li>
                       <li className="border-b border-blue-400">
-                        <Link to="/onewaytaxi/:Jaipur">Jaipur</Link>
+                        <Link to="/onewaytaxi/:Jaipur" onClick={closeMenu}>
+                          Jaipur
+                        </Link>
                       </li>
                       <li className="border-b border-blue-400">
-                        <Link to="/onewaytaxi/:Udaipur">Udaipur</Link>
+                        <Link to="/onewaytaxi/:Udaipur" onClick={closeMenu}>
+                          Udaipur
+                        </Link>
                       </li>
                     </ul>
                   )}
                 </div>
+
                 <div className="custom-font">
-                  <Link to="/one-way-taxi">One Way Taxi</Link>
+                  <Link to="/one-way-taxi" onClick={closeMenu}>
+                    One Way Taxi
+                  </Link>
                 </div>
-                <Link to="/car-rent-jodhpur">
-                  <div className="custom-font">Jodhpur Cab </div>
+
+                <Link to="/car-rent-jodhpur" onClick={closeMenu}>
+                  <div className="custom-font">Jodhpur Cab</div>
                 </Link>
 
                 <div className="custom-font">
-                  <Link to="/contect-us">Contect Us</Link>
+                  <Link to="/contect-us" onClick={closeMenu}>
+                    Contact Us
+                  </Link>
                 </div>
               </div>
-
-              {/* end */}
             </div>
           )}
         </div>
@@ -200,4 +210,5 @@ const MainNevbar = () => {
     </nav>
   );
 };
+
 export default MainNevbar;

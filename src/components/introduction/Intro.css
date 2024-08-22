@@ -22,9 +22,7 @@
 
 }
 
-.img2 img {
-    background: linear-gradient(to right, #f97316, #3b82f6, #d9f99d);
-}
+
 
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
@@ -45,7 +43,10 @@
 @media only screen and (max-width: 600px) {
 
     .img2 img {
-        display: none;
+        /* display: none; */
+        width: 150px;
+        height: 200px;
+    
     }
 
     .grid-container {
