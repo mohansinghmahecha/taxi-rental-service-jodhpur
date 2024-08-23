@@ -80,6 +80,7 @@ export default function OneWayTaxi() {
                         src={location.image}
                         loading="lazy"
                         alt=""
+                       
                         style={{
                           objectFit: "fill",
                           width: "100%",

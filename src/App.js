@@ -1,12 +1,11 @@
 import "./App.css";
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Intro from "./components/introduction/Intro";
 import MainNevbar from "./components/navbar/MainNevbar";
 import OurPackages from "./components/our-packages/OurPackages";
 import SlidingImage from "./components/slider/SlidingImage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutUs from "./components/about-us/AboutUs.js";
-import ReactGA from "react-ga4";
 import Footer from "./components/footer/Footer.js";
 import LocationOfffer from "./browse-location/LocationOffer.js";
 import Partners from "./components/our-partners/Partners.js";
@@ -25,27 +24,26 @@ import DelhiBlog from "./components/blogs/delhi/DelhiBlog.js";
 import ScrollToTop from "./components/ScrollToTop.js";
 import TermAndConsition from "./components/important/TermAndConsition.js";
 import SocialMedia from "./components/WhatsApp/SocialMedia.js";
+import ReactGA from "react-ga4";
 
-const Trackingid = "G-HM0J366CTJ";
-ReactGA.initialize(Trackingid);
+// Lazy load components
+const OneWayTaxi = React.lazy(() =>
+  import("./components/one-way-taxi/OneWayTaxi.js")
+);
+const DetailedInfo = React.lazy(() =>
+  import("./components/taxi-services/DetailedInfo.js")
+);
+const SeightSeenPage = React.lazy(() =>
+  import("./components/sightSeensPage/SightSeenPage.js")
+);
 
 export default function App() {
-  React.useEffect(() => {
+  // Initialize Google Analytics
+  useEffect(() => {
+    const Trackingid = "G-HM0J366CTJ";
+    ReactGA.initialize(Trackingid);
     ReactGA.send({ hitType: "pageview", page: window.location.pathname });
   }, []);
-  // Lazy load the OneWayTaxi component
-  const OneWayTaxi = React.lazy(() =>
-    import("./components/one-way-taxi/OneWayTaxi.js")
-  );
-
-  // details js lazy load
-  const DetailedInfo = React.lazy(() =>
-    import("./components/taxi-services/DetailedInfo.js")
-  );
-  // sight seen
-  const SeightSeenPage = React.lazy(() =>
-    import("./components/sightSeensPage/SightSeenPage.js")
-  );
 
   return (
     <BrowserRouter>
@@ -72,7 +70,7 @@ export default function App() {
           <Route
             path="/onewaytaxi/:cityName"
             element={
-              <Suspense fallback={<div>Our Schenious Are Loading</div>}>
+              <Suspense fallback={<div>Loading Sightseeing Page...</div>}>
                 <SeightSeenPage />
               </Suspense>
             }
@@ -82,15 +80,15 @@ export default function App() {
           <Route
             path="/taxi-services/:LocationName"
             element={
-              <Suspense fallback={<div>Loading.. Our Blog.</div>}>
+              <Suspense fallback={<div>Loading Taxi Service Details...</div>}>
                 <DetailedInfo />
               </Suspense>
-            } /* texi services in details */
+            }
           />
           <Route
             path="/one-way-taxi"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<div>Loading One Way Taxi...</div>}>
                 <OneWayTaxi />
               </Suspense>
             }
@@ -99,12 +97,12 @@ export default function App() {
           <Route path="/priviacy-policy" element={<PrivacyPolicy />} />
           <Route path="/cancellation-policy" element={<CancilationPolicy />} />
           <Route path="/term-and-conditions" element={<TermAndConsition />} />
-          {/* blog routes */}
+          {/* Blog routes */}
           <Route path="/car-rent-jodhpur" element={<JodhpurBlog />} />
           <Route path="/car-rent-jaisalmer" element={<JaisalmerBlog />} />
           <Route path="/car-rent-pushkar" element={<PushkatBlog />} />
           <Route path="/car-rent-delhi" element={<DelhiBlog />} />
-
+          {/* Catch-all route for 404 */}
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </div>
