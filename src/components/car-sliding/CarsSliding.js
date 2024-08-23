@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./CarSliding.css";
-
-import innova_crysta from "../../assets/cars-details/new-image.jpg";
-import swiftDezire from "../../assets/cars-details/SWIFT-DZIRE.jpg";
-import tempo1 from "../../assets/cars-details/new-tampo.png";
-import etios from "../../assets/cars-details/toyoto-etios.png";
+import innova_crysta from "../../assets/cars-details/new-image.webp";
+import swiftDezire from "../../assets/cars-details/SWIFT-DZIRE.webp";
+import tempo1 from "../../assets/cars-details/new-tampo.webp";
+import etios from "../../assets/cars-details/toyoto-etios.webp";
 import innova from "../../assets/cars-details/TOYOTA-INNOVA.webp";
-import ub from "../../assets/cars-details/Urbania-LWB.png";
-import kiaCarans from "../../assets/cars-details/new-kia-carans.jpg";
-import tourM from "../../assets/cars-details/tour-m.png";
+import ub from "../../assets/cars-details/Urbania-LWB.webp";
+import kiaCarans from "../../assets/cars-details/new-kia-carans.webp";
+import tourM from "../../assets/cars-details/tour-m.webp";
 
 export default function CarsSliding() {
   const [autoPlay, setAutoPlay] = useState(true);

@@ -1,6 +1,6 @@
 import React from "react";
-import callLogo from "../../assets/call-logo.png";
-import whatsappLogo from "../../assets/whatsapp-logo.png";
+import callLogo from "../../assets/call-logo.webp";
+import whatsappLogo from "../../assets/whatsapp-logo.webp";
 import "./Floating.css";
 
 function whatsappopen() {

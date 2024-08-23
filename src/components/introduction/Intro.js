@@ -1,4 +1,4 @@
-import car2 from "../../assets/intro-pic.jpg";
+import car2 from "../../assets/intro-pic.webp";
 
 import "./Intro.css";
 

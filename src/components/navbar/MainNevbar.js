@@ -6,7 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 import { RiMenu3Fill } from "react-icons/ri";
 import { MdArrowDropDown } from "react-icons/md";
 import "./MainNevbar.css";
-import instaLogo from "../../assets/insta-logo.png";
+import instaLogo from "../../assets/insta-logo.webp";
 import { useState } from "react";
 
 const MainNevbar = () => {

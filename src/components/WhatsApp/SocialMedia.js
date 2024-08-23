@@ -1,6 +1,6 @@
 import React from 'react'
-import insta from '../../assets/insta-logo.png'
-import whatsApp from '../../assets/whatsapp-logo.png'
+import insta from '../../assets/insta-logo.webp'
+import whatsApp from '../../assets/whatsapp-logo.webp'
 import { FaFacebook } from "react-icons/fa";
 
   
