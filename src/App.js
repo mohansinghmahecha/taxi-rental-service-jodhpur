@@ -26,7 +26,13 @@ import ScrollToTop from "./components/ScrollToTop.js";
 import TermAndConsition from "./components/important/TermAndConsition.js";
 import SocialMedia from "./components/WhatsApp/SocialMedia.js";
 
+const Trackingid = "G-HM0J366CTJ";
+ReactGA.initialize(Trackingid);
+
 export default function App() {
+  React.useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
   // Lazy load the OneWayTaxi component
   const OneWayTaxi = React.lazy(() =>
     import("./components/one-way-taxi/OneWayTaxi.js")
@@ -41,9 +47,6 @@ export default function App() {
     import("./components/sightSeensPage/SightSeenPage.js")
   );
 
-  const Trackingid = "G-HM0J366CTJ";
-  ReactGA.initialize(Trackingid);
-  ReactGA.pageview(document.location.pathname)
   return (
     <BrowserRouter>
       <div className="bg-white">
