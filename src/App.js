@@ -6,7 +6,7 @@ import OurPackages from "./components/our-packages/OurPackages";
 import SlidingImage from "./components/slider/SlidingImage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutUs from "./components/about-us/AboutUs.js";
-
+import ReactGA from "react-ga4";
 import Footer from "./components/footer/Footer.js";
 import LocationOfffer from "./browse-location/LocationOffer.js";
 import Partners from "./components/our-partners/Partners.js";
@@ -40,6 +40,10 @@ export default function App() {
   const SeightSeenPage = React.lazy(() =>
     import("./components/sightSeensPage/SightSeenPage.js")
   );
+
+  const Trackingid = "G-HM0J366CTJ";
+  ReactGA.initialize(Trackingid);
+  ReactGA.pageview(document.location.pathname)
   return (
     <BrowserRouter>
       <div className="bg-white">
@@ -53,7 +57,7 @@ export default function App() {
               <>
                 <SlidingImage />
                 <Intro />
-                <SocialMedia/>
+                <SocialMedia />
                 <OurPackages />
                 <LocationOfffer /> {/* Popular Destinations */}
                 <NormalParagraph />
