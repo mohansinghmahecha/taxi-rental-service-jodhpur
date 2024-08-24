@@ -1,5 +1,6 @@
 import React from "react";
-
+import { FaCarAlt } from "react-icons/fa";
+import { MdFamilyRestroom } from "react-icons/md";
 export default function SmallAboutUS() {
   return (
     <div className="w-full bg-white">
@@ -9,27 +10,31 @@ export default function SmallAboutUS() {
 
       <div className="w-full flex flex-wrap justify-center items-center  p-4 gap-8 ">
         {/* one box */}
-        <div className="flex flex-col justify-center items-center shadow-lg rounded-lg bg-orange-400 p-4  w-[300px]">
-          <p className=" text-white  font-bold text-2xl mb-2">Our vission</p>
-          <img
-            src="https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/Mission.png?time=1721209120"
-            alt=""
+        <div className="flex flex-col justify-center items-center shadow-lg rounded-lg bg-orange-400 p-4  w-[300px] h-[300px]">
+          {/* <p className=" text-white  font-bold text-2xl mb-2">Our vission</p> */}
+          <FaCarAlt
+            className="text-blue-500"
+            style={{
+              width: "100px",
+              height: "100px",
+            }}
           />
           <p className="text-center ">
-            Our vision is to become a forward motion-oriented car rental company
-            by serving perfect and best service to value-conscious customers for
-            all of their car rental demands and attain functional excellence.
+            we cares for you and family , let us give a try for you we assure
+            your safety
           </p>
         </div>
         {/* one end */}
 
         {/* one box */}
-        <div className="flex flex-col justify-center items-center shadow-lg rounded-lg bg-orange-400 p-4  w-[300px]">
+        <div className="flex flex-col justify-center items-center shadow-lg rounded-lg bg-orange-400 p-4  w-[300px] h-[300px]">
           <p className=" text-white  font-bold text-2xl mb-2">Our vission</p>
-          <img className="bg-transparent mix-blend-multiply"
+          {/*  <img
+            className="bg-transparent mix-blend-multiply"
             src="https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/images-1-1.png?time=1721209120"
             alt=""
-          />
+          /> */}
+
           <p className="text-center ">
             Our vision is to become a forward motion-oriented car rental company
             by serving perfect and best service to value-conscious customers for
@@ -39,16 +44,23 @@ export default function SmallAboutUS() {
         {/* one end */}
 
         {/* one box */}
-        <div className="flex flex-col justify-center items-center shadow-lg rounded-lg bg-orange-400 p-4  w-[300px]">
-          <p className=" text-white  font-bold text-2xl mb-2">Our vission</p>
-          <img className="bg-transparent mix-blend-multiply"
+        <div className="flex flex-col justify-center items-center shadow-lg rounded-lg bg-orange-400 p-4  w-[300px] h-[300px]">
+          {/* <p className=" text-white  font-bold text-2xl mb-2">Our vission</p> */}
+          {/*   <img
+            className="bg-transparent mix-blend-multiply"
             src="https://xpd0c6.p3cdn1.secureserver.net/wp-content/uploads/2020/08/images-2-150x150.png"
             alt=""
+          /> */}
+          <MdFamilyRestroom
+            className="text-blue-500"
+            style={{
+              width: "100px",
+              height: "100px",
+            }}
           />
           <p className="text-center ">
-            Our vision is to become a forward motion-oriented car rental company
-            by serving perfect and best service to value-conscious customers for
-            all of their car rental demands and attain functional excellence.
+            we are best for car rental services in jodhpur , we qualify the need
+            of customer.
           </p>
         </div>
         {/* one end */}
