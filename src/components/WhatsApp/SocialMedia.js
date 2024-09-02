@@ -24,9 +24,9 @@ export default function SocialMedia() {
       }
   return (
     <div className="w-full flex justify-center items-center gap-4">
-        <img src={insta}  className='w-10 h-10 hover:cursor-pointer'  alt="" onClick={intaBoxOpen}/>
-        <img src={whatsApp}  className='w-10 h-10 hover:cursor-pointer' alt="" onClick={whatsappopen}/>
-        <FaFacebook className='w-10 h-10 text-blue-400 hover:cursor-pointer' onClick={FbBoxOpen}/>
+        <img src={insta}  className='w-10 h-10 hover:cursor-pointer'  alt="socialmedia-instagram" onClick={intaBoxOpen}/>
+        <img src={whatsApp}  className='w-10 h-10 hover:cursor-pointer' alt="socialmedia-whatsapp" onClick={whatsappopen}/>
+        <FaFacebook className='w-10 h-10 text-blue-400 hover:cursor-pointer' alt="facebook-logo-for-car-service-jodhpur" onClick={FbBoxOpen}/>
 
     </div>
   )

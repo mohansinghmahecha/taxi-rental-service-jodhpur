@@ -41,7 +41,7 @@ export default function Reviews() {
             <div className="">
               <img
                 src={kainaatArira}
-                alt=""
+                alt="kainaat-Arirai-review-for-best-cab-in-jodhpur"
                 width={100}
                 height={100}
                 className="rounded-full "
@@ -65,7 +65,7 @@ export default function Reviews() {
             <div className="">
               <img
                 src={hemaMalini}
-                alt=""
+                alt="hema-malini-ji-review-for-best-cab-in-jodhpur"
                 width={100}
                 height={100}
                 className="rounded-full mb-8"
