@@ -56,8 +56,9 @@ const MainNevbar = () => {
             Call us for Booking +919001502506
           </p>
           <span className="text-xs md:text-sm p-1 rounded-lg bg-orange-500">
-            toursshreeganesh5@gmail.com
+            &#116;&#111;&#117;&#114;&#115;&#115;&#104;&#114;&#101;&#101;&#103;&#97;&#110;&#101;&#115;&#104;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
           </span>
+
           <FaFacebook
             onClick={FbBoxOpen}
             className="w-8 h-10 text-blue-500 ml-1 hover:cursor-pointer"
