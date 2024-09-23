@@ -25,6 +25,7 @@ import ScrollToTop from "./components/ScrollToTop.js";
 import TermAndConsition from "./components/important/TermAndConsition.js";
 import SocialMedia from "./components/WhatsApp/SocialMedia.js";
 import ReactGA from "react-ga4";
+import MostVisitedPlaceRajasthan from "./components/blogs/most-visited-place/MostVisitedPlaceRajasthan.js";
 
 // Lazy load components
 const OneWayTaxi = React.lazy(() =>
@@ -56,13 +57,21 @@ export default function App() {
             path="/"
             element={
               <>
+              {/* sliding image */}
                 <SlidingImage />
+                {/* second page content */}
                 <Intro />
+                {/* only social media icons */}
                 <SocialMedia />
+                {/* showing details of available cars */}
                 <OurPackages />
-                <LocationOfffer /> {/* Popular Destinations */}
+                {/* Popular Destinations */}
+                <LocationOfffer /> 
+                {/* normal text -we are available */}
                 <NormalParagraph />
+                {/* review component */}
                 <Reviews />
+                {/* our all partner information */}
                 <Partners />
               </>
             }
@@ -70,7 +79,7 @@ export default function App() {
           <Route
             path="/onewaytaxi/:cityName"
             element={
-              <Suspense fallback={<div>Loading Sightseeing Page...</div>}>
+              <Suspense fallback={<div className="text-3xl font-bold text-center">Loading... Page</div>}>
                 <SeightSeenPage />
               </Suspense>
             }
@@ -102,6 +111,7 @@ export default function App() {
           <Route path="/car-rent-jaisalmer" element={<JaisalmerBlog />} />
           <Route path="/car-rent-pushkar" element={<PushkatBlog />} />
           <Route path="/car-rent-delhi" element={<DelhiBlog />} />
+          <Route path="/Most-Visited-Places-in-Rajasthan-Explore-with-Car-Tours-Jodhpur" element={<MostVisitedPlaceRajasthan />} />
           {/* Catch-all route for 404 */}
           <Route path="/*" element={<NotFound />} />
         </Routes>

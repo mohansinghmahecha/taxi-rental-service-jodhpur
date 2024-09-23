@@ -77,7 +77,7 @@ const MainNevbar = () => {
 
           <Link to="/">
             <div>
-              <img src={logo} alt="logo" width={180} height={100} />
+              <img src={logo} alt="car tour jodhpur" width={180} height={100} />
             </div>
           </Link>
           <div>
@@ -95,7 +95,7 @@ const MainNevbar = () => {
               <Link to="/" onClick={closeMenu}>
                 <img
                   src={logo}
-                  alt="car tour jodhpur logo"
+                  alt="car tour jodhpur"
                   width={100}
                   height={140}
                 />
