@@ -102,8 +102,8 @@ export default function Intro() {
           alt={car2}
           width={480}
           height={100}
-          className="  border  "
-        />
+          className="   "
+         />
       </div>
     </div>
   );

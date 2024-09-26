@@ -34,7 +34,7 @@ const MainNevbar = () => {
     setIsSightSeenOpen(false);
   };
 
-  function FbBoxOpen() {
+  /* function FbBoxOpen() {
     window.open(
       "https://www.facebook.com/share/AE3w4KDPuhyL7bF5/?mibextid=qi2Omg",
       "_blank"
@@ -46,7 +46,7 @@ const MainNevbar = () => {
       "https://www.instagram.com/cartoursjodhpur/?igsh=OTkwZmVyYTc5c3Ru",
       "_blank"
     );
-  }
+  } */
 
   return (
     <nav>
@@ -59,17 +59,26 @@ const MainNevbar = () => {
             &#116;&#111;&#117;&#114;&#115;&#115;&#104;&#114;&#101;&#101;&#103;&#97;&#110;&#101;&#115;&#104;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
           </span>
 
-          <FaFacebook
-            onClick={FbBoxOpen}
-            className="w-8 h-10 text-blue-500 ml-1 hover:cursor-pointer"
-          />
-          <img
-            src={instaLogo}
-            alt="social-media-icon"
-            width={35}
-            className="ml-[4px] hover:cursor-pointer"
-            onClick={intaBoxOpen}
-          />
+          <a
+            href="https://www.facebook.com/share/AE3w4KDPuhyL7bF5/?mibextid=qi2Omg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className="w-8 h-10 text-blue-500 ml-1 hover:cursor-pointer" />
+          </a>
+
+          <a
+            href="https://www.instagram.com/cartoursjodhpur/?igsh=OTkwZmVyYTc5c3Ru"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={instaLogo}
+              alt="social-media-icon"
+              width={35}
+              className="ml-[4px] hover:cursor-pointer"
+            />
+          </a>
         </div>
 
         <div className="sub-main">

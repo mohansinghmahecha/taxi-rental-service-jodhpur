@@ -2,10 +2,15 @@ import React from 'react'
 import insta from '../../assets/insta-logo.webp'
 import whatsApp from '../../assets/whatsapp-logo.webp'
 import { FaFacebook } from "react-icons/fa";
+import callLogo from "../../assets/call-logo.webp";
+
 
   
 
 export default function SocialMedia() {
+  function callNumber() {
+    window.location.href = "tel:+919001502506";
+  }
     function FbBoxOpen() {
         window.open(
           "https://www.facebook.com/share/AE3w4KDPuhyL7bF5/?mibextid=qi2Omg",
@@ -27,6 +32,12 @@ export default function SocialMedia() {
         <img src={insta}  className='w-10 h-10 hover:cursor-pointer'  alt="socialmedia-instagram" onClick={intaBoxOpen}/>
         <img src={whatsApp}  className='w-10 h-10 hover:cursor-pointer' alt="socialmedia-whatsapp" onClick={whatsappopen}/>
         <FaFacebook className='w-10 h-10 text-blue-400 hover:cursor-pointer' alt="facebook-logo-for-car-service-jodhpur" onClick={FbBoxOpen}/>
+        <img
+          src={callLogo}
+          alt="call-logo"
+          className="w-10 h-10 hover:cursor-pointer  "
+          onClick={callNumber}
+        />
 
     </div>
   )
